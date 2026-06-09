@@ -45,23 +45,26 @@ export default function StatsPanel({
         <div className="flex items-end gap-2 h-40">
           {recent7.map((day, i) => {
             const total = day.newWords + day.reviewWords;
-            const height = maxWords > 0 ? (total / maxWords) * 100 : 0;
+            const newHeight = maxWords > 0 ? (day.newWords / maxWords) * 100 : 0;
+            const reviewHeight = maxWords > 0 ? (day.reviewWords / maxWords) * 100 : 0;
             return (
-              <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                <div
-                  className="w-full rounded-t-md relative"
-                  style={{ height: `${Math.max(height, 4)}%` }}
-                >
+              <div key={i} className="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+                {total > 0 && (
+                  <span className="text-xs text-gray-500 mb-1">{total}</span>
+                )}
+                <div className="w-full flex flex-col" style={{ height: `${Math.max(newHeight + reviewHeight, total > 0 ? 4 : 0)}%` }}>
+                  {/* 新学 - 上方蓝色 */}
                   <div
-                    className="absolute bottom-0 w-full bg-indigo-400 rounded-t-md"
-                    style={{ height: '100%' }}
+                    className="w-full bg-indigo-400 rounded-t-sm"
+                    style={{ height: day.newWords > 0 ? `${(day.newWords / Math.max(total, 1)) * 100}%` : '0%' }}
                   />
+                  {/* 复习 - 下方绿色 */}
                   <div
-                    className="absolute bottom-0 w-full bg-green-400 rounded-t-md"
-                    style={{ height: `${(day.reviewWords / Math.max(total, 1)) * 100}%` }}
+                    className="w-full bg-green-400 rounded-b-sm"
+                    style={{ height: day.reviewWords > 0 ? `${(day.reviewWords / Math.max(total, 1)) * 100}%` : '0%' }}
                   />
                 </div>
-                <span className="text-xs text-gray-400">
+                <span className="text-xs text-gray-400 mt-1">
                   {day.date.slice(5)}
                 </span>
               </div>
