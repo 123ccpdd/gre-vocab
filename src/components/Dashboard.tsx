@@ -1,3 +1,4 @@
+import { FireOutlined, RocketOutlined, TrophyOutlined, StarOutlined, BookOutlined, SyncOutlined, PlusOutlined } from '@ant-design/icons';
 import type { DailyStats } from '../types';
 
 interface DashboardProps {
@@ -34,14 +35,14 @@ export default function Dashboard({
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold">
-              {streak > 0 ? `🔥 连续打卡 ${streak} 天` : '💪 开始你的学习之旅'}
+              {streak > 0 ? <><FireOutlined className="mr-2" />连续打卡 {streak} 天</> : <><RocketOutlined className="mr-2" />开始你的学习之旅</>}
             </h2>
             <p className="text-indigo-100 mt-1">
               今日已学 {todayStats.newWords} 词 · 复习 {todayStats.reviewWords} 词
             </p>
           </div>
           <div className="text-5xl">
-            {streak >= 7 ? '🏆' : streak >= 3 ? '⭐' : '📚'}
+            {streak >= 7 ? <TrophyOutlined /> : streak >= 3 ? <StarOutlined /> : <BookOutlined />}
           </div>
         </div>
       </div>
@@ -64,22 +65,22 @@ export default function Dashboard({
       {/* 分类统计 */}
       <div className="grid grid-cols-2 gap-4">
         <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2">📗</div>
+          <div className="text-3xl mb-2 text-green-500"><BookOutlined /></div>
           <p className="text-2xl font-bold text-gray-900">{masteredCount}</p>
           <p className="text-sm text-gray-500">已掌握</p>
         </div>
         <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2">📘</div>
+          <div className="text-3xl mb-2 text-blue-500"><SyncOutlined /></div>
           <p className="text-2xl font-bold text-gray-900">{reviewingCount}</p>
           <p className="text-sm text-gray-500">复习中</p>
         </div>
         <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2">📙</div>
+          <div className="text-3xl mb-2 text-yellow-500"><StarOutlined /></div>
           <p className="text-2xl font-bold text-gray-900">{learningCount}</p>
           <p className="text-sm text-gray-500">学习中</p>
         </div>
         <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2">📕</div>
+          <div className="text-3xl mb-2 text-red-400"><PlusOutlined /></div>
           <p className="text-2xl font-bold text-gray-900">{newCount}</p>
           <p className="text-sm text-gray-500">待学习</p>
         </div>
@@ -92,14 +93,14 @@ export default function Dashboard({
             onClick={onStartReview}
             className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-2xl font-semibold text-lg hover:from-orange-600 hover:to-red-600 transition shadow-lg shadow-orange-200 flex items-center justify-center gap-2"
           >
-            🔄 待复习 {dueCount} 词
+            <SyncOutlined /> 待复习 {dueCount} 词
           </button>
         )}
         <button
           onClick={onStartLearn}
           className="w-full py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl font-semibold text-lg hover:from-indigo-600 hover:to-purple-700 transition shadow-lg shadow-indigo-200 flex items-center justify-center gap-2"
         >
-          ✨ 学习新词
+          <PlusOutlined /> 学习新词
         </button>
       </div>
     </div>

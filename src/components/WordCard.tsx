@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Word } from '../types';
 import { getStageLabel } from '../utils/spaced-repetition';
+import { CheckOutlined, CloseOutlined, UpOutlined, DownOutlined, ExperimentOutlined, FileTextOutlined, BulbOutlined, FrownOutlined, SmileOutlined } from '@ant-design/icons';
 
 interface WordCardProps {
   word: Word;
@@ -83,8 +84,8 @@ export default function WordCard({
               {word.meaning}
             </p>
             <div className="flex items-center gap-4 text-sm text-gray-500">
-              <span className="text-green-600">✓ {correctCount}</span>
-              <span className="text-red-500">✗ {incorrectCount}</span>
+              <span className="text-green-600"><CheckOutlined className="mr-1" />{correctCount}</span>
+              <span className="text-red-500"><CloseOutlined className="mr-1" />{incorrectCount}</span>
               <span className="text-indigo-600">{getStageLabel(correctCount)}</span>
             </div>
           </div>
@@ -98,8 +99,8 @@ export default function WordCard({
             onClick={() => setShowRoots(!showRoots)}
             className="w-full text-left px-4 py-2 bg-white rounded-lg border border-gray-100 text-sm text-gray-600 hover:bg-gray-50 transition flex items-center justify-between"
           >
-            <span>🔤 词根词缀分析</span>
-            <span>{showRoots ? '▲' : '▼'}</span>
+            <span><ExperimentOutlined className="mr-2" />词根词缀分析</span>
+            <span>{showRoots ? <UpOutlined /> : <DownOutlined />}</span>
           </button>
           {showRoots && (
             <div className="mt-1 p-4 bg-white rounded-lg border border-gray-100 space-y-2">
@@ -132,7 +133,7 @@ export default function WordCard({
                 </div>
               ))}
               <div className="mt-2 pt-2 border-t border-gray-100 text-sm text-gray-600">
-                💡 记忆：{word.roots.map((r) => r.part).join(' + ')} → {word.meaning}
+                <BulbOutlined className="mr-1 text-yellow-500" />记忆：{word.roots.map((r) => r.part).join(' + ')} → {word.meaning}
               </div>
             </div>
           )}
@@ -146,8 +147,8 @@ export default function WordCard({
             onClick={() => setShowExamples(!showExamples)}
             className="w-full text-left px-4 py-2 bg-white rounded-lg border border-gray-100 text-sm text-gray-600 hover:bg-gray-50 transition flex items-center justify-between"
           >
-            <span>📝 真题语境</span>
-            <span>{showExamples ? '▲' : '▼'}</span>
+            <span><FileTextOutlined className="mr-2" />真题语境</span>
+            <span>{showExamples ? <UpOutlined /> : <DownOutlined />}</span>
           </button>
           {showExamples && (
             <div className="mt-1 p-4 bg-white rounded-lg border border-gray-100 space-y-3">
@@ -175,18 +176,18 @@ export default function WordCard({
               e.stopPropagation();
               onDontKnow();
             }}
-            className="flex-1 py-3 px-6 bg-red-50 text-red-600 rounded-xl font-medium hover:bg-red-100 transition border border-red-200"
+            className="flex-1 py-3 px-6 bg-red-50 text-red-600 rounded-xl font-medium hover:bg-red-100 transition border border-red-200 flex items-center justify-center gap-2"
           >
-            😕 不认识
+            <FrownOutlined /> 不认识
           </button>
           <button
             onClick={(e) => {
               e.stopPropagation();
               onKnow();
             }}
-            className="flex-1 py-3 px-6 bg-green-50 text-green-600 rounded-xl font-medium hover:bg-green-100 transition border border-green-200"
+            className="flex-1 py-3 px-6 bg-green-50 text-green-600 rounded-xl font-medium hover:bg-green-100 transition border border-green-200 flex items-center justify-center gap-2"
           >
-            😊 认识
+            <SmileOutlined /> 认识
           </button>
         </div>
       )}

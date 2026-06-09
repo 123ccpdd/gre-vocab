@@ -11,8 +11,10 @@ import Dashboard from './components/Dashboard';
 import LearningSession from './components/LearningSession';
 import CompletionScreen from './components/CompletionScreen';
 import StatsPanel from './components/StatsPanel';
+import WordListPage from './components/WordList';
+import { ReadOutlined, HomeOutlined, BarChartOutlined, BookOutlined, SunOutlined, MoonOutlined } from '@ant-design/icons';
 
-type View = 'home' | 'learn' | 'review' | 'stats' | 'complete';
+type View = 'home' | 'learn' | 'review' | 'stats' | 'wordlist' | 'complete';
 
 function App() {
   const [currentView, setCurrentView] = useState<View>('home');
@@ -176,10 +178,10 @@ function App() {
             onClick={() => setCurrentView('home')}
             className="text-lg font-bold text-indigo-600 hover:text-indigo-700 transition"
           >
-            📖 考研词汇
+            <ReadOutlined className="mr-1" /> 考研词汇
           </button>
           <div className="flex gap-1">
-            {(['home', 'stats'] as const).map((view) => (
+            {(['home', 'wordlist', 'stats'] as const).map((view) => (
               <button
                 key={view}
                 onClick={() => setCurrentView(view)}
@@ -189,7 +191,7 @@ function App() {
                     : 'text-gray-500 hover:bg-gray-100'
                 }`}
               >
-                {view === 'home' ? '🏠 首页' : '📊 统计'}
+                {view === 'home' ? <><HomeOutlined className="mr-1" /> 首页</> : view === 'wordlist' ? <><BookOutlined className="mr-1" /> 词库</> : <><BarChartOutlined className="mr-1" /> 统计</>}
               </button>
             ))}
             <button
@@ -198,7 +200,7 @@ function App() {
               }
               className="px-2 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-gray-100 transition"
             >
-              {settings.enableDarkMode ? '☀️' : '🌙'}
+              {settings.enableDarkMode ? <SunOutlined /> : <MoonOutlined />}
             </button>
           </div>
         </div>
@@ -277,6 +279,8 @@ function App() {
             totalWords={wordList.length}
           />
         )}
+
+        {currentView === 'wordlist' && <WordListPage />}
       </main>
     </div>
   );

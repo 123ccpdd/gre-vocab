@@ -1,3 +1,4 @@
+import { TrophyOutlined, FireOutlined, BookOutlined, ArrowRightOutlined, SmileOutlined } from '@ant-design/icons';
 import type { LearningMode } from '../types';
 
 interface CompletionScreenProps {
@@ -22,17 +23,17 @@ export default function CompletionScreen({
 
   const getMessage = () => {
     const rate = Number(accuracy);
-    if (rate >= 90) return { emoji: '🎉', text: '太棒了！正确率超高！' };
-    if (rate >= 70) return { emoji: '👍', text: '不错！继续加油！' };
-    if (rate >= 50) return { emoji: '💪', text: '还需努力，别放弃！' };
-    return { emoji: '📖', text: '多复习几遍，一定能记住！' };
+    if (rate >= 90) return { icon: <SmileOutlined className="text-7xl text-green-500" />, text: '太棒了！正确率超高！' };
+    if (rate >= 70) return { icon: <TrophyOutlined className="text-7xl text-yellow-500" />, text: '不错！继续加油！' };
+    if (rate >= 50) return { icon: <FireOutlined className="text-7xl text-orange-500" />, text: '还需努力，别放弃！' };
+    return { icon: <BookOutlined className="text-7xl text-blue-500" />, text: '多复习几遍，一定能记住！' };
   };
 
   const message = getMessage();
 
   return (
     <div className="max-w-md mx-auto text-center space-y-6 py-12">
-      <div className="text-7xl">{message.emoji}</div>
+      <div>{message.icon}</div>
       <h2 className="text-2xl font-bold text-gray-900">
         {mode === 'learn' ? '学习完成！' : '复习完成！'}
       </h2>
@@ -63,9 +64,9 @@ export default function CompletionScreen({
       <div className="space-y-3 pt-4">
         <button
           onClick={onContinue}
-          className="w-full py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl font-medium hover:from-indigo-600 hover:to-purple-700 transition"
+          className="w-full py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl font-medium hover:from-indigo-600 hover:to-purple-700 transition flex items-center justify-center gap-2"
         >
-          继续学习
+          继续学习 <ArrowRightOutlined />
         </button>
         <button
           onClick={onBack}
