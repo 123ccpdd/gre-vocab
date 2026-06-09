@@ -1,0 +1,325 @@
+import type { Word } from '../../types';
+
+export const wordList: Word[] = [
+  {
+    id: '336',
+    word: 'tentative',
+    phonetic: '/ˈtentətɪv/',
+    meaning: 'adj. 试探性的；暂定的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'tent', meaning: '尝试，伸展', origin: '拉丁语' },
+      { type: 'suffix', part: '-ative', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The committee reached a tentative agreement after hours of negotiation.', translation: '经过数小时的谈判，委员会达成了暂定协议。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '337',
+    word: 'threshold',
+    phonetic: '/ˈθreʃhəʊld/',
+    meaning: 'n. 门槛；入门；临界点',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'thresh', meaning: '踩踏', origin: '古英语' },
+      { type: 'root', part: 'hold', meaning: '持有' },
+    ],
+    examples: [
+      { sentence: 'The country is on the threshold of a new era of economic reform.', translation: '该国正处于经济改革新时代的门槛上。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '338',
+    word: 'tolerate',
+    phonetic: '/ˈtɒləreɪt/',
+    meaning: 'v. 容忍；忍受',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'toler', meaning: '忍受', origin: '拉丁语' },
+      { type: 'suffix', part: '-ate', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'Society should not tolerate any form of discrimination.', translation: '社会不应容忍任何形式的歧视。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '339',
+    word: 'transcend',
+    phonetic: '/trænˈsend/',
+    meaning: 'v. 超越；超出',
+    pos: ['v.'],
+    roots: [
+      { type: 'prefix', part: 'trans-', meaning: '跨越' },
+      { type: 'root', part: 'scend', meaning: '攀登', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Great art has the power to transcend cultural boundaries.', translation: '伟大的艺术有超越文化界限的力量。', year: 2023, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 4,
+  },
+  {
+    id: '340',
+    word: 'tenure',
+    phonetic: '/ˈtenjə/',
+    meaning: 'n. 任期；终身教职',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'ten', meaning: '持有', origin: '拉丁语' },
+      { type: 'suffix', part: '-ure', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'During his tenure as president, the university underwent significant reforms.', translation: '在他担任校长期间，该大学进行了重大改革。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '341',
+    word: 'terminate',
+    phonetic: '/ˈtɜːmɪneɪt/',
+    meaning: 'v. 终止，结束',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'termin', meaning: '界限，终点', origin: '拉丁语' },
+      { type: 'suffix', part: '-ate', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'The contract will be terminated if either party fails to meet its obligations.', translation: '如果任何一方未能履行义务，合同将被终止。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '342',
+    word: 'terrain',
+    phonetic: '/təˈreɪn/',
+    meaning: 'n. 地形，地势',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'terr', meaning: '土地', origin: '拉丁语' },
+      { type: 'suffix', part: '-ain', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The rugged terrain made the construction of roads extremely difficult.', translation: '崎岖的地形使道路建设极为困难。', year: 2019, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '343',
+    word: 'therapeutic',
+    phonetic: '/ˌθerəˈpjuːtɪk/',
+    meaning: 'adj. 治疗的；有疗效的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'therap', meaning: '治疗', origin: '希腊语' },
+      { type: 'suffix', part: '-eutic', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'Some researchers argue that music has therapeutic effects on mental health.', translation: '一些研究人员认为音乐对心理健康有治疗作用。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '344',
+    word: 'tract',
+    phonetic: '/trækt/',
+    meaning: 'n. 大片土地；小册子；道',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'tract', meaning: '拉，拖', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Large tracts of forest have been cleared for agricultural use.', translation: '大片森林被清理用于农业。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '345',
+    word: 'transient',
+    phonetic: '/ˈtrænziənt/',
+    meaning: 'adj. 短暂的；转瞬即逝的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'prefix', part: 'trans-', meaning: '跨越' },
+      { type: 'root', part: 'ient', meaning: '行走' },
+    ],
+    examples: [
+      { sentence: 'The economic boom proved to be transient rather than permanent.', translation: '经济繁荣被证明是短暂的而非持久的。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 4,
+  },
+  {
+    id: '346',
+    word: 'transition',
+    phonetic: '/trænˈzɪʃn/',
+    meaning: 'n. 过渡；转变',
+    pos: ['n.'],
+    roots: [
+      { type: 'prefix', part: 'trans-', meaning: '跨越' },
+      { type: 'root', part: 'it', meaning: '行走', origin: '拉丁语' },
+      { type: 'suffix', part: '-ion', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The transition from a planned economy to a market economy was not without challenges.', translation: '从计划经济向市场经济的过渡并非没有挑战。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '347',
+    word: 'transparent',
+    phonetic: '/trænsˈpærənt/',
+    meaning: 'adj. 透明的；坦率的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'prefix', part: 'trans-', meaning: '穿过' },
+      { type: 'root', part: 'par', meaning: '出现，可见', origin: '拉丁语' },
+      { type: 'suffix', part: '-ent', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The government promised to make the decision-making process more transparent.', translation: '政府承诺使决策过程更加透明。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '348',
+    word: 'trigger',
+    phonetic: '/ˈtrɪɡə/',
+    meaning: 'v. 触发，引起；n. 触发器',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'trig', meaning: '拉，扣', origin: '荷兰语' },
+      { type: 'suffix', part: '-er', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The financial crisis was triggered by a collapse in the housing market.', translation: '金融危机是由房地产市场的崩溃引发的。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '349',
+    word: 'trivial',
+    phonetic: '/ˈtrɪviəl/',
+    meaning: 'adj. 琐碎的；不重要的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'prefix', part: 'tri-', meaning: '三' },
+      { type: 'root', part: 'vi', meaning: '道路', origin: '拉丁语' },
+      { type: 'suffix', part: '-al', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'What may seem like a trivial issue can sometimes lead to serious consequences.', translation: '看似琐碎的问题有时可能导致严重后果。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '350',
+    word: 'thorough',
+    phonetic: '/ˈθʌrə/',
+    meaning: 'adj. 彻底的；详尽的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'thor', meaning: '穿过', origin: '古英语' },
+      { type: 'suffix', part: '-ough', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'A thorough investigation is needed to determine the root cause of the accident.', translation: '需要进行彻底调查以确定事故的根本原因。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '351',
+    word: 'trait',
+    phonetic: '/treɪt/',
+    meaning: 'n. 特征，特点',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'trait', meaning: '拉，抽取', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Resilience is a trait that enables people to overcome adversity.', translation: '韧性是一种使人能够克服逆境的特质。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '352',
+    word: 'tremendous',
+    phonetic: '/trɪˈmendəs/',
+    meaning: 'adj. 巨大的；极大的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'trem', meaning: '颤抖', origin: '拉丁语' },
+      { type: 'suffix', part: '-endous', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The Internet has had a tremendous impact on the way people communicate.', translation: '互联网对人们的交流方式产生了巨大的影响。', year: 2021, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '353',
+    word: 'turbulent',
+    phonetic: '/ˈtɜːbjələnt/',
+    meaning: 'adj. 动荡的；混乱的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'turb', meaning: '扰乱，骚动', origin: '拉丁语' },
+      { type: 'suffix', part: '-ulent', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The country went through a turbulent period of political reform.', translation: '该国经历了一段政治改革的动荡时期。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '513',
+    word: 'tackle',
+    phonetic: '/ˈtækl/',
+    meaning: 'v. 处理；解决；n. 用具',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'tack', meaning: '抓住', origin: '中古英语' },
+      { type: 'suffix', part: '-le', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'The government needs to tackle the issue of income inequality.', translation: '政府需要解决收入不平等问题。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '514',
+    word: 'testify',
+    phonetic: '/ˈtestɪfaɪ/',
+    meaning: 'v. 作证；证明',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'test', meaning: '见证', origin: '拉丁语' },
+      { type: 'suffix', part: '-ify', meaning: '使……化' },
+    ],
+    examples: [
+      { sentence: 'Several witnesses testified that they saw the defendant at the scene.', translation: '几名证人作证说他们在现场看到了被告。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+];

@@ -1,0 +1,402 @@
+import type { Word } from '../../types';
+
+export const wordList: Word[] = [
+  {
+    id: '20',
+    word: 'benevolent',
+    phonetic: '/bəˈnevələnt/',
+    meaning: 'adj. 仁慈的，慈善的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'prefix', part: 'bene-', meaning: '好' },
+      { type: 'root', part: 'vol', meaning: '意愿', origin: '拉丁语' },
+      { type: 'suffix', part: '-ent', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The benevolent donor contributed millions to children\'s education.', translation: '这位仁慈的捐赠者为儿童教育捐献了数百万。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '21',
+    word: 'bias',
+    phonetic: '/ˈbaɪəs/',
+    meaning: 'n. 偏见，偏心；v. 使有偏见',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'bias', meaning: '倾斜', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'The study was criticized for its potential bias in data collection.', translation: '该研究因数据收集可能存在的偏见而受到批评。', year: 2020, type: '阅读' },
+      { sentence: 'Media bias can significantly influence public opinion.', translation: '媒体偏见可以显著影响公众舆论。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 2,
+    frequency: 8,
+  },
+  {
+    id: '22',
+    word: 'bizarre',
+    phonetic: '/bɪˈzɑːr/',
+    meaning: 'adj. 奇异的，古怪的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'bizar', meaning: '勇敢的，奇特的', origin: '巴斯克语' },
+      { type: 'suffix', part: '-re', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The artist was known for his bizarre and unconventional sculptures.', translation: '这位艺术家以其奇异而不合常规的雕塑闻名。', year: 2019, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '23',
+    word: 'blunt',
+    phonetic: '/blʌnt/',
+    meaning: 'adj. 钝的；直言不讳的；v. 使变钝',
+    pos: ['adj.', 'v.'],
+    roots: [
+      { type: 'root', part: 'blunt', meaning: '钝的', origin: '古诺尔斯语' },
+    ],
+    examples: [
+      { sentence: 'She was blunt in her criticism of the government\'s policy.', translation: '她对政府政策的批评直言不讳。', year: 2021, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '24',
+    word: 'boost',
+    phonetic: '/buːst/',
+    meaning: 'v. 促进，增强；n. 推动，提升',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'boost', meaning: '举起，推动', origin: '英语方言' },
+    ],
+    examples: [
+      { sentence: 'The new infrastructure plan aims to boost economic growth in rural areas.', translation: '新的基础设施计划旨在促进农村地区的经济增长。', year: 2023, type: '阅读' },
+      { sentence: 'Technology can boost productivity in almost every industry.', translation: '技术几乎可以提升每个行业的生产力。', year: 2019, type: '完形' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '25',
+    word: 'boundary',
+    phonetic: '/ˈbaʊndəri/',
+    meaning: 'n. 边界，界限',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'bound', meaning: '界限', origin: '法语' },
+      { type: 'suffix', part: '-ary', meaning: '名词后缀，表示场所' },
+    ],
+    examples: [
+      { sentence: 'Researchers are pushing the boundaries of what is scientifically possible.', translation: '研究人员正在推动科学可能性的界限。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '26',
+    word: 'breach',
+    phonetic: '/briːtʃ/',
+    meaning: 'n. 违反，破坏；裂口；v. 违反，打破',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'breach', meaning: '打破', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The company was fined for a serious breach of data protection regulations.', translation: '该公司因严重违反数据保护法规而被罚款。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '27',
+    word: 'breed',
+    phonetic: '/briːd/',
+    meaning: 'v. 繁殖，饲养；引起，滋生；n. 品种',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'breed', meaning: '孕育，燃烧', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Poverty and inequality can breed social unrest.', translation: '贫困和不平等会滋生社会动荡。', year: 2020, type: '翻译' },
+      { sentence: 'These conditions breed a culture of dependency.', translation: '这些条件滋生了一种依赖文化。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '28',
+    word: 'burden',
+    phonetic: '/ˈbɜːrdn/',
+    meaning: 'n. 负担，重担；v. 使负担',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'bur', meaning: '背负', origin: '古英语' },
+      { type: 'suffix', part: '-den', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The growing burden of student debt has become a major social issue.', translation: '日益增长的学生贷款负担已成为一个重大的社会问题。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '29',
+    word: 'bureaucracy',
+    phonetic: '/bjʊˈrɒkrəsi/',
+    meaning: 'n. 官僚主义；官僚机构',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'bureau', meaning: '办公桌，局', origin: '法语' },
+      { type: 'root', part: 'cracy', meaning: '统治', origin: '希腊语' },
+    ],
+    examples: [
+      { sentence: 'Excessive bureaucracy often stifles innovation and efficiency.', translation: '过度的官僚主义常常扼杀创新和效率。', year: 2021, type: '阅读' },
+      { sentence: 'The bureaucracy of the healthcare system needs fundamental reform.', translation: '医疗体系的官僚机构需要根本性改革。', year: 2023, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 5,
+  },
+  {
+    id: '30',
+    word: 'bypass',
+    phonetic: '/ˈbaɪpɑːs/',
+    meaning: 'v. 绕过，避开；n. 旁路，绕行道',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'prefix', part: 'by-', meaning: '旁边' },
+      { type: 'root', part: 'pass', meaning: '通过', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Companies often try to bypass regulations by relocating to other countries.', translation: '公司经常试图通过迁往其他国家来规避法规。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 4,
+  },
+  {
+    id: '31',
+    word: 'bargain',
+    phonetic: '/ˈbɑːrɡɪn/',
+    meaning: 'n. 交易，便宜货；v. 讨价还价',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'barg', meaning: '交易', origin: '古法语' },
+      { type: 'suffix', part: '-ain', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'Consumers are always looking for a bargain, especially during holiday sales.', translation: '消费者总是在寻找便宜货，尤其是在假日促销期间。', year: 2019, type: '完形' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '32',
+    word: 'barrier',
+    phonetic: '/ˈbæriər/',
+    meaning: 'n. 障碍，屏障',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'barr', meaning: '横木，障碍', origin: '法语' },
+      { type: 'suffix', part: '-ier', meaning: '名词后缀，表示物' },
+    ],
+    examples: [
+      { sentence: 'Language barriers can hinder effective communication in international business.', translation: '语言障碍会阻碍国际商务中的有效沟通。', year: 2022, type: '阅读' },
+      { sentence: 'The government must remove barriers to equal access in education.', translation: '政府必须消除教育平等机会的障碍。', year: 2020, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '33',
+    word: 'betray',
+    phonetic: '/bɪˈtreɪ/',
+    meaning: 'v. 背叛，出卖；泄露',
+    pos: ['v.'],
+    roots: [
+      { type: 'prefix', part: 'be-', meaning: '加强语气' },
+      { type: 'root', part: 'tray', meaning: '交付', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'His nervous smile betrayed his lack of confidence.', translation: '他紧张的微笑泄露了他缺乏自信。', year: 2021, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '34',
+    word: 'blend',
+    phonetic: '/blend/',
+    meaning: 'v. 混合，融合；n. 混合物',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'blend', meaning: '混合', origin: '古诺尔斯语' },
+    ],
+    examples: [
+      { sentence: 'Modern architecture often blends traditional elements with contemporary design.', translation: '现代建筑常将传统元素与当代设计相融合。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '35',
+    word: 'blossom',
+    phonetic: '/ˈblɒsəm/',
+    meaning: 'n. 花，花朵；v. 开花，发展',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'bloss', meaning: '花', origin: '古英语' },
+      { type: 'suffix', part: '-om', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'Their partnership blossomed into one of the most successful tech companies.', translation: '他们的合作关系发展成为最成功的科技公司之一。', year: 2019, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 3,
+  },
+  {
+    id: '36',
+    word: 'blur',
+    phonetic: '/blɜːr/',
+    meaning: 'v. 使模糊，使看不清；n. 模糊之物',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'blur', meaning: '模糊的斑点', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The line between work and personal life has become increasingly blurred.', translation: '工作与个人生活之间的界限变得越来越模糊。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '37',
+    word: 'boom',
+    phonetic: '/buːm/',
+    meaning: 'n. 繁荣，激增；v. 迅速发展',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'boom', meaning: '轰鸣声', origin: '荷兰语' },
+    ],
+    examples: [
+      { sentence: 'The tech boom of the early 21st century transformed the global economy.', translation: '21世纪初的科技繁荣改变了全球经济。', year: 2021, type: '阅读' },
+      { sentence: 'Online education has boomed since the pandemic began.', translation: '自疫情开始以来，在线教育迅速发展。', year: 2020, type: '完形' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '38',
+    word: 'brace',
+    phonetic: '/breɪs/',
+    meaning: 'v. 做准备，支撑；n. 支撑物，支架',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'brace', meaning: '手臂，支撑', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Cities must brace themselves for the impact of climate change.', translation: '城市必须为气候变化的影响做好准备。', year: 2023, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '39',
+    word: 'brutal',
+    phonetic: '/ˈbruːtl/',
+    meaning: 'adj. 残忍的，野蛮的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'brut', meaning: '野兽', origin: '拉丁语' },
+      { type: 'suffix', part: '-al', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The brutal reality of war leaves lasting scars on entire generations.', translation: '战争的残酷现实给整整几代人留下了持久的创伤。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '392',
+    word: 'bewilder',
+    phonetic: '/bɪˈwɪldə/',
+    meaning: 'v. 使困惑，使迷惑',
+    pos: ['v.'],
+    roots: [
+      { type: 'prefix', part: 'be-', meaning: '加强语气' },
+      { type: 'root', part: 'wild', meaning: '荒野，迷失', origin: '古英语' },
+      { type: 'suffix', part: '-er', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'The complexity of the legal system bewilders many ordinary citizens.', translation: '法律体系的复杂性使许多普通公民感到困惑。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '393',
+    word: 'bolster',
+    phonetic: '/ˈbəʊlstə/',
+    meaning: 'v. 支持，加强；n. 垫枕',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'bolst', meaning: '支撑', origin: '古诺尔斯语' },
+      { type: 'suffix', part: '-er', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The new evidence bolstered the researcher\'s argument about climate change.', translation: '新证据加强了研究人员关于气候变化的论点。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '394',
+    word: 'brittle',
+    phonetic: '/ˈbrɪtl/',
+    meaning: 'adj. 脆的，易碎的；脆弱的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'britt', meaning: '折断', origin: '古英语' },
+      { type: 'suffix', part: '-le', meaning: '形容词后缀，反复' },
+    ],
+    examples: [
+      { sentence: 'The brittle nature of the old infrastructure makes it vulnerable to earthquakes.', translation: '老旧基础设施的脆弱性使其容易遭受地震破坏。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '395',
+    word: 'balk',
+    phonetic: '/bɔːk/',
+    meaning: 'v. 犹豫，畏缩；阻止',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'balk', meaning: '障碍，横梁', origin: '古诺尔斯语' },
+    ],
+    examples: [
+      { sentence: 'Many students balk at the prospect of taking on enormous student loans.', translation: '许多学生对承担巨额学生贷款的前景望而却步。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '396',
+    word: 'beset',
+    phonetic: '/bɪˈset/',
+    meaning: 'v. 困扰，围攻',
+    pos: ['v.'],
+    roots: [
+      { type: 'prefix', part: 'be-', meaning: '加强语气' },
+      { type: 'root', part: 'set', meaning: '放置，设置', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The project has been beset by delays and funding shortages.', translation: '该项目一直受到延误和资金短缺的困扰。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+];

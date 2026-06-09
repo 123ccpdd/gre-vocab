@@ -1,0 +1,475 @@
+import type { Word } from '../../types';
+
+export const wordList: Word[] = [
+  {
+    id: '214',
+    word: 'manifest',
+    phonetic: '/ˈmænɪfest/',
+    meaning: 'adj. 明显的；v. 表明，显现',
+    pos: ['adj.', 'v.'],
+    roots: [
+      { type: 'root', part: 'man', meaning: '手', origin: '拉丁语' },
+      { type: 'root', part: 'fest', meaning: '打击', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The benefits of the policy are manifest in the improved living standards.', translation: '该政策的益处在改善的生活水平中显而易见。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '215',
+    word: 'manipulate',
+    phonetic: '/məˈnɪpjuleɪt/',
+    meaning: 'v. 操纵，控制；操作',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'man', meaning: '手', origin: '拉丁语' },
+      { type: 'suffix', part: '-ipulate', meaning: '操作', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Politicians often manipulate public opinion to gain support.', translation: '政客们经常操纵舆论以获得支持。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '216',
+    word: 'marginal',
+    phonetic: '/ˈmɑːdʒɪnl/',
+    meaning: 'adj. 边缘的；微小的；不重要的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'margin', meaning: '边缘', origin: '拉丁语' },
+      { type: 'suffix', part: '-al', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The marginal benefits of the new policy were outweighed by its costs.', translation: '新政策的边际收益被其成本所抵消。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '217',
+    word: 'mature',
+    phonetic: '/məˈtjʊə/',
+    meaning: 'adj. 成熟的；v. 成熟',
+    pos: ['adj.', 'v.'],
+    roots: [
+      { type: 'root', part: 'mat', meaning: '成熟', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'A mature understanding of the issue requires years of experience.', translation: '对这个问题的成熟理解需要多年的经验。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '218',
+    word: 'mediate',
+    phonetic: '/ˈmiːdieɪt/',
+    meaning: 'v. 调解，斡旋；中介',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'medi', meaning: '中间', origin: '拉丁语' },
+      { type: 'suffix', part: '-ate', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'The UN attempted to mediate between the two conflicting parties.', translation: '联合国试图在两个冲突方之间进行调解。', year: 2019, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '219',
+    word: 'melancholy',
+    phonetic: '/ˈmelənkɒli/',
+    meaning: 'n. 忧郁；adj. 忧郁的',
+    pos: ['n.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'melan', meaning: '黑色', origin: '希腊语' },
+      { type: 'root', part: 'chol', meaning: '胆汁', origin: '希腊语' },
+    ],
+    examples: [
+      { sentence: 'A sense of melancholy pervaded the novel from beginning to end.', translation: '一种忧郁感贯穿小说始终。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '220',
+    word: 'merge',
+    phonetic: '/mɜːdʒ/',
+    meaning: 'v. 合并，融合',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'merg', meaning: '浸入，沉没', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The two companies decided to merge to increase their market share.', translation: '两家公司决定合并以增加市场份额。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '221',
+    word: 'methodology',
+    phonetic: '/ˌmeθəˈdɒlədʒi/',
+    meaning: 'n. 方法论；一套方法',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'method', meaning: '方法', origin: '希腊语' },
+      { type: 'suffix', part: '-ology', meaning: '学科', origin: '希腊语' },
+    ],
+    examples: [
+      { sentence: 'The researchers explained their methodology in detail.', translation: '研究人员详细解释了他们的方法论。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '222',
+    word: 'migrate',
+    phonetic: '/maɪˈɡreɪt/',
+    meaning: 'v. 迁移，迁徙',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'migr', meaning: '迁移', origin: '拉丁语' },
+      { type: 'suffix', part: '-ate', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'Many birds migrate south for the winter.', translation: '许多鸟类在冬天迁徙到南方。', year: 2019, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 4,
+  },
+  {
+    id: '223',
+    word: 'mitigate',
+    phonetic: '/ˈmɪtɪɡeɪt/',
+    meaning: 'v. 减轻，缓和',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'mitis', meaning: '温和的', origin: '拉丁语' },
+      { type: 'suffix', part: '-gate', meaning: '做，行动', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Measures must be taken to mitigate the effects of climate change.', translation: '必须采取措施减轻气候变化的影响。', year: 2023, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '224',
+    word: 'modest',
+    phonetic: '/ˈmɒdɪst/',
+    meaning: 'adj. 谦虚的；适度的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'mod', meaning: '适度', origin: '拉丁语' },
+      { type: 'suffix', part: '-est', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'Despite his achievements, he remained modest about his success.', translation: '尽管取得了成就，他对自己的成功仍然保持谦虚。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '225',
+    word: 'momentum',
+    phonetic: '/məˈmentəm/',
+    meaning: 'n. 动力；势头；动量',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'mov', meaning: '移动', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The campaign gained momentum as more people joined the cause.', translation: '随着更多人加入这项事业，运动获得了动力。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '226',
+    word: 'monitor',
+    phonetic: '/ˈmɒnɪtə/',
+    meaning: 'v. 监控，监视；n. 监视器',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'mon', meaning: '警告，提醒', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Scientists monitor the volcano for signs of eruption.', translation: '科学家监控火山是否有喷发迹象。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '227',
+    word: 'monopoly',
+    phonetic: '/məˈnɒpəli/',
+    meaning: 'n. 垄断，专卖',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'mono', meaning: '单一', origin: '希腊语' },
+      { type: 'root', part: 'poly', meaning: '销售', origin: '希腊语' },
+    ],
+    examples: [
+      { sentence: 'The company was accused of having a monopoly in the market.', translation: '该公司被指控在市场上拥有垄断地位。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '228',
+    word: 'morbid',
+    phonetic: '/ˈmɔːbɪd/',
+    meaning: 'adj. 病态的；不健康的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'morbid', meaning: '疾病', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'He had a morbid fascination with death and dying.', translation: '他对死亡和濒死有着病态的迷恋。', year: 2019, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '229',
+    word: 'mundane',
+    phonetic: '/mʌnˈdeɪn/',
+    meaning: 'adj. 平凡的，世俗的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'mund', meaning: '世界', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'She found satisfaction in the mundane tasks of daily life.', translation: '她在日常生活的平凡任务中找到了满足感。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '230',
+    word: 'memoir',
+    phonetic: '/ˈmemwɑː/',
+    meaning: 'n. 回忆录；自传',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'mem', meaning: '记忆', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The former president published a memoir about his years in office.', translation: '前总统出版了一本关于他执政岁月的回忆录。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '231',
+    word: 'mental',
+    phonetic: '/ˈmentl/',
+    meaning: 'adj. 精神的；心理的；智力的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'ment', meaning: '心智', origin: '拉丁语' },
+      { type: 'suffix', part: '-al', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'Mental health is as important as physical health.', translation: '心理健康与身体健康同样重要。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '232',
+    word: 'merit',
+    phonetic: '/ˈmerɪt/',
+    meaning: 'n. 优点，价值；v. 值得',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'merit', meaning: '值得', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The proposal has some merit and deserves further consideration.', translation: '这个提议有一些价值，值得进一步考虑。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 6,
+  },
+  {
+    id: '233',
+    word: 'mingle',
+    phonetic: '/ˈmɪŋɡl/',
+    meaning: 'v. 混合，交往',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'ming', meaning: '混合', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Guests mingled at the reception, exchanging pleasantries.', translation: '客人们在招待会上相互交往，寒暄问候。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 3,
+  },
+  {
+    id: '483',
+    word: 'magnitude',
+    phonetic: '/ˈmæɡnɪtjuːd/',
+    meaning: 'n. 巨大；规模；震级；重要性',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'magn', meaning: '大', origin: '拉丁语' },
+      { type: 'suffix', part: '-itude', meaning: '名词后缀，表示状态' },
+    ],
+    examples: [
+      { sentence: 'The magnitude of the environmental crisis requires immediate global action.', translation: '环境危机的严重程度需要全球立即采取行动。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '484',
+    word: 'malice',
+    phonetic: '/ˈmælɪs/',
+    meaning: 'n. 恶意；怨恨',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'mal', meaning: '坏，恶', origin: '拉丁语' },
+      { type: 'suffix', part: '-ice', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The defendant acted with malice aforethought, according to the prosecution.', translation: '据控方称，被告是蓄意作恶。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '485',
+    word: 'mandate',
+    phonetic: '/ˈmændeɪt/',
+    meaning: 'n. 授权；命令；任期；v. 授权',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'mand', meaning: '命令', origin: '拉丁语' },
+      { type: 'suffix', part: '-ate', meaning: '名词/动词后缀' },
+    ],
+    examples: [
+      { sentence: 'The new government has a clear mandate to reform the education system.', translation: '新政府有明确的授权来改革教育体系。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '486',
+    word: 'meditate',
+    phonetic: '/ˈmedɪteɪt/',
+    meaning: 'v. 冥想；沉思',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'med', meaning: '思考，治愈', origin: '拉丁语' },
+      { type: 'suffix', part: '-itate', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'Many people meditate daily to reduce stress and improve mental clarity.', translation: '许多人每天冥想以减轻压力并提高思维清晰度。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '487',
+    word: 'memorandum',
+    phonetic: '/ˌmeməˈrændəm/',
+    meaning: 'n. 备忘录；便函',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'memor', meaning: '记忆', origin: '拉丁语' },
+      { type: 'suffix', part: '-andum', meaning: '名词后缀，表示事物' },
+    ],
+    examples: [
+      { sentence: 'The manager sent a memorandum to all staff regarding the new policy.', translation: '经理向全体员工发送了一份关于新政策的备忘录。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '488',
+    word: 'mentor',
+    phonetic: '/ˈmentɔː/',
+    meaning: 'n. 导师；v. 指导',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'ment', meaning: '心智', origin: '拉丁语' },
+      { type: 'suffix', part: '-or', meaning: '名词后缀，表示人' },
+    ],
+    examples: [
+      { sentence: 'Having a mentor can significantly accelerate one\'s career development.', translation: '有一位导师可以显著加速一个人的职业发展。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '489',
+    word: 'merchandise',
+    phonetic: '/ˈmɜːtʃəndaɪs/',
+    meaning: 'n. 商品；v. 推销',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'merch', meaning: '贸易', origin: '拉丁语' },
+      { type: 'suffix', part: '-andise', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The store offers a wide variety of merchandise at competitive prices.', translation: '这家商店以有竞争力的价格提供各种商品。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 4,
+  },
+  {
+    id: '490',
+    word: 'miniature',
+    phonetic: '/ˈmɪnətʃə/',
+    meaning: 'n. 缩影；微型画；adj. 微型的',
+    pos: ['n.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'mini', meaning: '小', origin: '拉丁语' },
+      { type: 'suffix', part: '-ature', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'The model is a perfect miniature of the original building.', translation: '这个模型是原建筑的完美缩影。', year: 2020, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '491',
+    word: 'morale',
+    phonetic: '/məˈrɑːl/',
+    meaning: 'n. 士气；斗志',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'mor', meaning: '道德，精神', origin: '法语' },
+      { type: 'suffix', part: '-ale', meaning: '名词后缀' },
+    ],
+    examples: [
+      { sentence: 'High employee morale is essential for a company\'s long-term success.', translation: '高昂的员工士气对公司的长期成功至关重要。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '492',
+    word: 'motivate',
+    phonetic: '/ˈməʊtɪveɪt/',
+    meaning: 'v. 激励；激发',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'mot', meaning: '移动', origin: '拉丁语' },
+      { type: 'suffix', part: '-ivate', meaning: '动词后缀' },
+    ],
+    examples: [
+      { sentence: 'Teachers need to find creative ways to motivate students to learn.', translation: '教师需要找到创造性的方法来激励学生学习。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+];
