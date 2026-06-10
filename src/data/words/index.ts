@@ -32,8 +32,8 @@ import { wordList as wordsZ } from './words-z';
 
 export { wordsA, wordsB, wordsC, wordsD, wordsE, wordsF, wordsG, wordsH, wordsI, wordsJ, wordsK, wordsL, wordsM, wordsN, wordsO, wordsP, wordsQ, wordsR, wordsS, wordsT, wordsU, wordsV, wordsW, wordsX, wordsY, wordsZ };
 
-// 合并所有词汇
-export const allWords: Word[] = [
+// 内置词库（不可变）
+export const builtInWords: Word[] = [
   ...wordsA,
   ...wordsB,
   ...wordsC,
@@ -62,31 +62,48 @@ export const allWords: Word[] = [
   ...wordsZ,
 ];
 
+// 从 localStorage 加载自定义词库
+function loadCustomWords(): Word[] {
+  try {
+    const stored = localStorage.getItem('gre-vocab-custom-words');
+    return stored ? JSON.parse(stored) : [];
+  } catch {
+    return [];
+  }
+}
+
+// 合并词库：内置 + 自定义
+export function getAllWords(): Word[] {
+  return [...builtInWords, ...loadCustomWords()];
+}
+
 // 兼容旧导入：App.tsx 使用 wordList
-export const wordList = allWords;
+// 注意：wordList 是内置词库，不含自定义词
+// 新代码应使用 getAllWords() 获取完整词库
+export const wordList = builtInWords;
 
 // 根据难度筛选单词
 export function getWordsByDifficulty(difficulty: number): Word[] {
-  return allWords.filter((w) => w.difficulty === difficulty);
+  return getAllWords().filter((w) => w.difficulty === difficulty);
 }
 
 // 根据词根搜索单词
 export function getWordsByRoot(root: string): Word[] {
-  return allWords.filter((w) =>
+  return getAllWords().filter((w) =>
     w.roots.some((r) => r.part.toLowerCase().includes(root.toLowerCase()))
   );
 }
 
 // 获取随机单词
 export function getRandomWords(count: number): Word[] {
-  const shuffled = [...allWords].sort(() => Math.random() - 0.5);
+  const shuffled = [...getAllWords()].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
 }
 
 // 搜索单词
 export function searchWords(query: string): Word[] {
   const lowerQuery = query.toLowerCase();
-  return allWords.filter(
+  return getAllWords().filter(
     (w) =>
       w.word.toLowerCase().includes(lowerQuery) ||
       w.meaning.includes(query) ||

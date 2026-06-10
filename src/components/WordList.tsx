@@ -1,8 +1,11 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import type { Word } from '../types';
-import { wordList, searchWords } from '../data/words';
+import { getAllWords, searchWords } from '../data/words';
+import { useCustomWords } from '../hooks/useCustomWords';
+import { exportToJSON, exportToCSV } from '../utils/export';
 import { getStageLabel } from '../utils/spaced-repetition';
-import { SearchOutlined, CloseCircleFilled, UpOutlined, DownOutlined, ExperimentOutlined, BulbOutlined, FileTextOutlined, LeftOutlined, RightOutlined, BookOutlined } from '@ant-design/icons';
+import { SearchOutlined, CloseCircleFilled, UpOutlined, DownOutlined, ExperimentOutlined, BulbOutlined, FileTextOutlined, LeftOutlined, RightOutlined, BookOutlined, ImportOutlined, ExportOutlined, DeleteOutlined } from '@ant-design/icons';
+import ImportPanel from './ImportPanel';
 
 const PAGE_SIZE = 50;
 
@@ -14,6 +17,16 @@ export default function WordList() {
   const [frequencyFilter, setFrequencyFilter] = useState<FreqFilter>(null);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [showImport, setShowImport] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  const { customWords, addCustomWords, clearCustomWords } = useCustomWords();
+
+  // 获取完整词库（内置 + 自定义），refreshKey 变化时刷新
+  const allWordsList = useMemo(() => {
+    void refreshKey; // 依赖 refreshKey 触发刷新
+    return getAllWords();
+  }, [refreshKey]);
 
   // 筛选逻辑
   const filteredWords = useMemo(() => {
@@ -23,7 +36,7 @@ export default function WordList() {
     if (searchQuery.trim()) {
       result = searchWords(searchQuery.trim());
     } else {
-      result = wordList;
+      result = allWordsList;
     }
 
     // 难度筛选
@@ -41,7 +54,7 @@ export default function WordList() {
     }
 
     return result;
-  }, [searchQuery, difficultyFilter, frequencyFilter]);
+  }, [searchQuery, difficultyFilter, frequencyFilter, allWordsList]);
 
   // 分页
   const totalPages = Math.max(1, Math.ceil(filteredWords.length / PAGE_SIZE));
@@ -63,6 +76,30 @@ export default function WordList() {
     setExpandedId(null);
   };
 
+  // 导入回调
+  const handleImport = useCallback((words: Word[]) => {
+    addCustomWords(words);
+    setRefreshKey((k) => k + 1);
+  }, [addCustomWords]);
+
+  // 导出
+  const handleExportJSON = useCallback(() => {
+    exportToJSON(allWordsList);
+  }, [allWordsList]);
+
+  const handleExportCSV = useCallback(() => {
+    exportToCSV(allWordsList);
+  }, [allWordsList]);
+
+  // 清空自定义词库
+  const handleClearCustom = useCallback(() => {
+    if (customWords.length === 0) return;
+    if (window.confirm(`确认清空已导入的 ${customWords.length} 个自定义词？`)) {
+      clearCustomWords();
+      setRefreshKey((k) => k + 1);
+    }
+  }, [customWords.length, clearCustomWords]);
+
   // 难度颜色
   const getDifficultyColor = (d: number) => {
     if (d <= 2) return 'text-green-600 bg-green-50';
@@ -79,7 +116,45 @@ export default function WordList() {
 
   return (
     <div className="max-w-2xl mx-auto space-y-4">
-      <h2 className="text-xl font-bold text-gray-900"><BookOutlined className="mr-2" />词库浏览</h2>
+      {/* 标题 + 操作栏 */}
+      <div className="flex items-center justify-between">
+        <h2 className="text-xl font-bold text-gray-900"><BookOutlined className="mr-2" />词库浏览</h2>
+        <div className="flex gap-2">
+          <button
+            onClick={() => setShowImport(true)}
+            className="px-3 py-1.5 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition flex items-center gap-1"
+          >
+            <ImportOutlined /> 导入
+          </button>
+          <button
+            onClick={handleExportJSON}
+            className="px-3 py-1.5 bg-white text-gray-600 rounded-lg text-sm border border-gray-200 hover:bg-gray-50 transition flex items-center gap-1"
+          >
+            <ExportOutlined /> JSON
+          </button>
+          <button
+            onClick={handleExportCSV}
+            className="px-3 py-1.5 bg-white text-gray-600 rounded-lg text-sm border border-gray-200 hover:bg-gray-50 transition flex items-center gap-1"
+          >
+            <ExportOutlined /> CSV
+          </button>
+          {customWords.length > 0 && (
+            <button
+              onClick={handleClearCustom}
+              className="px-3 py-1.5 bg-red-50 text-red-500 rounded-lg text-sm border border-red-200 hover:bg-red-100 transition flex items-center gap-1"
+            >
+              <DeleteOutlined /> 清空导入
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* 自定义词数量提示 */}
+      {customWords.length > 0 && (
+        <div className="p-3 bg-indigo-50 rounded-lg border border-indigo-100 text-sm text-indigo-600 flex items-center justify-between">
+          <span>已导入 {customWords.length} 个自定义词 · 词库总计 {allWordsList.length} 词</span>
+        </div>
+      )}
 
       {/* 搜索框 */}
       <div className="relative">
@@ -161,6 +236,7 @@ export default function WordList() {
         {pagedWords.map((word) => {
           const isExpanded = expandedId === word.id;
           const freqLabel = getFreqLabel(word.frequency);
+          const isCustom = word.id.startsWith('custom-');
 
           return (
             <div key={word.id}>
@@ -174,6 +250,9 @@ export default function WordList() {
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-gray-900">{word.word}</span>
                     <span className="text-xs text-gray-400">{word.phonetic}</span>
+                    {isCustom && (
+                      <span className="px-1.5 py-0.5 bg-indigo-100 text-indigo-600 rounded text-xs font-medium">导入</span>
+                    )}
                   </div>
                   <p className="text-sm text-gray-600 truncate">{word.meaning}</p>
                 </div>
@@ -314,6 +393,14 @@ export default function WordList() {
             下一页 <RightOutlined />
           </button>
         </div>
+      )}
+
+      {/* 导入面板 */}
+      {showImport && (
+        <ImportPanel
+          onImport={handleImport}
+          onClose={() => setShowImport(false)}
+        />
       )}
     </div>
   );

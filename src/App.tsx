@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo, useEffect } from 'react';
 import type { Word, LearningMode } from './types';
-import { wordList } from './data/words';
+import { getAllWords } from './data/words';
 import {
   useLearningRecords,
   useDailyStats,
@@ -40,7 +40,7 @@ function App() {
 
   // 计算未学过的单词
   const unlearnedWords = useMemo(
-    () => wordList.filter((w) => !getRecord(w.id)),
+    () => getAllWords().filter((w) => !getRecord(w.id)),
     [getRecord]
   );
 
@@ -71,7 +71,7 @@ function App() {
 
   // 开始复习
   const startReview = useCallback(() => {
-    const dueWords = wordList.filter((w) => dueWordIds.includes(w.id));
+    const dueWords = getAllWords().filter((w) => dueWordIds.includes(w.id));
     if (dueWords.length === 0) {
       alert('暂无需要复习的单词！');
       return;
@@ -225,7 +225,7 @@ function App() {
             learningCount={wordStats.learning}
             newCount={wordStats.new}
             reviewingCount={wordStats.reviewing}
-            totalCount={wordList.length}
+            totalCount={getAllWords().length}
             dueCount={dueWordIds.length}
             streak={streak}
             todayStats={todayStats}
@@ -288,7 +288,7 @@ function App() {
             stats={stats}
             streak={streak}
             totalMastered={wordStats.mastered}
-            totalWords={wordList.length}
+            totalWords={getAllWords().length}
           />
         )}
 
