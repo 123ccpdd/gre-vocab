@@ -1,4 +1,5 @@
 import { FireOutlined, RocketOutlined, TrophyOutlined, StarOutlined, BookOutlined, SyncOutlined, PlusOutlined } from '@ant-design/icons';
+import { Tooltip } from 'antd';
 import type { DailyStats } from '../types';
 
 interface DashboardProps {
@@ -57,33 +58,41 @@ export default function Dashboard({
           />
         </div>
         <div className="flex justify-between text-sm text-gray-500">
-          <span>已掌握 {masteredCount} / {totalCount} 词</span>
+          <span>了如指掌 {masteredCount} / {totalCount} 词</span>
           <span>{progress}%</span>
         </div>
       </div>
 
       {/* 分类统计 */}
       <div className="grid grid-cols-2 gap-4">
-        <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2 text-green-500"><BookOutlined /></div>
-          <p className="text-2xl font-bold text-gray-900">{masteredCount}</p>
-          <p className="text-sm text-gray-500">已掌握</p>
-        </div>
-        <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2 text-blue-500"><SyncOutlined /></div>
-          <p className="text-2xl font-bold text-gray-900">{reviewingCount}</p>
-          <p className="text-sm text-gray-500">复习中</p>
-        </div>
-        <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2 text-yellow-500"><StarOutlined /></div>
-          <p className="text-2xl font-bold text-gray-900">{learningCount}</p>
-          <p className="text-sm text-gray-500">学习中</p>
-        </div>
-        <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
-          <div className="text-3xl mb-2 text-red-400"><PlusOutlined /></div>
-          <p className="text-2xl font-bold text-gray-900">{newCount}</p>
-          <p className="text-sm text-gray-500">待学习</p>
-        </div>
+        <Tooltip title="答对 ≥ 6 次，无需再复习" placement="top">
+          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+            <div className="text-3xl mb-2 text-green-500"><BookOutlined /></div>
+            <p className="text-2xl font-bold text-gray-900">{masteredCount}</p>
+            <p className="text-sm text-gray-500">了如指掌</p>
+          </div>
+        </Tooltip>
+        <Tooltip title="答对 2~5 次，按记忆曲线复习中" placement="top">
+          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+            <div className="text-3xl mb-2 text-blue-500"><SyncOutlined /></div>
+            <p className="text-2xl font-bold text-gray-900">{reviewingCount}</p>
+            <p className="text-sm text-gray-500">温故知新</p>
+          </div>
+        </Tooltip>
+        <Tooltip title="答对 1 次，刚接触还需巩固" placement="top">
+          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+            <div className="text-3xl mb-2 text-yellow-500"><StarOutlined /></div>
+            <p className="text-2xl font-bold text-gray-900">{learningCount}</p>
+            <p className="text-sm text-gray-500">初识面目</p>
+          </div>
+        </Tooltip>
+        <Tooltip title="从未学过的词" placement="top">
+          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+            <div className="text-3xl mb-2 text-red-400"><PlusOutlined /></div>
+            <p className="text-2xl font-bold text-gray-900">{newCount}</p>
+            <p className="text-sm text-gray-500">素未谋面</p>
+          </div>
+        </Tooltip>
       </div>
 
       {/* 操作按钮 */}
