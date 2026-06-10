@@ -21,6 +21,7 @@ function App() {
   const [currentWords, setCurrentWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [noTransition, setNoTransition] = useState(false);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionIncorrect, setSessionIncorrect] = useState(0);
   const [learningMode, setLearningMode] = useState<LearningMode>('learn');
@@ -103,8 +104,13 @@ function App() {
     if (currentIndex + 1 >= currentWords.length) {
       setCurrentView('complete');
     } else {
-      setCurrentIndex((i) => i + 1);
+      // 禁用动画 + 翻回正面，下一帧再切换词并恢复动画
+      setNoTransition(true);
       setIsFlipped(false);
+      requestAnimationFrame(() => {
+        setCurrentIndex((i) => i + 1);
+        setNoTransition(false);
+      });
     }
   }, [currentIndex, currentWords, markWord, learningMode, updateTodayStats, todayStats]);
 
@@ -124,8 +130,13 @@ function App() {
     if (currentIndex + 1 >= currentWords.length) {
       setCurrentView('complete');
     } else {
-      setCurrentIndex((i) => i + 1);
+      // 禁用动画 + 翻回正面，下一帧再切换词并恢复动画
+      setNoTransition(true);
       setIsFlipped(false);
+      requestAnimationFrame(() => {
+        setCurrentIndex((i) => i + 1);
+        setNoTransition(false);
+      });
     }
   }, [currentIndex, currentWords, markWord, learningMode, updateTodayStats, todayStats]);
 
@@ -238,6 +249,7 @@ function App() {
               <WordCard
                 word={currentWords[currentIndex]}
                 isFlipped={isFlipped}
+                noTransition={noTransition}
                 onFlip={() => setIsFlipped(!isFlipped)}
                 onKnow={handleKnow}
                 onDontKnow={handleDontKnow}

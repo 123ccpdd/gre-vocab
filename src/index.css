@@ -36,6 +36,11 @@ body {
   transform: rotateY(180deg);
 }
 
+/* 禁用翻转动画 — 切换词时瞬间跳回正面 */
+.card-inner.no-transition {
+  transition: none;
+}
+
 .card-front,
 .card-back {
   position: absolute;

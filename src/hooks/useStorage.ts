@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { LearningRecord, DailyStats, UserSettings } from '../types';
 import { createLearningRecord, updateLearningRecord } from '../utils/spaced-repetition';
+import { wordList } from '../data/words';
 
 const STORAGE_KEYS = {
   RECORDS: 'gre-vocab-records',
@@ -84,9 +85,10 @@ export function useLearningRecords() {
 
   const getStats = useCallback(() => {
     const allRecords = Object.values(records);
+    const recordedCount = allRecords.length;
     return {
-      total: allRecords.length,
-      new: allRecords.filter((r) => r.status === 'new').length,
+      total: recordedCount,
+      new: wordList.length - recordedCount,  // 从未学过的词 = 词库总数 - 已有记录数
       learning: allRecords.filter((r) => r.status === 'learning').length,
       reviewing: allRecords.filter((r) => r.status === 'reviewing').length,
       mastered: allRecords.filter((r) => r.status === 'mastered').length,

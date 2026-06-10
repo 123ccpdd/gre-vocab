@@ -6,6 +6,7 @@ import { CheckOutlined, CloseOutlined, UpOutlined, DownOutlined, ExperimentOutli
 interface WordCardProps {
   word: Word;
   isFlipped: boolean;
+  noTransition?: boolean;
   onFlip: () => void;
   onKnow: () => void;
   onDontKnow: () => void;
@@ -16,6 +17,7 @@ interface WordCardProps {
 export default function WordCard({
   word,
   isFlipped,
+  noTransition = false,
   onFlip,
   onKnow,
   onDontKnow,
@@ -32,7 +34,7 @@ export default function WordCard({
         className="perspective cursor-pointer"
         onClick={onFlip}
       >
-        <div className={`card-inner ${isFlipped ? 'flipped' : ''}`}>
+        <div className={`card-inner ${isFlipped ? 'flipped' : ''} ${noTransition ? 'no-transition' : ''}`}>
           {/* 正面 - 单词 */}
           <div className="card-front bg-white rounded-2xl shadow-lg border border-gray-100 p-8 pt-14">
             {/* 难度标签 */}
