@@ -1,6 +1,7 @@
-import { FireOutlined, RocketOutlined, TrophyOutlined, StarOutlined, BookOutlined, SyncOutlined, PlusOutlined } from '@ant-design/icons';
-import { Tooltip } from 'antd';
+import { FireOutlined, RocketOutlined, TrophyOutlined, StarOutlined, BookOutlined, SyncOutlined, PlusOutlined, RightOutlined } from '@ant-design/icons';
 import type { DailyStats } from '../types';
+
+type Category = 'mastered' | 'reviewing' | 'learning' | 'new';
 
 interface DashboardProps {
   masteredCount: number;
@@ -13,6 +14,7 @@ interface DashboardProps {
   todayStats: DailyStats;
   onStartLearn: () => void;
   onStartReview: () => void;
+  onViewCategory: (category: Category) => void;
 }
 
 export default function Dashboard({
@@ -26,6 +28,7 @@ export default function Dashboard({
   todayStats,
   onStartLearn,
   onStartReview,
+  onViewCategory,
 }: DashboardProps) {
   const progress = totalCount > 0 ? ((masteredCount / totalCount) * 100).toFixed(1) : '0';
 
@@ -65,34 +68,50 @@ export default function Dashboard({
 
       {/* 分类统计 */}
       <div className="grid grid-cols-2 gap-4">
-        <Tooltip title="答对 ≥ 6 次，无需再复习" placement="top">
-          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+        <div
+          onClick={() => masteredCount > 0 && onViewCategory('mastered')}
+          className={`bg-white rounded-2xl p-5 border border-gray-100 shadow-sm ${masteredCount > 0 ? 'cursor-pointer hover:border-green-200 hover:shadow-md transition-all' : ''}`}
+        >
+          <div className="flex items-center justify-between">
             <div className="text-3xl mb-2 text-green-500"><BookOutlined /></div>
-            <p className="text-2xl font-bold text-gray-900">{masteredCount}</p>
-            <p className="text-sm text-gray-500">了如指掌</p>
+            {masteredCount > 0 && <RightOutlined className="text-gray-300 text-xs" />}
           </div>
-        </Tooltip>
-        <Tooltip title="答对 2~5 次，按记忆曲线复习中" placement="top">
-          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+          <p className="text-2xl font-bold text-gray-900">{masteredCount}</p>
+          <p className="text-sm text-gray-500">了如指掌</p>
+        </div>
+        <div
+          onClick={() => reviewingCount > 0 && onViewCategory('reviewing')}
+          className={`bg-white rounded-2xl p-5 border border-gray-100 shadow-sm ${reviewingCount > 0 ? 'cursor-pointer hover:border-blue-200 hover:shadow-md transition-all' : ''}`}
+        >
+          <div className="flex items-center justify-between">
             <div className="text-3xl mb-2 text-blue-500"><SyncOutlined /></div>
-            <p className="text-2xl font-bold text-gray-900">{reviewingCount}</p>
-            <p className="text-sm text-gray-500">温故知新</p>
+            {reviewingCount > 0 && <RightOutlined className="text-gray-300 text-xs" />}
           </div>
-        </Tooltip>
-        <Tooltip title="答对 1 次，刚接触还需巩固" placement="top">
-          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+          <p className="text-2xl font-bold text-gray-900">{reviewingCount}</p>
+          <p className="text-sm text-gray-500">温故知新</p>
+        </div>
+        <div
+          onClick={() => learningCount > 0 && onViewCategory('learning')}
+          className={`bg-white rounded-2xl p-5 border border-gray-100 shadow-sm ${learningCount > 0 ? 'cursor-pointer hover:border-yellow-200 hover:shadow-md transition-all' : ''}`}
+        >
+          <div className="flex items-center justify-between">
             <div className="text-3xl mb-2 text-yellow-500"><StarOutlined /></div>
-            <p className="text-2xl font-bold text-gray-900">{learningCount}</p>
-            <p className="text-sm text-gray-500">初识面目</p>
+            {learningCount > 0 && <RightOutlined className="text-gray-300 text-xs" />}
           </div>
-        </Tooltip>
-        <Tooltip title="从未学过的词" placement="top">
-          <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm cursor-help">
+          <p className="text-2xl font-bold text-gray-900">{learningCount}</p>
+          <p className="text-sm text-gray-500">初识面目</p>
+        </div>
+        <div
+          onClick={() => newCount > 0 && onViewCategory('new')}
+          className={`bg-white rounded-2xl p-5 border border-gray-100 shadow-sm ${newCount > 0 ? 'cursor-pointer hover:border-red-200 hover:shadow-md transition-all' : ''}`}
+        >
+          <div className="flex items-center justify-between">
             <div className="text-3xl mb-2 text-red-400"><PlusOutlined /></div>
-            <p className="text-2xl font-bold text-gray-900">{newCount}</p>
-            <p className="text-sm text-gray-500">素未谋面</p>
+            {newCount > 0 && <RightOutlined className="text-gray-300 text-xs" />}
           </div>
-        </Tooltip>
+          <p className="text-2xl font-bold text-gray-900">{newCount}</p>
+          <p className="text-sm text-gray-500">素未谋面</p>
+        </div>
       </div>
 
       {/* 操作按钮 */}

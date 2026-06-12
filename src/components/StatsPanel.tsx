@@ -208,9 +208,7 @@ export default function StatsPanel({
               <div className="flex gap-4 text-sm">
                 <span className="text-indigo-600">新学 {day.newWords}</span>
                 <span className="text-green-600">复习 {day.reviewWords}</span>
-                <span className="text-gray-500">
-                  正确率 {(day.correctRate * 100).toFixed(0)}%
-                </span>
+
               </div>
             </div>
           ))}

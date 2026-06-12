@@ -12,9 +12,11 @@ import LearningSession from './components/LearningSession';
 import CompletionScreen from './components/CompletionScreen';
 import StatsPanel from './components/StatsPanel';
 import WordListPage from './components/WordList';
+import CategoryWordList from './components/CategoryWordList';
 import { ReadOutlined, HomeOutlined, BarChartOutlined, BookOutlined, SunOutlined, MoonOutlined } from '@ant-design/icons';
 
-type View = 'home' | 'learn' | 'review' | 'stats' | 'wordlist' | 'complete';
+type View = 'home' | 'learn' | 'review' | 'stats' | 'wordlist' | 'complete' | 'category';
+type Category = 'mastered' | 'reviewing' | 'learning' | 'new';
 
 function App() {
   const [currentView, setCurrentView] = useState<View>('home');
@@ -25,8 +27,9 @@ function App() {
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionIncorrect, setSessionIncorrect] = useState(0);
   const [learningMode, setLearningMode] = useState<LearningMode>('learn');
+  const [category, setCategory] = useState<Category>('mastered');
 
-  const { getRecord, markWord, getDueWords, getStats } = useLearningRecords();
+  const { records, getRecord, markWord, getDueWords, getStats } = useLearningRecords();
   const { updateTodayStats, getTodayStats, getStreak, stats } = useDailyStats();
   const { settings, updateSettings } = useSettings();
 
@@ -44,6 +47,23 @@ function App() {
     [getRecord]
   );
 
+  // 按分类获取单词列表
+  const categoryWords = useMemo(() => {
+    const allWords = getAllWords();
+    return {
+      mastered: allWords.filter((w) => { const r = getRecord(w.id); return r?.status === 'mastered'; }),
+      reviewing: allWords.filter((w) => { const r = getRecord(w.id); return r?.status === 'reviewing'; }),
+      learning: allWords.filter((w) => { const r = getRecord(w.id); return r?.status === 'learning'; }),
+      new: allWords.filter((w) => !getRecord(w.id)),
+    };
+  }, [getRecord]);
+
+  // 查看分类词汇
+  const handleViewCategory = useCallback((cat: Category) => {
+    setCategory(cat);
+    setCurrentView('category');
+  }, []);
+
   // 深色模式
   useEffect(() => {
     if (settings.enableDarkMode) {
@@ -53,9 +73,19 @@ function App() {
     }
   }, [settings.enableDarkMode]);
 
+  // Fisher-Yates 洗牌
+  const shuffle = <T,>(arr: T[]): T[] => {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+
   // 开始学习新词
   const startLearn = useCallback(() => {
-    const words = unlearnedWords.slice(0, settings.dailyNewWords);
+    const words = shuffle(unlearnedWords).slice(0, settings.dailyNewWords);
     if (words.length === 0) {
       alert('今日新词已学完！');
       return;
@@ -71,7 +101,7 @@ function App() {
 
   // 开始复习
   const startReview = useCallback(() => {
-    const dueWords = getAllWords().filter((w) => dueWordIds.includes(w.id));
+    const dueWords = shuffle(getAllWords().filter((w) => dueWordIds.includes(w.id)));
     if (dueWords.length === 0) {
       alert('暂无需要复习的单词！');
       return;
@@ -231,6 +261,7 @@ function App() {
             todayStats={todayStats}
             onStartLearn={startLearn}
             onStartReview={startReview}
+            onViewCategory={handleViewCategory}
           />
         )}
 
@@ -293,6 +324,15 @@ function App() {
         )}
 
         {currentView === 'wordlist' && <WordListPage />}
+
+        {currentView === 'category' && (
+          <CategoryWordList
+            category={category}
+            words={categoryWords[category]}
+            records={records}
+            onBack={() => setCurrentView('home')}
+          />
+        )}
       </main>
     </div>
   );

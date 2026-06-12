@@ -45,7 +45,7 @@ export interface DailyStats {
   date: string;               // YYYY-MM-DD
   newWords: number;           // 新学单词数
   reviewWords: number;        // 复习单词数
-  correctRate: number;        // 正确率
+  correctRate: number;        // 正确率 (0~1)
   studyTime: number;          // 学习时长（分钟）
 }
 

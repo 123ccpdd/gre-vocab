@@ -154,4 +154,163 @@ export const wordList: Word[] = [
     difficulty: 3,
     frequency: 4,
   },
+  {
+    id: '701',
+    word: 'kaleidoscope',
+    phonetic: '/kəˈlaɪdəskəʊp/',
+    meaning: 'n. 万花筒，千变万化',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'kalos', meaning: '美丽的', origin: '希腊语' },
+      { type: 'root', part: 'eidos', meaning: '形态', origin: '希腊语' },
+      { type: 'root', part: 'skopein', meaning: '看，观察', origin: '希腊语' },
+    ],
+    examples: [
+      { sentence: 'The city presents a kaleidoscope of cultures, languages, and traditions.', translation: '这座城市展现了文化、语言和传统的万花筒。', year: 2021, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '1650',
+    word: 'keyword',
+    phonetic: '/ˈkiːwɜːd/',
+    meaning: 'n. 关键词，关键字',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'key', meaning: '关键' },
+      { type: 'root', part: 'word', meaning: '词，话语' },
+    ],
+    examples: [
+      { sentence: 'The keyword in the argument is "sustainability," which frames the entire debate.', translation: '论点中的关键词是"可持续性"，它框定了整个辩论。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 7,
+  },
+  {
+    id: '1651',
+    word: 'knitwear',
+    phonetic: '/ˈnɪtweə/',
+    meaning: 'n. 针织品，编织物',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'knit', meaning: '编织', origin: '古英语' },
+      { type: 'root', part: 'wear', meaning: '穿着物' },
+    ],
+    examples: [
+      { sentence: 'The export of knitwear has declined due to rising labor costs in developing countries.', translation: '由于发展中国家劳动力成本上升，针织品出口有所下降。', year: 2020, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 2,
+  },
+  {
+    id: '1652',
+    word: 'knowing',
+    phonetic: '/ˈnəʊɪŋ/',
+    meaning: 'adj. 会意的，心照不宣的；狡黠的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'know', meaning: '知道', origin: '古英语' },
+      { type: 'suffix', part: 'ing', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'She gave a knowing smile when the professor hinted at what would be on the exam.', translation: '当教授暗示考试内容时，她露出了会意的微笑。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 4,
+  },
+  {
+    id: '1653',
+    word: 'knock-on',
+    phonetic: '/ˈnɒkɒn/',
+    meaning: 'adj. 连锁的，附带影响的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'knock', meaning: '敲击', origin: '古英语' },
+      { type: 'root', part: 'on', meaning: '继续' },
+    ],
+    examples: [
+      { sentence: 'The knock-on effect of the pandemic on global supply chains was devastating.', translation: '疫情对全球供应链的连锁影响是毁灭性的。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '1654',
+    word: 'kinship',
+    phonetic: '/ˈkɪnʃɪp/',
+    meaning: 'n. 亲属关系，亲密关系',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'kin', meaning: '家族，亲属', origin: '古英语' },
+      { type: 'suffix', part: 'ship', meaning: '名词后缀，表示状态' },
+    ],
+    examples: [
+      { sentence: 'A sense of kinship among team members can significantly improve collaboration and productivity.', translation: '团队成员之间的亲密感可以显著改善合作和生产力。', year: 2023, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '1894',
+    word: 'kneel',
+    phonetic: '/niːl/',
+    meaning: 'v. 跪下，跪着',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'kneel', meaning: '跪', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Citizens knelt in silence to honor the victims of the tragedy.', translation: '市民们跪地默哀，悼念悲剧中的遇难者。', year: 2023, type: '翻译' },
+    ],
+    difficulty: 2,
+    frequency: 3,
+  },
+  {
+    id: '1895',
+    word: 'kin',
+    phonetic: '/kɪn/',
+    meaning: 'n. 亲属，家族；adj. 有亲属关系的',
+    pos: ['n.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'kin', meaning: '家族，亲属', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Next of kin were informed immediately after the accident occurred.', translation: '事故发生后立即通知了最近的亲属。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 2,
+    frequency: 5,
+  },
+  {
+    id: '1896',
+    word: 'knotty',
+    phonetic: '/ˈnɒti/',
+    meaning: 'adj. 棘手的，复杂的；多结的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'knot', meaning: '结，纠缠', origin: '古英语' },
+      { type: 'suffix', part: 'y', meaning: '形容词后缀，充满...的' },
+    ],
+    examples: [
+      { sentence: 'The knotty problem of income inequality has puzzled economists for decades.', translation: '收入不平等这个棘手问题困扰了经济学家数十年。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '1897',
+    word: 'kindred',
+    phonetic: '/ˈkɪndrəd/',
+    meaning: 'n. 亲属，同族；adj. 同类的，同宗的',
+    pos: ['n.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'kin', meaning: '家族，亲属', origin: '古英语' },
+      { type: 'suffix', part: 'dred', meaning: '名词后缀，表示群体' },
+    ],
+    examples: [
+      { sentence: 'Scientists found a kindred spirit in their shared pursuit of truth and knowledge.', translation: '科学家们在共同追求真理和知识中找到了志同道合的精神。', year: 2020, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  }
 ];
