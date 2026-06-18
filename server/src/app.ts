@@ -17,7 +17,7 @@ const app = express();
 app.use(cors({
   origin: config.nodeEnv === 'development'
     ? 'http://localhost:5173'
-    : process.env.CORS_ORIGIN,
+    : config.corsOrigin,
   credentials: true,
 }));
 app.use(express.json());

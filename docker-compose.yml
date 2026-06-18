@@ -1,0 +1,53 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: gre-mongodb
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: gre-vocab
+    # 不暴露端口到宿主机，仅容器内部访问
+    networks:
+      - gre-network
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: gre-backend
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    environment:
+      - PORT=3001
+      - MONGODB_URI=mongodb://mongodb:27017/gre-vocab
+      - JWT_ACCESS_SECRET=${JWT_ACCESS_SECRET}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
+      - JWT_ACCESS_EXPIRY=15m
+      - JWT_REFRESH_EXPIRY=7d
+      - NODE_ENV=production
+      - CORS_ORIGIN=http://${SERVER_IP:-localhost}
+    # 不暴露端口到宿主机，仅容器内部访问
+    networks:
+      - gre-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gre-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - gre-network
+
+volumes:
+  mongo_data:
+
+networks:
+  gre-network:
+    driver: bridge
