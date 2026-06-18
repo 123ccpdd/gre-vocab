@@ -226,7 +226,7 @@ export const wordList: Word[] = [
       { type: 'root', part: 'year', meaning: '年' },
     ],
     examples: [
-      { sentence: 'The economic policies of yesteryear are ill-suited to address today\'s global challenges.', translation: '往昔的经济政策已不适合应对当今的全球挑战。', year: 2022, type: '阅读' },
+      { sentence: "The economic policies of yesteryear are ill-suited to address today\'s global challenges.", translation: '往昔的经济政策已不适合应对当今的全球挑战。', year: 2022, type: '阅读' },
     ],
     difficulty: 3,
     frequency: 3,
@@ -245,5 +245,20 @@ export const wordList: Word[] = [
     ],
     difficulty: 3,
     frequency: 3,
+  },
+  {
+    id: '2245',
+    word: 'yeoman',
+    phonetic: '/ˈjoʊmən/',
+    meaning: 'n. 侍从，自耕农',
+    pos: ['n.'],
+    roots: [
+      { type: 'yeoman', part: '侍从', meaning: '', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The yeoman served the king loyally for many years.', translation: '侍从忠诚地服务国王多年。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
   },
 ];

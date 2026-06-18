@@ -842,4 +842,68 @@ export const wordList: Word[] = [
     difficulty: 2,
     frequency: 7,
   },
+  {
+    id: '2232',
+    word: 'umbrage',
+    phonetic: '/ˈʌmbrɪdʒ/',
+    meaning: 'n. 不快，生气；树荫',
+    pos: ['n.'],
+    roots: [
+      { type: 'umbr', part: '阴影', meaning: '', origin: '拉丁语' },
+      { type: 'age', part: '名词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'She took umbrage at his insensitive remark.', translation: '她对他不敏感的言论感到不快。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2233',
+    word: 'unassailable',
+    phonetic: '/ˌʌnəˈseɪləbl/',
+    meaning: 'adj. 无懈可击的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'un', part: '不', meaning: '', origin: '法语' },
+      { type: 'assail', part: '攻击', meaning: '', origin: '法语' },
+      { type: 'able', part: '可…的', meaning: '', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'The evidence presented was unassailable.', translation: '提出的证据是无懈可击的。', year: 2020, type: '完形' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2234',
+    word: 'unctuous',
+    phonetic: '/ˈʌŋktʃuəs/',
+    meaning: 'adj. 油滑的，谄媚的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'unct', part: '油', meaning: '', origin: '拉丁语' },
+      { type: 'uous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The unctuous salesman flattered every customer.', translation: '油滑的推销员奉承每位顾客。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2235',
+    word: 'usurp',
+    phonetic: '/juːˈzɜːrp/',
+    meaning: 'v. 篡夺，侵占',
+    pos: ['v.'],
+    roots: [
+      { type: 'usurp', part: '篡夺', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The general usurped the throne and declared himself king.', translation: '将军篡夺了王位并宣布自己为国王。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
 ];

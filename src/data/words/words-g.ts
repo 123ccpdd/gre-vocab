@@ -1107,4 +1107,145 @@ export const wordList: Word[] = [
     difficulty: 3,
     frequency: 3,
   },
+  {
+    id: '2105',
+    word: 'gainsay',
+    phonetic: '/ˌɡeɪnˈseɪ/',
+    meaning: 'v. 否认，反驳',
+    pos: ['v.'],
+    roots: [
+      { type: 'gain', part: '反对', meaning: '', origin: '古英语' },
+      { type: 'say', part: '说', meaning: '', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'No one can gainsay the importance of education.', translation: '没有人能否认教育的重要性。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2106',
+    word: 'gibe',
+    phonetic: '/dʒaɪb/',
+    meaning: 'v. 嘲笑，讥讽',
+    pos: ['v.'],
+    roots: [
+      { type: 'gibe', part: '嘲笑', meaning: '', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'His opponents gibed at his lack of experience.', translation: '对手嘲笑他缺乏经验。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '2107',
+    word: 'grandiloquent',
+    phonetic: '/ɡrænˈdɪləkwənt/',
+    meaning: 'adj. 夸大的，浮夸的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'grand', part: '大', meaning: '', origin: '拉丁语' },
+      { type: 'iloqu', part: '说话', meaning: '', origin: '拉丁语' },
+      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'His grandiloquent speech impressed few people.', translation: '他浮夸的演讲几乎没给人留下印象。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2108',
+    word: 'grievous',
+    phonetic: '/ˈɡriːvəs/',
+    meaning: 'adj. 严重的，令人悲痛的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'griev', part: '悲伤', meaning: '', origin: '古法语' },
+      { type: 'ous', part: '形容词后缀', meaning: '', origin: '古法语' },
+    ],
+    examples: [
+      { sentence: 'The soldier suffered a grievous wound in battle.', translation: '士兵在战斗中受了重伤。', year: 2021, type: '写作' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2109',
+    word: 'guile',
+    phonetic: '/ɡaɪl/',
+    meaning: 'n. 狡诈，诡计',
+    pos: ['n.'],
+    roots: [
+      { type: 'guile', part: '狡诈', meaning: '', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'He achieved his goals through guile rather than hard work.', translation: '他通过狡诈而非努力实现了目标。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2110',
+    word: 'gustatory',
+    phonetic: '/ˈɡʌstətɔːri/',
+    meaning: 'adj. 味觉的，品尝的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'gust', part: '味道', meaning: '', origin: '拉丁语' },
+      { type: 'atory', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The chef created a gustatory experience that delighted diners.', translation: '厨师创造了一种令食客愉悦的味觉体验。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2111',
+    word: 'goad',
+    phonetic: '/ɡoʊd/',
+    meaning: 'v. 煽动，驱使；n. 刺激',
+    pos: ['v.'],
+    roots: [
+      { type: 'goad', part: '驱赶棒', meaning: '', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: "She was goaded into action by her competitor's success.", translation: '竞争对手的成功驱使她采取行动。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2112',
+    word: 'grudging',
+    phonetic: '/ˈɡrʌdʒɪŋ/',
+    meaning: 'adj. 勉强的，不情愿的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'grudg', part: '怨恨', meaning: '', origin: '古法语' },
+      { type: 'ing', part: '形容词后缀', meaning: '', origin: '古法语' },
+    ],
+    examples: [
+      { sentence: 'He gave grudging approval to the plan.', translation: '他勉强批准了该计划。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '2113',
+    word: 'gourmand',
+    phonetic: '/ˈɡʊrmənd/',
+    meaning: 'n. 美食家，贪吃者',
+    pos: ['n.'],
+    roots: [
+      { type: 'gourmand', part: '贪吃', meaning: '', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'The gourmand reviewed every restaurant in the city.', translation: '美食家评审了城市里的每一家餐厅。', year: 2021, type: '写作' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
 ];

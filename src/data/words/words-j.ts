@@ -517,4 +517,50 @@ export const wordList: Word[] = [
     difficulty: 4,
     frequency: 4,
   },
+  {
+    id: '2136',
+    word: 'junta',
+    phonetic: '/ˈhʊntə/',
+    meaning: 'n. 军事集团，政务会',
+    pos: ['n.'],
+    roots: [
+      { type: 'junta', part: '委员会', meaning: '', origin: '西班牙语' },
+    ],
+    examples: [
+      { sentence: 'The military junta seized control of the government.', translation: '军事集团夺取了政府控制权。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2137',
+    word: 'jingoism',
+    phonetic: '/ˈdʒɪŋɡoʊɪzəm/',
+    meaning: 'n. 极端爱国主义',
+    pos: ['n.'],
+    roots: [
+      { type: 'jingo', part: '极端爱国者', meaning: '', origin: '英语' },
+      { type: 'ism', part: '主义', meaning: '', origin: '英语' },
+    ],
+    examples: [
+      { sentence: "The leader's jingoism appealed to nationalist sentiments.", translation: '领导人的极端爱国主义迎合了民族主义情绪。', year: 2021, type: '写作' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2138',
+    word: 'jocund',
+    phonetic: '/ˈdʒɒkənd/',
+    meaning: 'adj. 欢乐的，愉快的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'jocund', part: '欢乐', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: "The jocund atmosphere of the festival lifted everyone's spirits.", translation: '节日欢乐的气氛振奋了每个人的精神。', year: 2020, type: '完形' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
 ];

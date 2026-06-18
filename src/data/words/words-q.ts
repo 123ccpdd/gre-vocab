@@ -466,4 +466,50 @@ export const wordList: Word[] = [
     difficulty: 3,
     frequency: 3,
   },
+  {
+    id: '2188',
+    word: 'quackery',
+    phonetic: '/ˈkwækəri/',
+    meaning: 'n. 庸医行径，骗术',
+    pos: ['n.'],
+    roots: [
+      { type: 'quack', part: '庸医', meaning: '', origin: '荷兰语' },
+      { type: 'ery', part: '名词后缀', meaning: '', origin: '荷兰语' },
+    ],
+    examples: [
+      { sentence: 'The government cracked down on medical quackery.', translation: '政府打击了医疗骗术。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2189',
+    word: 'quaff',
+    phonetic: '/kwɒf/',
+    meaning: 'v. 大口喝，痛饮',
+    pos: ['v.'],
+    roots: [
+      { type: 'quaff', part: '大口喝', meaning: '', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'He quaffed the cold beer after a long day.', translation: '漫长一天工作后他痛饮了冰啤酒。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2190',
+    word: 'quail',
+    phonetic: '/kweɪl/',
+    meaning: 'v. 畏惧，退缩',
+    pos: ['v.'],
+    roots: [
+      { type: 'quail', part: '畏缩', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'She quailed at the prospect of speaking before a large audience.', translation: '她一想到要在众多观众前演讲就畏缩了。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
 ];

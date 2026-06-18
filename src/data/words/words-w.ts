@@ -505,9 +505,70 @@ export const wordList: Word[] = [
       { type: 'root', part: 'whiff', meaning: '一阵风，气味', origin: '拟声词' },
     ],
     examples: [
-      { sentence: 'Even a whiff of scandal can destroy a politician\'s career in the age of social media.', translation: '在社交媒体时代，即使是一丝丑闻的迹象也能毁掉一位政治家的职业生涯。', year: 2023, type: '阅读' },
+      { sentence: "Even a whiff of scandal can destroy a politician\'s career in the age of social media.", translation: '在社交媒体时代，即使是一丝丑闻的迹象也能毁掉一位政治家的职业生涯。', year: 2023, type: '阅读' },
     ],
     difficulty: 3,
     frequency: 3,
+  },
+  {
+    id: '2241',
+    word: 'welter',
+    phonetic: '/ˈweltər/',
+    meaning: 'n. 混乱，纷杂；v. 翻滚',
+    pos: ['n.'],
+    roots: [
+      { type: 'welter', part: '翻滚', meaning: '', origin: '荷兰语' },
+    ],
+    examples: [
+      { sentence: 'The report emerged from a welter of conflicting data.', translation: '报告从纷杂的矛盾数据中浮现。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2242',
+    word: 'wistful',
+    phonetic: '/ˈwɪstfəl/',
+    meaning: 'adj. 渴望的，惆怅的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'wist', part: '渴望', meaning: '', origin: '英语' },
+      { type: 'ful', part: '形容词后缀', meaning: '', origin: '英语' },
+    ],
+    examples: [
+      { sentence: 'She gave a wistful glance at the old photograph.', translation: '她惆怅地看了一眼旧照片。', year: 2021, type: '写作' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '2243',
+    word: 'wry',
+    phonetic: '/raɪ/',
+    meaning: 'adj. 扭曲的，讽刺的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'wry', part: '扭曲', meaning: '', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'He gave a wry smile when he heard the ironic news.', translation: '听到讽刺的消息时他露出了苦笑。', year: 2021, type: '写作' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2244',
+    word: 'wraith',
+    phonetic: '/reɪθ/',
+    meaning: 'n. 幽灵，鬼影',
+    pos: ['n.'],
+    roots: [
+      { type: 'wraith', part: '幽灵', meaning: '', origin: '苏格兰语' },
+    ],
+    examples: [
+      { sentence: 'A wraith-like figure appeared in the mist.', translation: '幽灵般的身影出现在雾中。', year: 2020, type: '完形' },
+    ],
+    difficulty: 5,
+    frequency: 2,
   },
 ];

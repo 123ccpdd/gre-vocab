@@ -824,5 +824,121 @@ export const wordList: Word[] = [
     ],
     difficulty: 4,
     frequency: 3,
-  }
+  },
+  {
+    id: '2168',
+    word: 'obdurate',
+    phonetic: '/ˈɒbdjərət/',
+    meaning: 'adj. 固执的，顽固的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'ob', part: '加强', meaning: '', origin: '拉丁语' },
+      { type: 'dur', part: '坚硬', meaning: '', origin: '拉丁语' },
+      { type: 'ate', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The obdurate negotiator refused to make concessions.', translation: '固执的谈判者拒绝做出让步。', year: 2021, type: '写作' },
+    ],
+    difficulty: 4,
+    frequency: 4,
+  },
+  {
+    id: '2169',
+    word: 'obfuscate',
+    phonetic: '/ˈɒbfʌskeɪt/',
+    meaning: 'v. 使模糊，使困惑',
+    pos: ['v.'],
+    roots: [
+      { type: 'ob', part: '过度', meaning: '', origin: '拉丁语' },
+      { type: 'fusc', part: '暗', meaning: '', origin: '拉丁语' },
+      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The complex jargon obfuscated the simple truth.', translation: '复杂的术语使简单的真相变得模糊。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2170',
+    word: 'obstreperous',
+    phonetic: '/əbˈstrepərəs/',
+    meaning: 'adj. 喧闹的，难管束的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'ob', part: '对抗', meaning: '', origin: '拉丁语' },
+      { type: 'strep', part: '喧闹', meaning: '', origin: '拉丁语' },
+      { type: 'erous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The obstreperous child refused to follow any rules.', translation: '难管束的孩子拒绝遵守任何规则。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2171',
+    word: 'obtuse',
+    phonetic: '/əbˈtjuːs/',
+    meaning: 'adj. 迟钝的，愚笨的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'ob', part: '加强', meaning: '', origin: '拉丁语' },
+      { type: 'tus', part: '钝', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'He was too obtuse to understand the subtle hint.', translation: '他太迟钝了，理解不了微妙的暗示。', year: 2020, type: '完形' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2172',
+    word: 'obviate',
+    phonetic: '/ˈɒbvieɪt/',
+    meaning: 'v. 排除，消除，避免',
+    pos: ['v.'],
+    roots: [
+      { type: 'ob', part: '对着', meaning: '', origin: '拉丁语' },
+      { type: 'vi', part: '路', meaning: '', origin: '拉丁语' },
+      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The new bridge obviated the need for the ferry.', translation: '新桥消除了渡轮的需要。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 4,
+  },
+  {
+    id: '2173',
+    word: 'odious',
+    phonetic: '/ˈoʊdiəs/',
+    meaning: 'adj. 可憎的，令人作呕的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'odi', part: '仇恨', meaning: '', origin: '拉丁语' },
+      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: "The dictator's odious regime was finally overthrown.", translation: '独裁者可憎的政权终于被推翻了。', year: 2020, type: '完形' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2174',
+    word: 'onerous',
+    phonetic: '/ˈoʊnərəs/',
+    meaning: 'adj. 繁重的，麻烦的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'oner', part: '负担', meaning: '', origin: '拉丁语' },
+      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The onerous regulations placed a heavy burden on small businesses.', translation: '繁重的法规给小企业带来了沉重负担。', year: 2021, type: '写作' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
 ];

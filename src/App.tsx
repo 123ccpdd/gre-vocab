@@ -1,4 +1,5 @@
 import { useState, useCallback, useMemo, useEffect } from 'react';
+import { Routes, Route, useNavigate, useLocation, Navigate, Link, useParams } from 'react-router-dom';
 import type { Word, LearningMode } from './types';
 import { getAllWords } from './data/words';
 import {
@@ -6,6 +7,7 @@ import {
   useDailyStats,
   useSettings,
 } from './hooks/useStorage';
+import { useAuth } from './contexts/AuthContext';
 import WordCard from './components/WordCard';
 import Dashboard from './components/Dashboard';
 import LearningSession from './components/LearningSession';
@@ -13,13 +15,34 @@ import CompletionScreen from './components/CompletionScreen';
 import StatsPanel from './components/StatsPanel';
 import WordListPage from './components/WordList';
 import CategoryWordList from './components/CategoryWordList';
-import { ReadOutlined, HomeOutlined, BarChartOutlined, BookOutlined, SunOutlined, MoonOutlined } from '@ant-design/icons';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import { ReadOutlined, HomeOutlined, BarChartOutlined, BookOutlined, SunOutlined, MoonOutlined, LogoutOutlined } from '@ant-design/icons';
 
-type View = 'home' | 'learn' | 'review' | 'stats' | 'wordlist' | 'complete' | 'category';
 type Category = 'mastered' | 'reviewing' | 'learning' | 'new';
 
-function App() {
-  const [currentView, setCurrentView] = useState<View>('home');
+// 路由守卫：未登录重定向到 /login
+function ProtectedRoute({ children }: { children: React.ReactNode }) {
+  const { isAuthenticated, isLoading } = useAuth();
+  const location = useLocation();
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <p className="text-gray-400">加载中...</p>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return <Navigate to="/login" state={{ from: location }} replace />;
+  }
+
+  return <>{children}</>;
+}
+
+// 主应用布局
+function MainApp() {
   const [currentWords, setCurrentWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -28,6 +51,10 @@ function App() {
   const [sessionIncorrect, setSessionIncorrect] = useState(0);
   const [learningMode, setLearningMode] = useState<LearningMode>('learn');
   const [category, setCategory] = useState<Category>('mastered');
+  const [activeView, setActiveView] = useState<'home' | 'learn' | 'review' | 'complete' | 'category'>('home');
+
+  const { logout, user, showMigrationDialog, handleMigration, skipMigration } = useAuth();
+  const navigate = useNavigate();
 
   const { records, getRecord, markWord, getDueWords, getStats } = useLearningRecords();
   const { updateTodayStats, getTodayStats, getStreak, stats } = useDailyStats();
@@ -61,7 +88,7 @@ function App() {
   // 查看分类词汇
   const handleViewCategory = useCallback((cat: Category) => {
     setCategory(cat);
-    setCurrentView('category');
+    setActiveView('category');
   }, []);
 
   // 深色模式
@@ -96,7 +123,7 @@ function App() {
     setSessionCorrect(0);
     setSessionIncorrect(0);
     setLearningMode('learn');
-    setCurrentView('learn');
+    setActiveView('learn');
   }, [unlearnedWords, settings.dailyNewWords]);
 
   // 开始复习
@@ -112,7 +139,7 @@ function App() {
     setSessionCorrect(0);
     setSessionIncorrect(0);
     setLearningMode('review');
-    setCurrentView('review');
+    setActiveView('review');
   }, [dueWordIds]);
 
   // 处理"认识"
@@ -122,7 +149,6 @@ function App() {
     markWord(word.id, true);
     setSessionCorrect((c) => c + 1);
 
-    // 更新今日统计
     const isLearning = learningMode === 'learn';
     updateTodayStats(
       isLearning
@@ -130,11 +156,9 @@ function App() {
         : { reviewWords: todayStats.reviewWords + 1 }
     );
 
-    // 下一个
     if (currentIndex + 1 >= currentWords.length) {
-      setCurrentView('complete');
+      setActiveView('complete');
     } else {
-      // 禁用动画 + 翻回正面，下一帧再切换词并恢复动画
       setNoTransition(true);
       setIsFlipped(false);
       requestAnimationFrame(() => {
@@ -158,9 +182,8 @@ function App() {
     );
 
     if (currentIndex + 1 >= currentWords.length) {
-      setCurrentView('complete');
+      setActiveView('complete');
     } else {
-      // 禁用动画 + 翻回正面，下一帧再切换词并恢复动画
       setNoTransition(true);
       setIsFlipped(false);
       requestAnimationFrame(() => {
@@ -172,16 +195,14 @@ function App() {
 
   // 快捷键支持
   useEffect(() => {
-    if (currentView !== 'learn' && currentView !== 'review') return;
+    if (activeView !== 'learn' && activeView !== 'review') return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
       switch (e.key) {
         case ' ':
         case 'Enter':
           e.preventDefault();
-          if (!isFlipped) {
-            setIsFlipped(true);
-          }
+          if (!isFlipped) setIsFlipped(true);
           break;
         case '1':
         case 'j':
@@ -192,16 +213,15 @@ function App() {
           if (isFlipped) handleKnow();
           break;
         case 'Escape':
-          setCurrentView('home');
+          setActiveView('home');
           break;
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentView, isFlipped, handleKnow, handleDontKnow]);
+  }, [activeView, isFlipped, handleKnow, handleDontKnow]);
 
-  // 当前单词的学习记录
   const currentRecord = useMemo(
     () =>
       currentWords.length > 0 && currentIndex < currentWords.length
@@ -210,38 +230,62 @@ function App() {
     [currentWords, currentIndex, getRecord]
   );
 
+  // 判断当前导航栏高亮
+  const location = useLocation();
+  const navHighlight = (path: string) => {
+    if (path === '/' && activeView === 'home') return true;
+    if (location.pathname === path) return true;
+    return false;
+  };
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* 导航栏 */}
       <nav className="bg-white border-b border-gray-100 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
-          <button
-            onClick={() => setCurrentView('home')}
+          <Link
+            to="/"
+            onClick={() => setActiveView('home')}
             className="text-lg font-bold text-indigo-600 hover:text-indigo-700 transition"
           >
             <ReadOutlined className="mr-1" /> 考研词汇
-          </button>
-          <div className="flex gap-1">
-            {(['home', 'wordlist', 'stats'] as const).map((view) => (
-              <button
-                key={view}
-                onClick={() => setCurrentView(view)}
-                className={`px-3 py-1.5 rounded-lg text-sm transition ${
-                  currentView === view
-                    ? 'bg-indigo-100 text-indigo-700'
-                    : 'text-gray-500 hover:bg-gray-100'
-                }`}
-              >
-                {view === 'home' ? <><HomeOutlined className="mr-1" /> 首页</> : view === 'wordlist' ? <><BookOutlined className="mr-1" /> 词库</> : <><BarChartOutlined className="mr-1" /> 统计</>}
-              </button>
-            ))}
+          </Link>
+          <div className="flex gap-1 items-center">
             <button
-              onClick={() =>
-                updateSettings({ enableDarkMode: !settings.enableDarkMode })
-              }
+              onClick={() => { setActiveView('home'); navigate('/'); }}
+              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/') ? 'bg-indigo-100 text-indigo-700' : 'text-gray-500 hover:bg-gray-100'}`}
+            >
+              <HomeOutlined className="mr-1" /> 首页
+            </button>
+            <Link
+              to="/words"
+              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/words') ? 'bg-indigo-100 text-indigo-700' : 'text-gray-500 hover:bg-gray-100'}`}
+            >
+              <BookOutlined className="mr-1" /> 词库
+            </Link>
+            <Link
+              to="/stats"
+              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/stats') ? 'bg-indigo-100 text-indigo-700' : 'text-gray-500 hover:bg-gray-100'}`}
+            >
+              <BarChartOutlined className="mr-1" /> 统计
+            </Link>
+            <button
+              onClick={() => updateSettings({ enableDarkMode: !settings.enableDarkMode })}
               className="px-2 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-gray-100 transition"
             >
               {settings.enableDarkMode ? <SunOutlined /> : <MoonOutlined />}
+            </button>
+            <button
+              onClick={handleLogout}
+              className="px-2 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-gray-100 transition"
+              title="退出登录"
+            >
+              <LogoutOutlined />
             </button>
           </div>
         </div>
@@ -249,7 +293,8 @@ function App() {
 
       {/* 主内容区 */}
       <main className="max-w-2xl mx-auto px-4 py-6">
-        {currentView === 'home' && (
+        {/* 首页 + 学习/复习/完成/分类 — 用内部 state 切换 */}
+        {(activeView === 'home' || location.pathname === '/') && activeView !== 'learn' && activeView !== 'review' && activeView !== 'complete' && activeView !== 'category' && (
           <Dashboard
             masteredCount={wordStats.mastered}
             learningCount={wordStats.learning}
@@ -265,17 +310,17 @@ function App() {
           />
         )}
 
-        {(currentView === 'learn' || currentView === 'review') &&
+        {(activeView === 'learn' || activeView === 'review') &&
           currentWords.length > 0 &&
           currentIndex < currentWords.length && (
             <div className="space-y-6">
               <LearningSession
-                mode={currentView === 'learn' ? 'learn' : 'review'}
+                mode={activeView === 'learn' ? 'learn' : 'review'}
                 totalWords={currentWords.length}
                 currentIndex={currentIndex}
                 correctCount={sessionCorrect}
                 incorrectCount={sessionIncorrect}
-                onFinish={() => setCurrentView('home')}
+                onFinish={() => setActiveView('home')}
               />
               <WordCard
                 word={currentWords[currentIndex]}
@@ -287,7 +332,6 @@ function App() {
                 correctCount={currentRecord?.correctCount ?? 0}
                 incorrectCount={currentRecord?.incorrectCount ?? 0}
               />
-              {/* 快捷键提示 */}
               <div className="text-center text-xs text-gray-400 space-x-4">
                 <span>空格 翻转</span>
                 <span>1/J 不认识</span>
@@ -297,44 +341,90 @@ function App() {
             </div>
           )}
 
-        {currentView === 'complete' && (
+        {activeView === 'complete' && (
           <CompletionScreen
             mode={learningMode === 'review' ? 'review' : 'learn'}
             totalWords={sessionCorrect + sessionIncorrect}
             correctCount={sessionCorrect}
             incorrectCount={sessionIncorrect}
-            onBack={() => setCurrentView('home')}
+            onBack={() => setActiveView('home')}
             onContinue={() => {
-              if (learningMode === 'learn') {
-                startLearn();
-              } else {
-                startReview();
-              }
+              if (learningMode === 'learn') startLearn();
+              else startReview();
             }}
           />
         )}
 
-        {currentView === 'stats' && (
-          <StatsPanel
-            stats={stats}
-            streak={streak}
-            totalMastered={wordStats.mastered}
-            totalWords={getAllWords().length}
-          />
-        )}
-
-        {currentView === 'wordlist' && <WordListPage />}
-
-        {currentView === 'category' && (
+        {activeView === 'category' && (
           <CategoryWordList
             category={category}
             words={categoryWords[category]}
             records={records}
-            onBack={() => setCurrentView('home')}
+            onBack={() => setActiveView('home')}
           />
         )}
+
+        {/* 路由页面 */}
+        <Routes>
+          <Route path="/stats" element={<StatsPanel stats={stats} streak={streak} totalMastered={wordStats.mastered} totalWords={getAllWords().length} />} />
+          <Route path="/words" element={<WordListPage />} />
+          <Route path="/words/:category" element={<CategoryWordRoute categoryWords={categoryWords} records={records} onBack={() => navigate('/')} />} />
+        </Routes>
       </main>
+
+      {/* 数据迁移对话框 */}
+      {showMigrationDialog && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
+          <div className="bg-white rounded-2xl p-6 max-w-md w-full shadow-xl">
+            <h3 className="text-lg font-bold text-gray-900 mb-2">检测到本地学习数据</h3>
+            <p className="text-sm text-gray-600 mb-6">
+              你之前在本地有学习记录，是否将数据同步到云端？同步后可在不同设备间共享进度。
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={skipMigration}
+                className="px-4 py-2 rounded-xl text-sm text-gray-600 bg-gray-100 hover:bg-gray-200 transition"
+              >
+                暂不同步
+              </button>
+              <button
+                onClick={handleMigration}
+                className="px-4 py-2 rounded-xl text-sm text-white bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 transition font-medium"
+              >
+                同步到云端
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
+  );
+}
+
+// 分类词汇路由组件
+function CategoryWordRoute({ categoryWords, records, onBack }: { categoryWords: Record<Category, Word[]>; records: Record<string, any>; onBack: () => void }) {
+  const { category: cat } = useParams<{ category: Category }>();
+  const validCategories: Category[] = ['mastered', 'reviewing', 'learning', 'new'];
+  if (!cat || !validCategories.includes(cat)) {
+    return <Navigate to="/" replace />;
+  }
+  return <CategoryWordList category={cat} words={categoryWords[cat]} records={records} onBack={onBack} />;
+}
+
+function App() {
+  return (
+    <Routes>
+      {/* 公开路由 */}
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+
+      {/* 受保护路由 */}
+      <Route path="/*" element={
+        <ProtectedRoute>
+          <MainApp />
+        </ProtectedRoute>
+      } />
+    </Routes>
   );
 }
 

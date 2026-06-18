@@ -1359,4 +1359,177 @@ export const wordList: Word[] = [
     difficulty: 4,
     frequency: 3,
   },
+  {
+    id: '2222',
+    word: 'talisman',
+    phonetic: '/ˈtælɪzmən/',
+    meaning: 'n. 护身符，法宝',
+    pos: ['n.'],
+    roots: [
+      { type: 'talisman', part: '护身符', meaning: '', origin: '阿拉伯语' },
+    ],
+    examples: [
+      { sentence: 'The ancient talisman was believed to bring good fortune.', translation: '古老护身符被认为能带来好运。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2223',
+    word: 'tempestuous',
+    phonetic: '/temˈpestʃuəs/',
+    meaning: 'adj. 暴风雨的，动荡的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'tempest', part: '暴风雨', meaning: '', origin: '拉丁语' },
+      { type: 'uous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'Their tempestuous relationship was marked by frequent arguments.', translation: '他们动荡的关系以频繁争吵为特征。', year: 2021, type: '写作' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2224',
+    word: 'tirade',
+    phonetic: '/taɪˈreɪd/',
+    meaning: 'n. 长篇激烈演说',
+    pos: ['n.'],
+    roots: [
+      { type: 'tirade', part: '长篇演说', meaning: '', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'The senator launched a tirade against the proposed legislation.', translation: '参议员对拟议立法发表了长篇激烈演说。', year: 2021, type: '写作' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2225',
+    word: 'torpor',
+    phonetic: '/ˈtɔːrpər/',
+    meaning: 'n. 迟钝，无精打采',
+    pos: ['n.'],
+    roots: [
+      { type: 'torp', part: '麻木', meaning: '', origin: '拉丁语' },
+      { type: 'or', part: '名词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The heat induced a state of torpor in the workers.', translation: '炎热使工人们陷入迟钝状态。', year: 2020, type: '完形' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2226',
+    word: 'tribulation',
+    phonetic: '/ˌtrɪbjuˈleɪʃən/',
+    meaning: 'n. 苦难，磨难',
+    pos: ['n.'],
+    roots: [
+      { type: 'tribul', part: '压迫', meaning: '', origin: '拉丁语' },
+      { type: 'ation', part: '名词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'She endured many tribulations before achieving success.', translation: '她在成功之前经历了许多磨难。', year: 2019, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2227',
+    word: 'tendentious',
+    phonetic: '/tenˈdenʃəs/',
+    meaning: 'adj. 有偏见的，有倾向性的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'tend', part: '倾向', meaning: '', origin: '拉丁语' },
+      { type: 'entious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The tendentious report was criticized for its lack of objectivity.', translation: '有偏见的报告因缺乏客观性而受到批评。', year: 2021, type: '写作' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2228',
+    word: 'trenchant',
+    phonetic: '/ˈtrentʃənt/',
+    meaning: 'adj. 锐利的，一针见血的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'trench', part: '切割', meaning: '', origin: '法语' },
+      { type: 'ant', part: '形容词后缀', meaning: '', origin: '法语' },
+    ],
+    examples: [
+      { sentence: 'Her trenchant analysis exposed the flaws in the argument.', translation: '她一针见血的分析暴露了论点中的缺陷。', year: 2020, type: '完形' },
+    ],
+    difficulty: 4,
+    frequency: 4,
+  },
+  {
+    id: '2229',
+    word: 'truculent',
+    phonetic: '/ˈtrʌkjələnt/',
+    meaning: 'adj. 好斗的，凶猛的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'truc', part: '凶猛', meaning: '', origin: '拉丁语' },
+      { type: 'ulent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The truculent dictator brooked no opposition.', translation: '好斗的独裁者不容许任何反对。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 5,
+    frequency: 2,
+  },
+  {
+    id: '2230',
+    word: 'timorous',
+    phonetic: '/ˈtɪmərəs/',
+    meaning: 'adj. 胆小的，怯懦的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'timor', part: '恐惧', meaning: '', origin: '拉丁语' },
+      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The timorous child hid behind his mother.', translation: '胆小的孩子躲在母亲身后。', year: 2018, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2231',
+    word: 'torpid',
+    phonetic: '/ˈtɔːrpɪd/',
+    meaning: 'adj. 迟钝的，不活跃的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'torp', part: '麻木', meaning: '', origin: '拉丁语' },
+      { type: 'id', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+    ],
+    examples: [
+      { sentence: 'The torpid bear emerged from hibernation slowly.', translation: '迟钝的熊慢慢从冬眠中醒来。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2267',
+    word: 'tatty',
+    phonetic: '/ˈtæti/',
+    meaning: 'adj.破旧的，寒酸的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'tatty', part: '破旧', meaning: '', origin: '英语' },
+    ],
+    examples: [
+      { sentence: 'The tatty curtains needed replacing.', translation: '破旧的窗帘需要更换。', year: 2022, type: '新题型' },
+    ],
+    difficulty: 2,
+    frequency: 3,
+  },
 ];
