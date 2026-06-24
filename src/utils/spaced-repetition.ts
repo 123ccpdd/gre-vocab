@@ -80,10 +80,12 @@ export function updateLearningRecord(
     }
   } else {
     newRecord.incorrectCount += 1;
-    // 答错则重置间隔
-    newRecord.correctCount = 0;
-    newRecord.interval = 0;
-    newRecord.status = 'learning';
+    // 答错降级而非清零：扣2次进度（最低保留1），避免一次遗忘打回原点
+    newRecord.correctCount = Math.max(1, newRecord.correctCount - 2);
+    const intervalIndex = Math.min(newRecord.correctCount - 1, REVIEW_INTERVALS.length - 1);
+    newRecord.interval = REVIEW_INTERVALS[intervalIndex];
+    // 只有 correctCount 降到 1 才退回 learning，否则保持 reviewing
+    newRecord.status = newRecord.correctCount <= 1 ? 'learning' : 'reviewing';
   }
 
   // 计算下次复习日期
