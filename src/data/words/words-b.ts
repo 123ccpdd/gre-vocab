@@ -1296,7 +1296,7 @@ export const wordList: Word[] = [
     meaning: 'v. 纠缠，烦扰',
     pos: ['v.'],
     roots: [
-      { type: 'badger', part: '獾（引申为纠缠）', meaning: '', origin: '英语' },
+      { type: 'root', part: 'badger', meaning: '獾（引申为纠缠）', origin: '英语' },
     ],
     examples: [
       { sentence: 'Journalists badgered the politician with questions.', translation: '记者们用问题纠缠那位政治家。', year: 2019, type: '翻译' },
@@ -1311,8 +1311,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 有害的，邪恶的',
     pos: ['adj.'],
     roots: [
-      { type: 'bale', part: '祸害', meaning: '', origin: '古英语' },
-      { type: 'ful', part: '充满', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'bale', meaning: '祸害', origin: '古英语' },
+      { type: 'root', part: 'ful', meaning: '充满', origin: '古英语' },
     ],
     examples: [
       { sentence: 'The baleful influence of social media on youth was discussed.', translation: '社交媒体对青少年的有害影响被讨论了。', year: 2019, type: '翻译' },
@@ -1327,9 +1327,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 好战的，交战的',
     pos: ['adj.'],
     roots: [
-      { type: 'belli', part: '战争', meaning: '', origin: '拉丁语' },
-      { type: 'ger', part: '携带', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'belli', meaning: '战争', origin: '拉丁语' },
+      { type: 'root', part: 'ger', meaning: '携带', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The belligerent nations refused to negotiate.', translation: '好战的国家拒绝谈判。', year: 2019, type: '翻译' },
@@ -1344,9 +1344,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 行善的，仁慈的',
     pos: ['adj.'],
     roots: [
-      { type: 'bene', part: '好', meaning: '', origin: '拉丁语' },
-      { type: 'fic', part: '做', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'bene', meaning: '好', origin: '拉丁语' },
+      { type: 'root', part: 'fic', meaning: '做', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The beneficent donor contributed millions to charity.', translation: '仁慈的捐赠者向慈善捐献了数百万。', year: 2021, type: '写作' },
@@ -1361,8 +1361,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 公然的，明目张胆的',
     pos: ['adj.'],
     roots: [
-      { type: 'blat', part: '喋喋不休', meaning: '', origin: '拉丁语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'blat', meaning: '喋喋不休', origin: '拉丁语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The blatant disregard for rules led to consequences.', translation: '对规则的公然无视导致了后果。', year: 2022, type: '新题型' },
@@ -1377,7 +1377,7 @@ export const wordList: Word[] = [
     meaning: 'n. 极乐，幸福',
     pos: ['n.'],
     roots: [
-      { type: 'bliss', part: '喜悦', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'bliss', meaning: '喜悦', origin: '古英语' },
     ],
     examples: [
       { sentence: 'Living in the countryside was pure bliss for her.', translation: '住在乡下对她来说是纯粹的幸福。', year: 2021, type: '写作' },
@@ -1392,8 +1392,8 @@ export const wordList: Word[] = [
     meaning: 'v. 咆哮，虚张声势',
     pos: ['v.'],
     roots: [
-      { type: 'blust', part: '狂吹', meaning: '', origin: '英语' },
-      { type: 'er', part: '动词后缀', meaning: '', origin: '英语' },
+      { type: 'root', part: 'blust', meaning: '狂吹', origin: '英语' },
+      { type: 'root', part: 'er', meaning: '动词后缀', origin: '英语' },
     ],
     examples: [
       { sentence: 'He blustered his way through the negotiation.', translation: '他在谈判中虚张声势。', year: 2018, type: '阅读' },
@@ -1408,8 +1408,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 夸大的，言过其实的',
     pos: ['adj.'],
     roots: [
-      { type: 'bombast', part: '填充', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'bombast', meaning: '填充', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'His bombastic speech failed to convince the audience.', translation: '他夸大的演讲未能说服听众。', year: 2018, type: '阅读' },
@@ -1424,8 +1424,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 乡村的，田园的',
     pos: ['adj.'],
     roots: [
-      { type: 'bucol', part: '牧牛', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'bucol', meaning: '牧牛', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The bucolic landscape inspired many poets.', translation: '田园风光启发了许多诗人。', year: 2018, type: '阅读' },
@@ -1440,8 +1440,8 @@ export const wordList: Word[] = [
     meaning: 'v. 擦亮，磨光；改善形象',
     pos: ['v.'],
     roots: [
-      { type: 'burn', part: '擦亮', meaning: '', origin: '法语' },
-      { type: 'ish', part: '动词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'burn', meaning: '擦亮', origin: '法语' },
+      { type: 'root', part: 'ish', meaning: '动词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'The company tried to burnish its image after the scandal.', translation: '丑闻后公司试图改善自身形象。', year: 2021, type: '写作' },
@@ -1456,7 +1456,7 @@ export const wordList: Word[] = [
     meaning: 'n. 露营，临时营地；v. 露宿',
     pos: ['n.'],
     roots: [
-      { type: 'bivouac', part: '露营', meaning: '', origin: '法语' },
+      { type: 'root', part: 'bivouac', meaning: '露营', origin: '法语' },
     ],
     examples: [
       { sentence: 'Soldiers bivouacked in the forest during the campaign.', translation: '士兵在战役期间在森林中露营。', year: 2020, type: '完形' },
@@ -1471,7 +1471,7 @@ export const wordList: Word[] = [
     meaning: 'v. 宣布，展示；n. 纹章',
     pos: ['v.'],
     roots: [
-      { type: 'blazon', part: '纹章', meaning: '', origin: '法语' },
+      { type: 'root', part: 'blazon', meaning: '纹章', origin: '法语' },
     ],
     examples: [
       { sentence: 'The university blazoned its motto on the entrance gate.', translation: '大学在校门上展示了校训。', year: 2020, type: '完形' },
@@ -1486,8 +1486,8 @@ export const wordList: Word[] = [
     meaning: 'v. 奉承，讨好',
     pos: ['v.'],
     roots: [
-      { type: 'bland', part: '温和', meaning: '', origin: '拉丁语' },
-      { type: 'ish', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'bland', meaning: '温和', origin: '拉丁语' },
+      { type: 'root', part: 'ish', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'He blandished his boss hoping for a promotion.', translation: '他奉承老板希望获得晋升。', year: 2022, type: '新题型' },

@@ -517,7 +517,7 @@ export const wordList: Word[] = [
     meaning: 'n. 混乱，纷杂；v. 翻滚',
     pos: ['n.'],
     roots: [
-      { type: 'welter', part: '翻滚', meaning: '', origin: '荷兰语' },
+      { type: 'root', part: 'welter', meaning: '翻滚', origin: '荷兰语' },
     ],
     examples: [
       { sentence: 'The report emerged from a welter of conflicting data.', translation: '报告从纷杂的矛盾数据中浮现。', year: 2022, type: '新题型' },
@@ -532,8 +532,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 渴望的，惆怅的',
     pos: ['adj.'],
     roots: [
-      { type: 'wist', part: '渴望', meaning: '', origin: '英语' },
-      { type: 'ful', part: '形容词后缀', meaning: '', origin: '英语' },
+      { type: 'root', part: 'wist', meaning: '渴望', origin: '英语' },
+      { type: 'root', part: 'ful', meaning: '形容词后缀', origin: '英语' },
     ],
     examples: [
       { sentence: 'She gave a wistful glance at the old photograph.', translation: '她惆怅地看了一眼旧照片。', year: 2021, type: '写作' },
@@ -548,7 +548,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 扭曲的，讽刺的',
     pos: ['adj.'],
     roots: [
-      { type: 'wry', part: '扭曲', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'wry', meaning: '扭曲', origin: '古英语' },
     ],
     examples: [
       { sentence: 'He gave a wry smile when he heard the ironic news.', translation: '听到讽刺的消息时他露出了苦笑。', year: 2021, type: '写作' },
@@ -563,7 +563,7 @@ export const wordList: Word[] = [
     meaning: 'n. 幽灵，鬼影',
     pos: ['n.'],
     roots: [
-      { type: 'wraith', part: '幽灵', meaning: '', origin: '苏格兰语' },
+      { type: 'root', part: 'wraith', meaning: '幽灵', origin: '苏格兰语' },
     ],
     examples: [
       { sentence: 'A wraith-like figure appeared in the mist.', translation: '幽灵般的身影出现在雾中。', year: 2020, type: '完形' },

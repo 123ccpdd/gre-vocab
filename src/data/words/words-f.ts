@@ -1297,8 +1297,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 轻浮的，滑稽的',
     pos: ['adj.'],
     roots: [
-      { type: 'facet', part: '面', meaning: '', origin: '法语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'facet', meaning: '面', origin: '法语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'His facetious remarks during the ceremony were inappropriate.', translation: '他在典礼上的轻浮言辞不合时宜。', year: 2022, type: '新题型' },
@@ -1313,8 +1313,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 谬误的，欺骗性的',
     pos: ['adj.'],
     roots: [
-      { type: 'fallac', part: '欺骗', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fallac', meaning: '欺骗', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The argument is based on fallacious reasoning.', translation: '论点基于谬误的推理。', year: 2019, type: '翻译' },
@@ -1329,8 +1329,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 挑剔的，一丝不苟的',
     pos: ['adj.'],
     roots: [
-      { type: 'fastid', part: '厌恶', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fastid', meaning: '厌恶', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She is fastidious about the cleanliness of her kitchen.', translation: '她对厨房的清洁一丝不苟。', year: 2021, type: '写作' },
@@ -1345,8 +1345,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 愚蠢的，昏庸的',
     pos: ['adj.'],
     roots: [
-      { type: 'fatu', part: '愚蠢', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fatu', meaning: '愚蠢', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His fatuous comments revealed his ignorance.', translation: '他愚蠢的评论暴露了他的无知。', year: 2019, type: '翻译' },
@@ -1361,7 +1361,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 肥沃的，多产的',
     pos: ['adj.'],
     roots: [
-      { type: 'fecund', part: '多产的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fecund', meaning: '多产的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The fecund valley produced abundant crops every year.', translation: '肥沃的山谷每年产出丰富的庄稼。', year: 2019, type: '翻译' },
@@ -1376,8 +1376,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 恰当的，巧妙的',
     pos: ['adj.'],
     roots: [
-      { type: 'felicit', part: '幸福', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'felicit', meaning: '幸福', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She made a felicitous choice of words in her speech.', translation: '她在演讲中选词巧妙恰当。', year: 2022, type: '新题型' },
@@ -1392,8 +1392,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 野生的，未驯化的',
     pos: ['adj.'],
     roots: [
-      { type: 'fer', part: '野', meaning: '', origin: '拉丁语' },
-      { type: 'al', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fer', meaning: '野', origin: '拉丁语' },
+      { type: 'root', part: 'al', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Feral cats have become a problem in many urban areas.', translation: '野猫在许多城市地区已成问题。', year: 2018, type: '阅读' },
@@ -1408,8 +1408,8 @@ export const wordList: Word[] = [
     meaning: 'v. 预先阻止，先发制人',
     pos: ['v.'],
     roots: [
-      { type: 'fore', part: '前', meaning: '', origin: '古英语' },
-      { type: 'stall', part: '阻止', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'fore', meaning: '前', origin: '古英语' },
+      { type: 'root', part: 'stall', meaning: '阻止', origin: '古英语' },
     ],
     examples: [
       { sentence: 'The government took measures to forestall the crisis.', translation: '政府采取措施预先阻止危机。', year: 2022, type: '新题型' },
@@ -1424,8 +1424,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 易怒的，好争吵的',
     pos: ['adj.'],
     roots: [
-      { type: 'fract', part: '打破', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fract', meaning: '打破', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The fractious committee could not reach a consensus.', translation: '好争吵的委员会无法达成共识。', year: 2022, type: '新题型' },
@@ -1440,8 +1440,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 无能的，不负责任的',
     pos: ['adj.'],
     roots: [
-      { type: 'feck', part: '效果', meaning: '', origin: '苏格兰语' },
-      { type: 'less', part: '无', meaning: '', origin: '苏格兰语' },
+      { type: 'root', part: 'feck', meaning: '效果', origin: '苏格兰语' },
+      { type: 'root', part: 'less', meaning: '无', origin: '苏格兰语' },
     ],
     examples: [
       { sentence: 'The feckless manager drove the company into bankruptcy.', translation: '无能的经理把公司推向破产。', year: 2019, type: '翻译' },
@@ -1456,7 +1456,7 @@ export const wordList: Word[] = [
     meaning: 'v. 偷窃，小偷小摸',
     pos: ['v.'],
     roots: [
-      { type: 'filch', part: '偷窃', meaning: '', origin: '英语' },
+      { type: 'root', part: 'filch', meaning: '偷窃', origin: '英语' },
     ],
     examples: [
       { sentence: 'The student filched a candy bar from the store.', translation: '学生从商店偷了一条糖果。', year: 2019, type: '翻译' },
@@ -1471,8 +1471,8 @@ export const wordList: Word[] = [
     meaning: 'n. 小舰队，船队',
     pos: ['n.'],
     roots: [
-      { type: 'flot', part: '漂浮', meaning: '', origin: '西班牙语' },
-      { type: 'illa', part: '名词后缀', meaning: '', origin: '西班牙语' },
+      { type: 'root', part: 'flot', meaning: '漂浮', origin: '西班牙语' },
+      { type: 'root', part: 'illa', meaning: '名词后缀', origin: '西班牙语' },
     ],
     examples: [
       { sentence: 'A flotilla of fishing boats sailed into the harbor.', translation: '一支渔船小舰队驶入了港口。', year: 2022, type: '新题型' },
@@ -1487,8 +1487,8 @@ export const wordList: Word[] = [
     meaning: 'v.使结果实，使多产',
     pos: ['v.'],
     roots: [
-      { type: 'fruct', part: '果实', meaning: '', origin: '拉丁语' },
-      { type: 'ify', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'fruct', meaning: '果实', origin: '拉丁语' },
+      { type: 'root', part: 'ify', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The favorable conditions fructified the harvest.', translation: '有利条件使收获丰硕。', year: 2022, type: '新题型' },

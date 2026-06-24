@@ -1269,8 +1269,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 笨拙的，不灵巧的',
     pos: ['adj.'],
     roots: [
-      { type: 'mal', part: '坏', meaning: '', origin: '法语' },
-      { type: 'adroit', part: '灵巧', meaning: '', origin: '法语' },
+      { type: 'root', part: 'mal', meaning: '坏', origin: '法语' },
+      { type: 'root', part: 'adroit', meaning: '灵巧', origin: '法语' },
     ],
     examples: [
       { sentence: 'His maladroit handling of the crisis made things worse.', translation: '他对危机笨拙的处理使事情更糟。', year: 2020, type: '完形' },
@@ -1285,8 +1285,8 @@ export const wordList: Word[] = [
     meaning: 'v. 装病逃避工作',
     pos: ['v.'],
     roots: [
-      { type: 'mal', part: '坏', meaning: '', origin: '法语' },
-      { type: 'linger', part: '逗留', meaning: '', origin: '法语' },
+      { type: 'root', part: 'mal', meaning: '坏', origin: '法语' },
+      { type: 'root', part: 'linger', meaning: '逗留', origin: '法语' },
     ],
     examples: [
       { sentence: 'Employees who malinger cost the company productivity.', translation: '装病逃避工作的员工损失了公司生产力。', year: 2022, type: '新题型' },
@@ -1301,7 +1301,7 @@ export const wordList: Word[] = [
     meaning: 'n. 特立独行的人',
     pos: ['n.'],
     roots: [
-      { type: 'maverick', part: '未打烙印的牛', meaning: '', origin: '英语' },
+      { type: 'root', part: 'maverick', meaning: '未打烙印的牛', origin: '英语' },
     ],
     examples: [
       { sentence: 'The maverick politician refused to follow party lines.', translation: '特立独行的政治家拒绝遵循党派路线。', year: 2018, type: '阅读' },
@@ -1316,8 +1316,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 多变的，善变的',
     pos: ['adj.'],
     roots: [
-      { type: 'mercuri', part: '水星', meaning: '', origin: '拉丁语' },
-      { type: 'al', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'mercuri', meaning: '水星', origin: '拉丁语' },
+      { type: 'root', part: 'al', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Her mercurial temperament made it hard to predict her reactions.', translation: '她善变的脾气让人难以预测她的反应。', year: 2021, type: '写作' },
@@ -1332,8 +1332,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 值得赞赏的，有功的',
     pos: ['adj.'],
     roots: [
-      { type: 'merit', part: '功劳', meaning: '', origin: '拉丁语' },
-      { type: 'orious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'merit', meaning: '功劳', origin: '拉丁语' },
+      { type: 'root', part: 'orious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The meritorious student was awarded a scholarship.', translation: '值得赞赏的学生获得了奖学金。', year: 2020, type: '完形' },
@@ -1348,8 +1348,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 尖刻的，讽刺的',
     pos: ['adj.'],
     roots: [
-      { type: 'mord', part: '咬', meaning: '', origin: '拉丁语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'mord', meaning: '咬', origin: '拉丁语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Her mordant wit made her a popular columnist.', translation: '她尖刻的机智使她成为受欢迎的专栏作家。', year: 2018, type: '阅读' },
@@ -1364,8 +1364,8 @@ export const wordList: Word[] = [
     meaning: 'n. 不满者',
     pos: ['n.'],
     roots: [
-      { type: 'mal', part: '坏', meaning: '', origin: '法语' },
-      { type: 'content', part: '满足', meaning: '', origin: '法语' },
+      { type: 'root', part: 'mal', meaning: '坏', origin: '法语' },
+      { type: 'root', part: 'content', meaning: '满足', origin: '法语' },
     ],
     examples: [
       { sentence: 'The malcontents organized a protest against the policy.', translation: '不满者组织了反对政策的抗议。', year: 2021, type: '写作' },
@@ -1380,8 +1380,8 @@ export const wordList: Word[] = [
     meaning: 'v. 产生不利影响，阻碍',
     pos: ['v.'],
     roots: [
-      { type: 'milit', part: '对抗', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'milit', meaning: '对抗', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His lack of experience militated against his promotion.', translation: '他缺乏经验阻碍了晋升。', year: 2018, type: '阅读' },
@@ -1396,8 +1396,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 慷慨的，大方的',
     pos: ['adj.'],
     roots: [
-      { type: 'munific', part: '礼物', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'munific', meaning: '礼物', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The munificent benefactor donated a new library.', translation: '慷慨的捐助者捐赠了一座新图书馆。', year: 2020, type: '完形' },
@@ -1412,7 +1412,7 @@ export const wordList: Word[] = [
     meaning: 'n. 混合物，混杂',
     pos: ['n.'],
     roots: [
-      { type: 'mélange', part: '混合', meaning: '', origin: '法语' },
+      { type: 'root', part: 'mélange', meaning: '混合', origin: '法语' },
     ],
     examples: [
       { sentence: 'The city is a fascinating mélange of cultures.', translation: '这座城市是迷人的文化混合体。', year: 2022, type: '新题型' },
@@ -1427,8 +1427,8 @@ export const wordList: Word[] = [
     meaning: 'v.浸软，使消瘦',
     pos: ['v.'],
     roots: [
-      { type: 'macer', part: '软化', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'macer', meaning: '软化', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The fruit was macerated in alcohol for several weeks.', translation: '水果在酒精中浸泡了几个星期。', year: 2018, type: '阅读' },

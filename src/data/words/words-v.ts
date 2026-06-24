@@ -717,7 +717,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 乏味的，无生气的',
     pos: ['adj.'],
     roots: [
-      { type: 'vapid', part: '无味的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'vapid', meaning: '无味的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The vapid conversation made her wish she had stayed home.', translation: '乏味的对话让她希望自己待在家里。', year: 2021, type: '写作' },
@@ -732,8 +732,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 贪污的，可收买的',
     pos: ['adj.'],
     roots: [
-      { type: 'ven', part: '出卖', meaning: '', origin: '拉丁语' },
-      { type: 'al', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ven', meaning: '出卖', origin: '拉丁语' },
+      { type: 'root', part: 'al', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The venal official accepted bribes in exchange for favors.', translation: '贪污的官员收受贿赂以换取好处。', year: 2019, type: '翻译' },
@@ -748,8 +748,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 可宽恕的，轻微的',
     pos: ['adj.'],
     roots: [
-      { type: 'ven', part: '宽恕', meaning: '', origin: '拉丁语' },
-      { type: 'ial', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ven', meaning: '宽恕', origin: '拉丁语' },
+      { type: 'root', part: 'ial', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'A venial sin is less serious than a mortal sin.', translation: '可宽恕的罪比死罪轻微。', year: 2021, type: '写作' },
@@ -764,7 +764,7 @@ export const wordList: Word[] = [
     meaning: 'n. 遗迹，残余',
     pos: ['n.'],
     roots: [
-      { type: 'vestig', part: '脚印', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'vestig', meaning: '脚印', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'No vestige of the ancient civilization remained.', translation: '古代文明没有留下任何遗迹。', year: 2020, type: '完形' },
@@ -779,8 +779,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 恶毒的，剧毒的',
     pos: ['adj.'],
     roots: [
-      { type: 'virul', part: '毒', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'virul', meaning: '毒', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The virulent disease spread rapidly through the population.', translation: '剧毒的疾病在人群中迅速传播。', year: 2018, type: '阅读' },

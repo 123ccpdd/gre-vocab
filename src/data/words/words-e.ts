@@ -1644,9 +1644,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 热情洋溢的',
     pos: ['adj.'],
     roots: [
-      { type: 'e', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'bulli', part: '沸腾', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'e', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'bulli', meaning: '沸腾', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: "The ebullient crowd celebrated the team's victory.", translation: '热情洋溢的人群庆祝球队的胜利。', year: 2022, type: '新题型' },
@@ -1661,8 +1661,8 @@ export const wordList: Word[] = [
     meaning: 'v. 抹去，消除',
     pos: ['v.'],
     roots: [
-      { type: 'ef', part: '出', meaning: '', origin: '法语' },
-      { type: 'face', part: '面', meaning: '', origin: '法语' },
+      { type: 'root', part: 'ef', meaning: '出', origin: '法语' },
+      { type: 'root', part: 'face', meaning: '面', origin: '法语' },
     ],
     examples: [
       { sentence: 'Time cannot efface the memory of that terrible day.', translation: '时间无法抹去对那个可怕日子的记忆。', year: 2021, type: '写作' },
@@ -1677,9 +1677,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 光辉灿烂的',
     pos: ['adj.'],
     roots: [
-      { type: 'ef', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'fulg', part: '发光', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ef', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'fulg', meaning: '发光', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The effulgent sunrise painted the sky in brilliant colors.', translation: '灿烂的日出将天空染成了绚丽色彩。', year: 2019, type: '翻译' },
@@ -1694,8 +1694,8 @@ export const wordList: Word[] = [
     meaning: 'v. 省略，删去',
     pos: ['v.'],
     roots: [
-      { type: 'e', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'lid', part: '撞击', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'e', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'lid', meaning: '撞击', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The editor elided several paragraphs from the article.', translation: '编辑从文章中删去了几段。', year: 2022, type: '新题型' },
@@ -1710,9 +1710,9 @@ export const wordList: Word[] = [
     meaning: 'v. 散发，发出',
     pos: ['v.'],
     roots: [
-      { type: 'e', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'man', part: '流', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'e', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'man', meaning: '流', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'A strange odor emanated from the laboratory.', translation: '一种奇怪的气味从实验室散发出来。', year: 2021, type: '写作' },
@@ -1727,9 +1727,9 @@ export const wordList: Word[] = [
     meaning: 'v. 使大胆，鼓励',
     pos: ['v.'],
     roots: [
-      { type: 'em', part: '使', meaning: '', origin: '古英语' },
-      { type: 'bold', part: '大胆', meaning: '', origin: '古英语' },
-      { type: 'en', part: '动词后缀', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'em', meaning: '使', origin: '古英语' },
+      { type: 'root', part: 'bold', meaning: '大胆', origin: '古英语' },
+      { type: 'root', part: 'en', meaning: '动词后缀', origin: '古英语' },
     ],
     examples: [
       { sentence: 'Success emboldened him to take greater risks.', translation: '成功使他大胆地冒更大的风险。', year: 2019, type: '翻译' },
@@ -1744,9 +1744,9 @@ export const wordList: Word[] = [
     meaning: 'v. 使衰弱，使无力',
     pos: ['v.'],
     roots: [
-      { type: 'e', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'nerv', part: '力量', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'e', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'nerv', meaning: '力量', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The tropical heat enervated the travelers.', translation: '热带的酷热使旅行者们虚弱无力。', year: 2018, type: '阅读' },
@@ -1761,8 +1761,8 @@ export const wordList: Word[] = [
     meaning: 'v. 产生，引起',
     pos: ['v.'],
     roots: [
-      { type: 'en', part: '使', meaning: '', origin: '拉丁语' },
-      { type: 'gender', part: '产生', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'en', meaning: '使', origin: '拉丁语' },
+      { type: 'root', part: 'gender', meaning: '产生', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Discrimination engenders resentment and division.', translation: '歧视产生怨恨和分裂。', year: 2021, type: '写作' },
@@ -1777,8 +1777,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 神秘的，费解的',
     pos: ['adj.'],
     roots: [
-      { type: 'enigma', part: '谜', meaning: '', origin: '希腊语' },
-      { type: 'tic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'enigma', meaning: '谜', origin: '希腊语' },
+      { type: 'root', part: 'tic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: "The artist's enigmatic smile has fascinated viewers.", translation: '艺术家神秘的微笑令观者着迷。', year: 2018, type: '阅读' },
@@ -1793,9 +1793,9 @@ export const wordList: Word[] = [
     meaning: 'v. 模棱两可，含糊其辞',
     pos: ['v.'],
     roots: [
-      { type: 'equi', part: '相等', meaning: '', origin: '拉丁语' },
-      { type: 'voc', part: '声音', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'equi', meaning: '相等', origin: '拉丁语' },
+      { type: 'root', part: 'voc', meaning: '声音', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The politician equivocated when asked about his position.', translation: '政治家被问到立场时含糊其辞。', year: 2020, type: '完形' },
@@ -1810,8 +1810,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 博学的，有学问的',
     pos: ['adj.'],
     roots: [
-      { type: 'e', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'rudit', part: '学问', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'e', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'rudit', meaning: '学问', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The erudite professor could lecture on almost any subject.', translation: '博学的教授几乎可以讲授任何学科。', year: 2019, type: '翻译' },
@@ -1826,9 +1826,9 @@ export const wordList: Word[] = [
     meaning: 'v. 严厉批评，剥皮',
     pos: ['v.'],
     roots: [
-      { type: 'ex', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'cori', part: '皮', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ex', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'cori', meaning: '皮', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The reviewer excoriated the novel for its poor writing.', translation: '评论家严厉批评了小说的拙劣文笔。', year: 2020, type: '完形' },
@@ -1843,8 +1843,8 @@ export const wordList: Word[] = [
     meaning: 'v. 教化，启迪',
     pos: ['v.'],
     roots: [
-      { type: 'edif', part: '建设心灵', meaning: '', origin: '拉丁语' },
-      { type: 'y', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'edif', meaning: '建设心灵', origin: '拉丁语' },
+      { type: 'root', part: 'y', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The lecture was designed to edify rather than entertain.', translation: '讲座旨在教化而非娱乐。', year: 2020, type: '完形' },
@@ -1859,8 +1859,8 @@ export const wordList: Word[] = [
     meaning: 'v.醒目地装饰或展示',
     pos: ['v.'],
     roots: [
-      { type: 'em', part: '使', meaning: '', origin: '法语' },
-      { type: 'blazon', part: '纹章', meaning: '', origin: '法语' },
+      { type: 'root', part: 'em', meaning: '使', origin: '法语' },
+      { type: 'root', part: 'blazon', meaning: '纹章', origin: '法语' },
     ],
     examples: [
       { sentence: "The company's logo was emblazoned on every product.", translation: '公司的标志醒目地展示在每件产品上。', year: 2021, type: '写作' },
@@ -1875,9 +1875,9 @@ export const wordList: Word[] = [
     meaning: 'v.开脱，证明无罪',
     pos: ['v.'],
     roots: [
-      { type: 'ex', part: '出', meaning: '', origin: '拉丁语' },
-      { type: 'culp', part: '罪', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ex', meaning: '出', origin: '拉丁语' },
+      { type: 'root', part: 'culp', meaning: '罪', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'New evidence exculpated the defendant.', translation: '新证据证明了被告无罪。', year: 2022, type: '新题型' },

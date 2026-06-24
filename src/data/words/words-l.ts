@@ -1197,8 +1197,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 简洁的，言简意赅的',
     pos: ['adj.'],
     roots: [
-      { type: 'lacon', part: '斯巴达', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'lacon', meaning: '斯巴达', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'His laconic reply left everyone guessing.', translation: '他简洁的回答让每个人都在猜测。', year: 2021, type: '写作' },
@@ -1213,8 +1213,8 @@ export const wordList: Word[] = [
     meaning: 'v. 严厉批评，痛骂',
     pos: ['v.'],
     roots: [
-      { type: 'lam', part: '打', meaning: '', origin: '英语' },
-      { type: 'baste', part: '重击', meaning: '', origin: '英语' },
+      { type: 'root', part: 'lam', meaning: '打', origin: '英语' },
+      { type: 'root', part: 'baste', meaning: '重击', origin: '英语' },
     ],
     examples: [
       { sentence: 'The critic lambasted the film as the worst of the year.', translation: '评论家痛批这部电影是年度最差。', year: 2018, type: '阅读' },
@@ -1229,8 +1229,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 倦怠的，无精打采的',
     pos: ['adj.'],
     roots: [
-      { type: 'langu', part: '虚弱', meaning: '', origin: '拉丁语' },
-      { type: 'id', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'langu', meaning: '虚弱', origin: '拉丁语' },
+      { type: 'root', part: 'id', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The languid afternoon heat made everyone drowsy.', translation: '午后令人倦怠的炎热让每个人都昏昏欲睡。', year: 2022, type: '新题型' },
@@ -1245,8 +1245,8 @@ export const wordList: Word[] = [
     meaning: 'n. 慷慨赠予，赏赐',
     pos: ['n.'],
     roots: [
-      { type: 'larg', part: '大', meaning: '', origin: '法语' },
-      { type: 'ess', part: '名词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'larg', meaning: '大', origin: '法语' },
+      { type: 'root', part: 'ess', meaning: '名词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: "The philanthropist's largess benefited many charities.", translation: '慈善家的慷慨赠予使许多慈善组织受益。', year: 2018, type: '阅读' },
@@ -1261,8 +1261,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 昏睡的，无生气的',
     pos: ['adj.'],
     roots: [
-      { type: 'letharg', part: '昏睡', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'letharg', meaning: '昏睡', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The lethargic response to the crisis was concerning.', translation: '对危机无生气的反应令人担忧。', year: 2021, type: '写作' },
@@ -1277,8 +1277,8 @@ export const wordList: Word[] = [
     meaning: 'n. 轻浮，轻率',
     pos: ['n.'],
     roots: [
-      { type: 'lev', part: '轻', meaning: '', origin: '拉丁语' },
-      { type: 'ity', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'lev', meaning: '轻', origin: '拉丁语' },
+      { type: 'root', part: 'ity', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His levity during the serious meeting was inappropriate.', translation: '他在严肃会议上的轻浮不合时宜。', year: 2021, type: '写作' },
@@ -1293,8 +1293,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 多话的，健谈的',
     pos: ['adj.'],
     roots: [
-      { type: 'loqu', part: '说话', meaning: '', origin: '拉丁语' },
-      { type: 'acious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'loqu', meaning: '说话', origin: '拉丁语' },
+      { type: 'root', part: 'acious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The loquacious tour guide kept everyone entertained.', translation: '健谈的导游让每个人都感到愉快。', year: 2020, type: '完形' },
@@ -1309,8 +1309,8 @@ export const wordList: Word[] = [
     meaning: 'v. 撕裂，伤害',
     pos: ['v.'],
     roots: [
-      { type: 'lacer', part: '撕裂', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'lacer', meaning: '撕裂', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The sharp glass lacerated his hand.', translation: '锋利的玻璃割伤了他的手。', year: 2018, type: '阅读' },
@@ -1325,7 +1325,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 清澈的，透明的',
     pos: ['adj.'],
     roots: [
-      { type: 'limpid', part: '清澈', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'limpid', meaning: '清澈', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The limpid stream reflected the blue sky.', translation: '清澈的溪流映照着蓝天。', year: 2021, type: '写作' },
@@ -1340,8 +1340,8 @@ export const wordList: Word[] = [
     meaning: 'n. 食品储藏室',
     pos: ['n.'],
     roots: [
-      { type: 'lard', part: '猪肉', meaning: '', origin: '法语' },
-      { type: 'er', part: '名词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'lard', meaning: '猪肉', origin: '法语' },
+      { type: 'root', part: 'er', meaning: '名词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'The larder was well-stocked for the winter.', translation: '食品储藏室为冬天储备充足。', year: 2021, type: '写作' },
@@ -1356,7 +1356,7 @@ export const wordList: Word[] = [
     meaning: 'v. 蹒跚，突然倾斜；n. 困境',
     pos: ['v.'],
     roots: [
-      { type: 'lurch', part: '蹒跚', meaning: '', origin: '法语' },
+      { type: 'root', part: 'lurch', meaning: '蹒跚', origin: '法语' },
     ],
     examples: [
       { sentence: 'The economy lurched from one crisis to another.', translation: '经济从一个危机蹒跚到另一个。', year: 2020, type: '完形' },

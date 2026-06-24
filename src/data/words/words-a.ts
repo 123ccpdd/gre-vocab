@@ -1689,8 +1689,8 @@ export const wordList: Word[] = [
     meaning: 'v. 减轻，减弱',
     pos: ['v.'],
     roots: [
-      { type: 'a-', part: '加强', meaning: '', origin: '拉丁语' },
-      { type: 'bate', part: '打击', meaning: '', origin: '拉丁语' },
+      { type: 'prefix', part: 'a-', meaning: '加强', origin: '拉丁语' },
+      { type: 'root', part: 'bate', meaning: '打击', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The storm began to abate after midnight.', translation: '暴风雨在午夜后开始减弱。', year: 2020, type: '完形' },
@@ -1705,9 +1705,9 @@ export const wordList: Word[] = [
     meaning: 'v. 退位，放弃权力',
     pos: ['v.'],
     roots: [
-      { type: 'ab-', part: '离开', meaning: '', origin: '拉丁语' },
-      { type: 'dic', part: '宣称', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'prefix', part: 'ab-', meaning: '离开', origin: '拉丁语' },
+      { type: 'root', part: 'dic', meaning: '宣称', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The king was forced to abdicate the throne.', translation: '国王被迫退位。', year: 2018, type: '阅读' },
@@ -1722,9 +1722,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 异常的，偏离常规的',
     pos: ['adj.'],
     roots: [
-      { type: 'ab-', part: '离开', meaning: '', origin: '拉丁语' },
-      { type: 'err', part: '偏离', meaning: '', origin: '拉丁语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'prefix', part: 'ab-', meaning: '离开', origin: '拉丁语' },
+      { type: 'root', part: 'err', meaning: '偏离', origin: '拉丁语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Aberrant behavior can indicate underlying issues.', translation: '异常行为可能暗示潜在问题。', year: 2020, type: '完形' },
@@ -1739,8 +1739,8 @@ export const wordList: Word[] = [
     meaning: 'v. 厌恶，憎恨',
     pos: ['v.'],
     roots: [
-      { type: 'ab-', part: '离开', meaning: '', origin: '拉丁语' },
-      { type: 'hor', part: '恐惧', meaning: '', origin: '拉丁语' },
+      { type: 'prefix', part: 'ab-', meaning: '离开', origin: '拉丁语' },
+      { type: 'root', part: 'hor', meaning: '恐惧', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She abhors any form of discrimination.', translation: '她憎恶任何形式的歧视。', year: 2022, type: '新题型' },
@@ -1755,8 +1755,8 @@ export const wordList: Word[] = [
     meaning: 'v. 同意，让步；就任',
     pos: ['v.'],
     roots: [
-      { type: 'ac-', part: '向', meaning: '', origin: '拉丁语' },
-      { type: 'cede', part: '走，让步', meaning: '', origin: '拉丁语' },
+      { type: 'prefix', part: 'ac-', meaning: '向', origin: '拉丁语' },
+      { type: 'root', part: 'cede', meaning: '走，让步', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The government acceded to the demands of the protesters.', translation: '政府向抗议者的要求让步了。', year: 2021, type: '写作' },
@@ -1771,8 +1771,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 尖刻的，激烈的',
     pos: ['adj.'],
     roots: [
-      { type: 'acri', part: '尖锐', meaning: '', origin: '拉丁语' },
-      { type: 'monious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'acri', meaning: '尖锐', origin: '拉丁语' },
+      { type: 'root', part: 'monious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The debate turned acrimonious as both sides refused to compromise.', translation: '辩论变得尖刻激烈。', year: 2022, type: '新题型' },
@@ -1787,8 +1787,8 @@ export const wordList: Word[] = [
     meaning: 'v. 掺杂，掺假',
     pos: ['v.'],
     roots: [
-      { type: 'adulter', part: '掺杂', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'adulter', meaning: '掺杂', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The food was adulterated with harmful chemicals.', translation: '食品被掺入了有害化学物质。', year: 2022, type: '新题型' },
@@ -1803,7 +1803,7 @@ export const wordList: Word[] = [
     meaning: 'n. 保护，庇护；赞助',
     pos: ['n.'],
     roots: [
-      { type: 'aegis', part: '盾牌', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'aegis', meaning: '盾牌', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The project was conducted under the aegis of the university.', translation: '该项目在大学的赞助下进行。', year: 2019, type: '翻译' },
@@ -1818,8 +1818,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 和蔼可亲的，友善的',
     pos: ['adj.'],
     roots: [
-      { type: 'aff', part: '接近', meaning: '', origin: '拉丁语' },
-      { type: 'able', part: '可…的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'aff', meaning: '接近', origin: '拉丁语' },
+      { type: 'root', part: 'able', meaning: '可…的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The professor was affable and always willing to help students.', translation: '教授和蔼可亲，乐于帮助学生。', year: 2022, type: '新题型' },
@@ -1834,8 +1834,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 敏捷的，灵活的',
     pos: ['adj.'],
     roots: [
-      { type: 'ag', part: '驱使', meaning: '', origin: '拉丁语' },
-      { type: 'ile', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ag', meaning: '驱使', origin: '拉丁语' },
+      { type: 'root', part: 'ile', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'An agile mind can adapt quickly to new situations.', translation: '敏捷的头脑能迅速适应新情况。', year: 2021, type: '写作' },
@@ -1850,8 +1850,8 @@ export const wordList: Word[] = [
     meaning: 'n. 敏捷，乐意，欣然',
     pos: ['n.'],
     roots: [
-      { type: 'alacr', part: '活泼', meaning: '', origin: '拉丁语' },
-      { type: 'ity', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'alacr', meaning: '活泼', origin: '拉丁语' },
+      { type: 'root', part: 'ity', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She accepted the invitation with alacrity.', translation: '她欣然接受了邀请。', year: 2019, type: '翻译' },
@@ -1866,8 +1866,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 顺从的，易处理的',
     pos: ['adj.'],
     roots: [
-      { type: 'amen', part: '令人愉快', meaning: '', origin: '拉丁语' },
-      { type: 'able', part: '可…的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'amen', meaning: '令人愉快', origin: '拉丁语' },
+      { type: 'root', part: 'able', meaning: '可…的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The data is amenable to statistical analysis.', translation: '数据适合统计分析。', year: 2022, type: '新题型' },
@@ -1882,8 +1882,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 类似的，相似的',
     pos: ['adj.'],
     roots: [
-      { type: 'analog', part: '类似', meaning: '', origin: '希腊语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'analog', meaning: '类似', origin: '希腊语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The two processes are analogous in many respects.', translation: '两个过程在许多方面类似。', year: 2022, type: '新题型' },
@@ -1898,9 +1898,9 @@ export const wordList: Word[] = [
     meaning: 'n. 冷漠，无动于衷',
     pos: ['n.'],
     roots: [
-      { type: 'a-', part: '无', meaning: '', origin: '希腊语' },
-      { type: 'path', part: '感情', meaning: '', origin: '希腊语' },
-      { type: 'y', part: '名词后缀', meaning: '', origin: '希腊语' },
+      { type: 'prefix', part: 'a-', meaning: '无', origin: '希腊语' },
+      { type: 'root', part: 'path', meaning: '感情', origin: '希腊语' },
+      { type: 'root', part: 'y', meaning: '名词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'Voter apathy contributed to the low turnout.', translation: '选民的冷漠导致了低投票率。', year: 2020, type: '完形' },
@@ -1915,8 +1915,8 @@ export const wordList: Word[] = [
     meaning: 'n. 敌意，怨恨',
     pos: ['n.'],
     roots: [
-      { type: 'anim', part: '灵魂', meaning: '', origin: '拉丁语' },
-      { type: 'us', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'anim', meaning: '灵魂', origin: '拉丁语' },
+      { type: 'root', part: 'us', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'There was animus between the two rival companies.', translation: '两家竞争公司之间存在敌意。', year: 2020, type: '完形' },
@@ -1931,8 +1931,8 @@ export const wordList: Word[] = [
     meaning: 'v. 适应，习惯',
     pos: ['v.'],
     roots: [
-      { type: 'ac', part: '向', meaning: '', origin: '拉丁语' },
-      { type: 'climate', part: '气候', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ac', meaning: '向', origin: '拉丁语' },
+      { type: 'root', part: 'climate', meaning: '气候', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'It took time to acclimate to the high altitude.', translation: '适应高海拔需要时间。', year: 2020, type: '完形' },
@@ -1947,8 +1947,8 @@ export const wordList: Word[] = [
     meaning: 'v. 起誓，恳求',
     pos: ['v.'],
     roots: [
-      { type: 'ad', part: '向', meaning: '', origin: '拉丁语' },
-      { type: 'jure', part: '发誓', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ad', meaning: '向', origin: '拉丁语' },
+      { type: 'root', part: 'jure', meaning: '发誓', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She adjured him to tell the truth.', translation: '她恳求他说出真相。', year: 2018, type: '阅读' },
@@ -1963,8 +1963,8 @@ export const wordList: Word[] = [
     meaning: 'n.赡养费',
     pos: ['n.'],
     roots: [
-      { type: 'ali', part: '滋养', meaning: '', origin: '拉丁语' },
-      { type: 'mony', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ali', meaning: '滋养', origin: '拉丁语' },
+      { type: 'root', part: 'mony', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The court ordered him to pay alimony to his former spouse.', translation: '法院命令他向前配偶支付赡养费。', year: 2022, type: '新题型' },

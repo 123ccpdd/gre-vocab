@@ -981,7 +981,7 @@ export const wordList: Word[] = [
     meaning: 'n. 先驱，预兆',
     pos: ['n.'],
     roots: [
-      { type: 'harbinger', part: '先驱', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'harbinger', meaning: '先驱', origin: '古英语' },
     ],
     examples: [
       { sentence: 'The first snowfall is a harbinger of winter.', translation: '第一场雪是冬天的预兆。', year: 2020, type: '完形' },
@@ -996,8 +996,8 @@ export const wordList: Word[] = [
     meaning: 'n. 享乐主义',
     pos: ['n.'],
     roots: [
-      { type: 'hedon', part: '快乐', meaning: '', origin: '希腊语' },
-      { type: 'ism', part: '主义', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'hedon', meaning: '快乐', origin: '希腊语' },
+      { type: 'root', part: 'ism', meaning: '主义', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'Consumerism promotes hedonism over meaningful pursuits.', translation: '消费主义推崇享乐主义而非有意义的追求。', year: 2020, type: '完形' },
@@ -1012,8 +1012,8 @@ export const wordList: Word[] = [
     meaning: 'n. 霸权，领导权',
     pos: ['n.'],
     roots: [
-      { type: 'hegemon', part: '领导者', meaning: '', origin: '希腊语' },
-      { type: 'y', part: '名词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'hegemon', meaning: '领导者', origin: '希腊语' },
+      { type: 'root', part: 'y', meaning: '名词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The country sought to establish hegemony over the region.', translation: '该国试图在该地区建立霸权。', year: 2022, type: '新题型' },
@@ -1028,8 +1028,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 异端的，离经叛道的',
     pos: ['adj.'],
     roots: [
-      { type: 'heret', part: '异端', meaning: '', origin: '希腊语' },
-      { type: 'ical', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'heret', meaning: '异端', origin: '希腊语' },
+      { type: 'root', part: 'ical', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'His heretical views challenged the established paradigm.', translation: '他异端的观点挑战了既定的范式。', year: 2020, type: '完形' },
@@ -1044,8 +1044,8 @@ export const wordList: Word[] = [
     meaning: 'n. 夸张，夸大',
     pos: ['n.'],
     roots: [
-      { type: 'hyper', part: '超过', meaning: '', origin: '希腊语' },
-      { type: 'bole', part: '投掷', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'hyper', meaning: '超过', origin: '希腊语' },
+      { type: 'root', part: 'bole', meaning: '投掷', origin: '希腊语' },
     ],
     examples: [
       { sentence: "Saying 'I have told you a million times' is hyperbole.", translation: "说'告诉了你一百万次'是夸张。", year: 2021, type: '写作' },
@@ -1060,8 +1060,8 @@ export const wordList: Word[] = [
     meaning: 'n. 伪善，虚伪',
     pos: ['n.'],
     roots: [
-      { type: 'hypo', part: '下面', meaning: '', origin: '希腊语' },
-      { type: 'crisy', part: '判断', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'hypo', meaning: '下面', origin: '希腊语' },
+      { type: 'root', part: 'crisy', meaning: '判断', origin: '希腊语' },
     ],
     examples: [
       { sentence: "The public condemned the politician's hypocrisy.", translation: '公众谴责了政治家的虚伪。', year: 2022, type: '新题型' },
@@ -1076,7 +1076,7 @@ export const wordList: Word[] = [
     meaning: 'v. 使神圣，尊崇',
     pos: ['v.'],
     roots: [
-      { type: 'hallow', part: '神圣', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'hallow', meaning: '神圣', origin: '古英语' },
     ],
     examples: [
       { sentence: 'The ground was hallowed by the sacrifice of fallen soldiers.', translation: '这片土地因阵亡将士的牺牲而神圣。', year: 2021, type: '写作' },
@@ -1091,7 +1091,7 @@ export const wordList: Word[] = [
     meaning: 'v. 砍，劈；坚持',
     pos: ['v.'],
     roots: [
-      { type: 'hew', part: '砍', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'hew', meaning: '砍', origin: '古英语' },
     ],
     examples: [
       { sentence: 'The pioneers hewed a path through the dense forest.', translation: '先驱在密林中砍出了一条路。', year: 2019, type: '翻译' },
@@ -1106,8 +1106,8 @@ export const wordList: Word[] = [
     meaning: 'adj.冬天的，冬眠的',
     pos: ['adj.'],
     roots: [
-      { type: 'hibern', part: '冬天', meaning: '', origin: '拉丁语' },
-      { type: 'al', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'hibern', meaning: '冬天', origin: '拉丁语' },
+      { type: 'root', part: 'al', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The hibernal landscape was covered in snow.', translation: '冬天的景色被雪覆盖。', year: 2019, type: '翻译' },

@@ -233,8 +233,8 @@ function MainApp() {
   // 判断当前导航栏高亮
   const location = useLocation();
   const navHighlight = (path: string) => {
-    if (path === '/' && activeView === 'home') return true;
-    if (location.pathname === path) return true;
+    if (path === '/' && location.pathname === '/' && activeView === 'home') return true;
+    if (path !== '/' && location.pathname === path) return true;
     return false;
   };
 
@@ -244,45 +244,45 @@ function MainApp() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       {/* 导航栏 */}
-      <nav className="bg-white border-b border-gray-100 sticky top-0 z-10">
+      <nav className="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 sticky top-0 z-10 transition-colors">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link
             to="/"
             onClick={() => setActiveView('home')}
-            className="text-lg font-bold text-indigo-600 hover:text-indigo-700 transition"
+            className="text-lg font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition"
           >
             <ReadOutlined className="mr-1" /> 考研词汇
           </Link>
           <div className="flex gap-1 items-center">
             <button
               onClick={() => { setActiveView('home'); navigate('/'); }}
-              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/') ? 'bg-indigo-100 text-indigo-700' : 'text-gray-500 hover:bg-gray-100'}`}
+              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/') ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
             >
               <HomeOutlined className="mr-1" /> 首页
             </button>
             <Link
               to="/words"
-              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/words') ? 'bg-indigo-100 text-indigo-700' : 'text-gray-500 hover:bg-gray-100'}`}
+              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/words') ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
             >
               <BookOutlined className="mr-1" /> 词库
             </Link>
             <Link
               to="/stats"
-              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/stats') ? 'bg-indigo-100 text-indigo-700' : 'text-gray-500 hover:bg-gray-100'}`}
+              className={`px-3 py-1.5 rounded-lg text-sm transition ${navHighlight('/stats') ? 'bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300' : 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
             >
               <BarChartOutlined className="mr-1" /> 统计
             </Link>
             <button
               onClick={() => updateSettings({ enableDarkMode: !settings.enableDarkMode })}
-              className="px-2 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-gray-100 transition"
+              className="px-2 py-1.5 rounded-lg text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             >
               {settings.enableDarkMode ? <SunOutlined /> : <MoonOutlined />}
             </button>
             <button
               onClick={handleLogout}
-              className="px-2 py-1.5 rounded-lg text-sm text-gray-500 hover:bg-gray-100 transition"
+              className="px-2 py-1.5 rounded-lg text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
               title="退出登录"
             >
               <LogoutOutlined />
@@ -294,7 +294,7 @@ function MainApp() {
       {/* 主内容区 */}
       <main className="max-w-2xl mx-auto px-4 py-6">
         {/* 首页 + 学习/复习/完成/分类 — 用内部 state 切换 */}
-        {(activeView === 'home' || location.pathname === '/') && activeView !== 'learn' && activeView !== 'review' && activeView !== 'complete' && activeView !== 'category' && (
+        {activeView === 'home' && location.pathname === '/' && (
           <Dashboard
             masteredCount={wordStats.mastered}
             learningCount={wordStats.learning}
@@ -332,7 +332,7 @@ function MainApp() {
                 correctCount={currentRecord?.correctCount ?? 0}
                 incorrectCount={currentRecord?.incorrectCount ?? 0}
               />
-              <div className="text-center text-xs text-gray-400 space-x-4">
+              <div className="text-center text-xs text-gray-400 dark:text-gray-500 space-x-4">
                 <span>空格 翻转</span>
                 <span>1/J 不认识</span>
                 <span>2/K 认识</span>
@@ -375,15 +375,15 @@ function MainApp() {
       {/* 数据迁移对话框 */}
       {showMigrationDialog && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
-          <div className="bg-white rounded-2xl p-6 max-w-md w-full shadow-xl">
-            <h3 className="text-lg font-bold text-gray-900 mb-2">检测到本地学习数据</h3>
-            <p className="text-sm text-gray-600 mb-6">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-md w-full shadow-xl transition-colors">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">检测到本地学习数据</h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-6">
               你之前在本地有学习记录，是否将数据同步到云端？同步后可在不同设备间共享进度。
             </p>
             <div className="flex gap-3">
               <button
                 onClick={skipMigration}
-                className="px-4 py-2 rounded-xl text-sm text-gray-600 bg-gray-100 hover:bg-gray-200 transition"
+                className="px-4 py-2 rounded-xl text-sm text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition"
               >
                 暂不同步
               </button>

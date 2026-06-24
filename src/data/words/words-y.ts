@@ -253,7 +253,7 @@ export const wordList: Word[] = [
     meaning: 'n. 侍从，自耕农',
     pos: ['n.'],
     roots: [
-      { type: 'yeoman', part: '侍从', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'yeoman', meaning: '侍从', origin: '古英语' },
     ],
     examples: [
       { sentence: 'The yeoman served the king loyally for many years.', translation: '侍从忠诚地服务国王多年。', year: 2018, type: '阅读' },

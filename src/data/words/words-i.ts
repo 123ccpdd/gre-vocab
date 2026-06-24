@@ -1599,8 +1599,8 @@ export const wordList: Word[] = [
     meaning: 'n. 打破旧习者',
     pos: ['n.'],
     roots: [
-      { type: 'icono', part: '偶像', meaning: '', origin: '希腊语' },
-      { type: 'clast', part: '打破', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'icono', meaning: '偶像', origin: '希腊语' },
+      { type: 'root', part: 'clast', meaning: '打破', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The young iconoclast challenged every tradition.', translation: '年轻的改革者挑战了每一个传统。', year: 2018, type: '阅读' },
@@ -1615,9 +1615,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 特异的，独特的',
     pos: ['adj.'],
     roots: [
-      { type: 'idio', part: '自己的', meaning: '', origin: '希腊语' },
-      { type: 'syncrasy', part: '混合', meaning: '', origin: '希腊语' },
-      { type: 'tic', part: '后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'idio', meaning: '自己的', origin: '希腊语' },
+      { type: 'root', part: 'syncrasy', meaning: '混合', origin: '希腊语' },
+      { type: 'root', part: 'tic', meaning: '后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'Her idiosyncratic style set her apart from other artists.', translation: '她独特的风格使她与其他艺术家不同。', year: 2018, type: '阅读' },
@@ -1632,9 +1632,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 可耻的，不光彩的',
     pos: ['adj.'],
     roots: [
-      { type: 'ig', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'nomin', part: '名字', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ig', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'nomin', meaning: '名字', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The general suffered an ignominious defeat.', translation: '将军遭受了可耻的失败。', year: 2022, type: '新题型' },
@@ -1649,9 +1649,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 纯洁的，无瑕的',
     pos: ['adj.'],
     roots: [
-      { type: 'im', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'macul', part: '斑点', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'im', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'macul', meaning: '斑点', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The hotel room was in immaculate condition.', translation: '酒店房间处于无瑕的状态。', year: 2021, type: '写作' },
@@ -1666,9 +1666,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 贫穷的，身无分文的',
     pos: ['adj.'],
     roots: [
-      { type: 'im', part: '无', meaning: '', origin: '拉丁语' },
-      { type: 'pecun', part: '金钱', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'im', meaning: '无', origin: '拉丁语' },
+      { type: 'root', part: 'pecun', meaning: '金钱', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The impecunious artist could barely afford rent.', translation: '贫穷的艺术家几乎付不起房租。', year: 2019, type: '翻译' },
@@ -1683,8 +1683,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 专横的，傲慢的',
     pos: ['adj.'],
     roots: [
-      { type: 'imper', part: '命令', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'imper', meaning: '命令', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Her imperious manner alienated her subordinates.', translation: '她专横的态度疏远了下属。', year: 2022, type: '新题型' },
@@ -1699,9 +1699,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 沉着的，冷静的',
     pos: ['adj.'],
     roots: [
-      { type: 'im', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'perturb', part: '扰乱', meaning: '', origin: '拉丁语' },
-      { type: 'able', part: '可…的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'im', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'perturb', meaning: '扰乱', origin: '拉丁语' },
+      { type: 'root', part: 'able', meaning: '可…的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The imperturbable pilot handled the emergency with calm.', translation: '沉着的飞行员冷静地处理了紧急情况。', year: 2018, type: '阅读' },
@@ -1716,9 +1716,9 @@ export const wordList: Word[] = [
     meaning: 'n. 免罚，不受惩罚',
     pos: ['n.'],
     roots: [
-      { type: 'im', part: '无', meaning: '', origin: '拉丁语' },
-      { type: 'pun', part: '惩罚', meaning: '', origin: '拉丁语' },
-      { type: 'ity', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'im', meaning: '无', origin: '拉丁语' },
+      { type: 'root', part: 'pun', meaning: '惩罚', origin: '拉丁语' },
+      { type: 'root', part: 'ity', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Corrupt officials acted with impunity for years.', translation: '腐败官员多年来不受惩罚地行事。', year: 2018, type: '阅读' },
@@ -1733,8 +1733,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 初期的，未完成的',
     pos: ['adj.'],
     roots: [
-      { type: 'in', part: '未', meaning: '', origin: '拉丁语' },
-      { type: 'choate', part: '完成', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'in', meaning: '未', origin: '拉丁语' },
+      { type: 'root', part: 'choate', meaning: '完成', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The project is still in its inchoate stage.', translation: '项目仍处于初期发展阶段。', year: 2020, type: '完形' },
@@ -1749,9 +1749,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 懒惰的，不活跃的',
     pos: ['adj.'],
     roots: [
-      { type: 'in', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'dol', part: '悲伤', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'in', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'dol', meaning: '悲伤', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The indolent student rarely completed assignments on time.', translation: '懒惰的学生很少按时完成作业。', year: 2019, type: '翻译' },
@@ -1766,9 +1766,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 难以言表的',
     pos: ['adj.'],
     roots: [
-      { type: 'in', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'eff', part: '说出', meaning: '', origin: '拉丁语' },
-      { type: 'able', part: '可…的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'in', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'eff', meaning: '说出', origin: '拉丁语' },
+      { type: 'root', part: 'able', meaning: '可…的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The beauty of the sunset was ineffable.', translation: '日落之美难以言表。', year: 2019, type: '翻译' },
@@ -1783,9 +1783,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 漫不经心的，无忧无虑的',
     pos: ['adj.'],
     roots: [
-      { type: 'in', part: '不', meaning: '', origin: '法语' },
-      { type: 'souci', part: '忧虑', meaning: '', origin: '法语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'in', meaning: '不', origin: '法语' },
+      { type: 'root', part: 'souci', meaning: '忧虑', origin: '法语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'His insouciant attitude toward deadlines frustrated colleagues.', translation: '他对截止日期漫不经心的态度让同事沮丧。', year: 2019, type: '翻译' },
@@ -1800,8 +1800,8 @@ export const wordList: Word[] = [
     meaning: 'n. 纠纷，混乱局面',
     pos: ['n.'],
     roots: [
-      { type: 'imbrogli', part: '纠缠', meaning: '', origin: '意大利语' },
-      { type: 'o', part: '名词后缀', meaning: '', origin: '意大利语' },
+      { type: 'root', part: 'imbrogli', meaning: '纠缠', origin: '意大利语' },
+      { type: 'root', part: 'o', meaning: '名词后缀', origin: '意大利语' },
     ],
     examples: [
       { sentence: 'The political imbroglio delayed the bill.', translation: '政治纠纷推迟了法案的通过。', year: 2020, type: '完形' },
@@ -1816,8 +1816,8 @@ export const wordList: Word[] = [
     meaning: 'v. 质疑，指责',
     pos: ['v.'],
     roots: [
-      { type: 'im', part: '向', meaning: '', origin: '拉丁语' },
-      { type: 'pugn', part: '战斗', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'im', meaning: '向', origin: '拉丁语' },
+      { type: 'root', part: 'pugn', meaning: '战斗', origin: '拉丁语' },
     ],
     examples: [
       { sentence: "The defense attorney impugned the witness's credibility.", translation: '辩护律师质疑了证人的可信度。', year: 2019, type: '翻译' },
@@ -1832,9 +1832,9 @@ export const wordList: Word[] = [
     meaning: 'n.耻辱，不光彩',
     pos: ['n.'],
     roots: [
-      { type: 'ig', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'nomin', part: '名字', meaning: '', origin: '拉丁语' },
-      { type: 'y', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ig', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'nomin', meaning: '名字', origin: '拉丁语' },
+      { type: 'root', part: 'y', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'He suffered ignominy after the scandal was revealed.', translation: '丑闻揭露后他遭受了耻辱。', year: 2018, type: '阅读' },
@@ -1849,8 +1849,8 @@ export const wordList: Word[] = [
     meaning: 'adj.引起嫉妒的，惹人怨恨的',
     pos: ['adj.'],
     roots: [
-      { type: 'invid', part: '嫉妒', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'invid', meaning: '嫉妒', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The invidious comparison between the two teams created tension.', translation: '两队之间引起嫉妒的比较制造了紧张气氛。', year: 2018, type: '阅读' },

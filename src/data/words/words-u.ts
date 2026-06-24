@@ -849,8 +849,8 @@ export const wordList: Word[] = [
     meaning: 'n. 不快，生气；树荫',
     pos: ['n.'],
     roots: [
-      { type: 'umbr', part: '阴影', meaning: '', origin: '拉丁语' },
-      { type: 'age', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'umbr', meaning: '阴影', origin: '拉丁语' },
+      { type: 'root', part: 'age', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She took umbrage at his insensitive remark.', translation: '她对他不敏感的言论感到不快。', year: 2019, type: '翻译' },
@@ -865,9 +865,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 无懈可击的',
     pos: ['adj.'],
     roots: [
-      { type: 'un', part: '不', meaning: '', origin: '法语' },
-      { type: 'assail', part: '攻击', meaning: '', origin: '法语' },
-      { type: 'able', part: '可…的', meaning: '', origin: '法语' },
+      { type: 'root', part: 'un', meaning: '不', origin: '法语' },
+      { type: 'root', part: 'assail', meaning: '攻击', origin: '法语' },
+      { type: 'root', part: 'able', meaning: '可…的', origin: '法语' },
     ],
     examples: [
       { sentence: 'The evidence presented was unassailable.', translation: '提出的证据是无懈可击的。', year: 2020, type: '完形' },
@@ -882,8 +882,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 油滑的，谄媚的',
     pos: ['adj.'],
     roots: [
-      { type: 'unct', part: '油', meaning: '', origin: '拉丁语' },
-      { type: 'uous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'unct', meaning: '油', origin: '拉丁语' },
+      { type: 'root', part: 'uous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The unctuous salesman flattered every customer.', translation: '油滑的推销员奉承每位顾客。', year: 2019, type: '翻译' },
@@ -898,7 +898,7 @@ export const wordList: Word[] = [
     meaning: 'v. 篡夺，侵占',
     pos: ['v.'],
     roots: [
-      { type: 'usurp', part: '篡夺', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'usurp', meaning: '篡夺', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The general usurped the throne and declared himself king.', translation: '将军篡夺了王位并宣布自己为国王。', year: 2019, type: '翻译' },

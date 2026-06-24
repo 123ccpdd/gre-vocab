@@ -473,8 +473,8 @@ export const wordList: Word[] = [
     meaning: 'n. 庸医行径，骗术',
     pos: ['n.'],
     roots: [
-      { type: 'quack', part: '庸医', meaning: '', origin: '荷兰语' },
-      { type: 'ery', part: '名词后缀', meaning: '', origin: '荷兰语' },
+      { type: 'root', part: 'quack', meaning: '庸医', origin: '荷兰语' },
+      { type: 'root', part: 'ery', meaning: '名词后缀', origin: '荷兰语' },
     ],
     examples: [
       { sentence: 'The government cracked down on medical quackery.', translation: '政府打击了医疗骗术。', year: 2019, type: '翻译' },
@@ -489,7 +489,7 @@ export const wordList: Word[] = [
     meaning: 'v. 大口喝，痛饮',
     pos: ['v.'],
     roots: [
-      { type: 'quaff', part: '大口喝', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'quaff', meaning: '大口喝', origin: '古英语' },
     ],
     examples: [
       { sentence: 'He quaffed the cold beer after a long day.', translation: '漫长一天工作后他痛饮了冰啤酒。', year: 2019, type: '翻译' },
@@ -504,7 +504,7 @@ export const wordList: Word[] = [
     meaning: 'v. 畏惧，退缩',
     pos: ['v.'],
     roots: [
-      { type: 'quail', part: '畏缩', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'quail', meaning: '畏缩', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She quailed at the prospect of speaking before a large audience.', translation: '她一想到要在众多观众前演讲就畏缩了。', year: 2022, type: '新题型' },

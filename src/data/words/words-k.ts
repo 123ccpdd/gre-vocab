@@ -320,7 +320,7 @@ export const wordList: Word[] = [
     meaning: 'n. 命运，宿命',
     pos: ['n.'],
     roots: [
-      { type: 'kismet', part: '命运', meaning: '', origin: '土耳其语' },
+      { type: 'root', part: 'kismet', meaning: '命运', origin: '土耳其语' },
     ],
     examples: [
       { sentence: 'Some believe meeting their partner was kismet.', translation: '有些人相信遇见伴侣是命中注定。', year: 2022, type: '新题型' },
@@ -335,7 +335,7 @@ export const wordList: Word[] = [
     meaning: 'n. 丧钟，不祥之兆',
     pos: ['n.'],
     roots: [
-      { type: 'knell', part: '钟声', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'knell', meaning: '钟声', origin: '古英语' },
     ],
     examples: [
       { sentence: "The factory closure sounded the knell for the town's economy.", translation: '工厂的关闭敲响了该镇经济的丧钟。', year: 2020, type: '完形' },

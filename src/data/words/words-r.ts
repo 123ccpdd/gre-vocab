@@ -1565,8 +1565,8 @@ export const wordList: Word[] = [
     meaning: 'n. 善于讲故事的人',
     pos: ['n.'],
     roots: [
-      { type: 'racont', part: '讲述', meaning: '', origin: '法语' },
-      { type: 'eur', part: '人', meaning: '', origin: '法语' },
+      { type: 'root', part: 'racont', meaning: '讲述', origin: '法语' },
+      { type: 'root', part: 'eur', meaning: '人', origin: '法语' },
     ],
     examples: [
       { sentence: 'The raconteur kept the dinner guests entertained all evening.', translation: '善于讲故事的人让晚宴客人整晚愉快。', year: 2022, type: '新题型' },
@@ -1581,9 +1581,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 顽抗的，不服从的',
     pos: ['adj.'],
     roots: [
-      { type: 're', part: '再次', meaning: '', origin: '拉丁语' },
-      { type: 'calcitr', part: '踢', meaning: '', origin: '拉丁语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '再次', origin: '拉丁语' },
+      { type: 'root', part: 'calcitr', meaning: '踢', origin: '拉丁语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The recalcitrant student refused to follow school rules.', translation: '顽抗的学生拒绝遵守校规。', year: 2018, type: '阅读' },
@@ -1598,8 +1598,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 深奥的，晦涩的',
     pos: ['adj.'],
     roots: [
-      { type: 're', part: '隐藏', meaning: '', origin: '拉丁语' },
-      { type: 'condit', part: '放置', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '隐藏', origin: '拉丁语' },
+      { type: 'root', part: 'condit', meaning: '放置', origin: '拉丁语' },
     ],
     examples: [
       { sentence: "The professor's recondite lectures were difficult to follow.", translation: '教授深奥的讲座很难跟上。', year: 2020, type: '完形' },
@@ -1614,9 +1614,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 令人敬畏的',
     pos: ['adj.'],
     roots: [
-      { type: 're', part: '再次', meaning: '', origin: '法语' },
-      { type: 'doubt', part: '恐惧', meaning: '', origin: '法语' },
-      { type: 'able', part: '可…的', meaning: '', origin: '法语' },
+      { type: 'root', part: 're', meaning: '再次', origin: '法语' },
+      { type: 'root', part: 'doubt', meaning: '恐惧', origin: '法语' },
+      { type: 'root', part: 'able', meaning: '可…的', origin: '法语' },
     ],
     examples: [
       { sentence: 'The redoubtable opponent was feared by all challengers.', translation: '令人敬畏的对手被所有挑战者畏惧。', year: 2019, type: '翻译' },
@@ -1631,9 +1631,9 @@ export const wordList: Word[] = [
     meaning: 'n. 叛徒，变节者',
     pos: ['n.'],
     roots: [
-      { type: 're', part: '再次', meaning: '', origin: '拉丁语' },
-      { type: 'neg', part: '否认', meaning: '', origin: '拉丁语' },
-      { type: 'ade', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '再次', origin: '拉丁语' },
+      { type: 'root', part: 'neg', meaning: '否认', origin: '拉丁语' },
+      { type: 'root', part: 'ade', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The renegade soldier defected to the enemy side.', translation: '叛变的士兵投靠了敌方。', year: 2020, type: '完形' },
@@ -1648,9 +1648,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 应受谴责的',
     pos: ['adj.'],
     roots: [
-      { type: 're', part: '再次', meaning: '', origin: '拉丁语' },
-      { type: 'prehens', part: '抓住', meaning: '', origin: '拉丁语' },
-      { type: 'ible', part: '可…的', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '再次', origin: '拉丁语' },
+      { type: 'root', part: 'prehens', meaning: '抓住', origin: '拉丁语' },
+      { type: 'root', part: 'ible', meaning: '可…的', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His reprehensible behavior was condemned by the community.', translation: '他应受谴责的行为受到了社区谴责。', year: 2020, type: '完形' },
@@ -1665,9 +1665,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 沉默寡言的，有保留的',
     pos: ['adj.'],
     roots: [
-      { type: 're', part: '再次', meaning: '', origin: '拉丁语' },
-      { type: 'tic', part: '沉默', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '再次', origin: '拉丁语' },
+      { type: 'root', part: 'tic', meaning: '沉默', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'She was reticent about discussing her personal life.', translation: '她对讨论个人生活保持沉默。', year: 2018, type: '阅读' },
@@ -1682,8 +1682,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 虔诚的，尊敬的',
     pos: ['adj.'],
     roots: [
-      { type: 'rever', part: '敬畏', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'rever', meaning: '敬畏', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The reverent crowd listened in silence to the speech.', translation: '虔诚的人群静静地聆听演讲。', year: 2019, type: '翻译' },
@@ -1698,8 +1698,8 @@ export const wordList: Word[] = [
     meaning: 'v. 撤回，放弃（主张）',
     pos: ['v.'],
     roots: [
-      { type: 're', part: '回', meaning: '', origin: '拉丁语' },
-      { type: 'cant', part: '唱', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '回', origin: '拉丁语' },
+      { type: 'root', part: 'cant', meaning: '唱', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The scientist was forced to recant his theory under pressure.', translation: '科学家在压力下被迫撤回他的理论。', year: 2019, type: '翻译' },
@@ -1714,8 +1714,8 @@ export const wordList: Word[] = [
     meaning: 'v. 食言，违约',
     pos: ['v.'],
     roots: [
-      { type: 're', part: '回', meaning: '', origin: '拉丁语' },
-      { type: 'neg', part: '否认', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 're', meaning: '回', origin: '拉丁语' },
+      { type: 'root', part: 'neg', meaning: '否认', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The company reneged on its promise to provide bonuses.', translation: '公司食言了提供奖金的承诺。', year: 2022, type: '新题型' },
@@ -1730,7 +1730,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 粗俗的，下流的',
     pos: ['adj.'],
     roots: [
-      { type: 'ribald', part: '粗俗', meaning: '', origin: '法语' },
+      { type: 'root', part: 'ribald', meaning: '粗俗', origin: '法语' },
     ],
     examples: [
       { sentence: 'The ribald jokes were inappropriate for the formal dinner.', translation: '粗俗的笑话不适合正式晚宴。', year: 2020, type: '完形' },
@@ -1745,7 +1745,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 充满的，流行的',
     pos: ['adj.'],
     roots: [
-      { type: 'rife', part: '丰富', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'rife', meaning: '丰富', origin: '古英语' },
     ],
     examples: [
       { sentence: 'Corruption is rife in the local government.', translation: '腐败在地方政府中很盛行。', year: 2019, type: '翻译' },
@@ -1760,8 +1760,8 @@ export const wordList: Word[] = [
     meaning: 'n. 标题，规则，评分标准',
     pos: ['n.'],
     roots: [
-      { type: 'rubr', part: '红', meaning: '', origin: '拉丁语' },
-      { type: 'ic', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'rubr', meaning: '红', origin: '拉丁语' },
+      { type: 'root', part: 'ic', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The teacher used a detailed rubric to grade the essays.', translation: '老师用详细的评分标准来给作文打分。', year: 2020, type: '完形' },
@@ -1776,7 +1776,7 @@ export const wordList: Word[] = [
     meaning: 'v.搅浑，使混乱',
     pos: ['v.'],
     roots: [
-      { type: 'roil', part: '搅浑', meaning: '', origin: '法语' },
+      { type: 'root', part: 'roil', meaning: '搅浑', origin: '法语' },
     ],
     examples: [
       { sentence: 'The scandal roiled the political establishment.', translation: '丑闻搅乱了政治体系。', year: 2018, type: '阅读' },

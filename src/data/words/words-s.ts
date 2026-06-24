@@ -2065,8 +2065,8 @@ export const wordList: Word[] = [
     meaning: 'n. 亵渎，渎圣',
     pos: ['n.'],
     roots: [
-      { type: 'sacr', part: '神圣', meaning: '', origin: '拉丁语' },
-      { type: 'ilege', part: '偷窃', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'sacr', meaning: '神圣', origin: '拉丁语' },
+      { type: 'root', part: 'ilege', meaning: '偷窃', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Vandalizing the historic church was considered sacrilege.', translation: '破坏历史教堂被视为亵渎。', year: 2019, type: '翻译' },
@@ -2081,8 +2081,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 睿智的，精明的',
     pos: ['adj.'],
     roots: [
-      { type: 'sagac', part: '敏锐', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'sagac', meaning: '敏锐', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The sagacious leader navigated the crisis with skill.', translation: '睿智的领导人巧妙地度过了危机。', year: 2021, type: '写作' },
@@ -2097,8 +2097,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 有益的，有利的',
     pos: ['adj.'],
     roots: [
-      { type: 'salut', part: '健康', meaning: '', origin: '拉丁语' },
-      { type: 'ary', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'salut', meaning: '健康', origin: '拉丁语' },
+      { type: 'root', part: 'ary', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The accident had a salutary effect on his driving habits.', translation: '事故对他的驾驶习惯产生了有益影响。', year: 2020, type: '完形' },
@@ -2113,9 +2113,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 假装神圣的，伪善的',
     pos: ['adj.'],
     roots: [
-      { type: 'sancti', part: '神圣', meaning: '', origin: '拉丁语' },
-      { type: 'moni', part: '警告', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'sancti', meaning: '神圣', origin: '拉丁语' },
+      { type: 'root', part: 'moni', meaning: '警告', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His sanctimonious preaching contrasted with his private behavior.', translation: '他假装神圣的说教与私下行为形成对比。', year: 2018, type: '阅读' },
@@ -2130,7 +2130,7 @@ export const wordList: Word[] = [
     meaning: 'v. 沸腾，激动',
     pos: ['v.'],
     roots: [
-      { type: 'seethe', part: '沸腾', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'seethe', meaning: '沸腾', origin: '古英语' },
     ],
     examples: [
       { sentence: 'She was seething with anger after the unfair decision.', translation: '不公正的决定后她怒火中烧。', year: 2021, type: '写作' },
@@ -2145,7 +2145,7 @@ export const wordList: Word[] = [
     meaning: 'n. 碎片，裂片',
     pos: ['n.'],
     roots: [
-      { type: 'shard', part: '碎片', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'shard', meaning: '碎片', origin: '古英语' },
     ],
     examples: [
       { sentence: 'Archaeologists found shards of ancient pottery.', translation: '考古学家发现了古代陶器碎片。', year: 2020, type: '完形' },
@@ -2160,7 +2160,7 @@ export const wordList: Word[] = [
     meaning: 'n. 懒惰，怠惰',
     pos: ['n.'],
     roots: [
-      { type: 'sloth', part: '懒惰', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'sloth', meaning: '懒惰', origin: '古英语' },
     ],
     examples: [
       { sentence: 'Sloth is one of the seven deadly sins.', translation: '懒惰是七宗罪之一。', year: 2019, type: '翻译' },
@@ -2175,8 +2175,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 关切的，挂念的',
     pos: ['adj.'],
     roots: [
-      { type: 'solicit', part: '请求', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'solicit', meaning: '请求', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The solicitous nurse checked on the patient frequently.', translation: '关切的护士频繁查看病人的情况。', year: 2020, type: '完形' },
@@ -2191,7 +2191,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 肮脏的，卑鄙的',
     pos: ['adj.'],
     roots: [
-      { type: 'sordid', part: '肮脏', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'sordid', meaning: '肮脏', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The journalist exposed the sordid details of the scandal.', translation: '记者揭露了丑闻的卑鄙细节。', year: 2021, type: '写作' },
@@ -2206,8 +2206,8 @@ export const wordList: Word[] = [
     meaning: 'v. 使变愚蠢，使迟钝',
     pos: ['v.'],
     roots: [
-      { type: 'stult', part: '愚蠢', meaning: '', origin: '拉丁语' },
-      { type: 'ify', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'stult', meaning: '愚蠢', origin: '拉丁语' },
+      { type: 'root', part: 'ify', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Repetitive tasks can stultify the mind.', translation: '重复性的任务会使头脑变得迟钝。', year: 2021, type: '写作' },
@@ -2222,7 +2222,7 @@ export const wordList: Word[] = [
     meaning: 'v. 分裂，切断',
     pos: ['v.'],
     roots: [
-      { type: 'sunder', part: '分开', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'sunder', meaning: '分开', origin: '古英语' },
     ],
     examples: [
       { sentence: 'Nothing could sunder the bond between the two friends.', translation: '没有什么能切断两个朋友之间的纽带。', year: 2018, type: '阅读' },
@@ -2237,8 +2237,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 有益健康的',
     pos: ['adj.'],
     roots: [
-      { type: 'salubr', part: '健康', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'salubr', meaning: '健康', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The salubrious mountain air was a welcome change.', translation: '有益健康的山间空气是令人欢迎的改变。', year: 2021, type: '写作' },
@@ -2253,8 +2253,8 @@ export const wordList: Word[] = [
     meaning: 'v. 使神圣，使圣洁',
     pos: ['v.'],
     roots: [
-      { type: 'sanct', part: '神圣', meaning: '', origin: '拉丁语' },
-      { type: 'ify', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'sanct', meaning: '神圣', origin: '拉丁语' },
+      { type: 'root', part: 'ify', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The ritual was meant to sanctify the new temple.', translation: '仪式旨在使新寺庙神圣化。', year: 2021, type: '写作' },
@@ -2269,7 +2269,7 @@ export const wordList: Word[] = [
     meaning: 'v. 使饱足，使满足',
     pos: ['v.'],
     roots: [
-      { type: 'sate', part: '满足', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'sate', meaning: '满足', origin: '古英语' },
     ],
     examples: [
       { sentence: 'No amount of wealth could sate his greed.', translation: '再多的财富也无法满足他的贪婪。', year: 2018, type: '阅读' },
@@ -2284,7 +2284,7 @@ export const wordList: Word[] = [
     meaning: 'v. 节约，吝惜；n. 定额工作',
     pos: ['v.'],
     roots: [
-      { type: 'stint', part: '限制', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'stint', meaning: '限制', origin: '古英语' },
     ],
     examples: [
       { sentence: "She didn't stint in her praise for the team's performance.", translation: '她对团队的表现毫不吝惜赞美。', year: 2019, type: '翻译' },
@@ -2299,8 +2299,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 说教的，格言式的',
     pos: ['adj.'],
     roots: [
-      { type: 'sentent', part: '感觉', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'sentent', meaning: '感觉', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His sententious remarks annoyed the younger audience.', translation: '他说教的言辞让年轻听众厌烦。', year: 2021, type: '写作' },
@@ -2315,7 +2315,7 @@ export const wordList: Word[] = [
     meaning: 'n. 口令，行话，陈旧信条',
     pos: ['n.'],
     roots: [
-      { type: 'shibboleth', part: '口令', meaning: '', origin: '希伯来语' },
+      { type: 'root', part: 'shibboleth', meaning: '口令', origin: '希伯来语' },
     ],
     examples: [
       { sentence: 'Using correct terminology is a shibboleth in academic circles.', translation: '使用正确术语是学术界的行话标志。', year: 2022, type: '新题型' },
@@ -2330,7 +2330,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 肮脏的，悲惨的',
     pos: ['adj.'],
     roots: [
-      { type: 'squalid', part: '肮脏', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'squalid', meaning: '肮脏', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The refugees lived in squalid conditions.', translation: '难民们生活在肮脏的条件下。', year: 2020, type: '完形' },
@@ -2345,7 +2345,7 @@ export const wordList: Word[] = [
     meaning: 'n.迷人的女人，警笛',
     pos: ['n.'],
     roots: [
-      { type: 'siren', part: '海妖', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'siren', meaning: '海妖', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The siren of the fire truck echoed through the streets.', translation: '消防车的警笛在街道上回荡。', year: 2022, type: '新题型' },

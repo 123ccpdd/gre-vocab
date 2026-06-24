@@ -1576,8 +1576,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 学究式的，迂腐的',
     pos: ['adj.'],
     roots: [
-      { type: 'pedant', part: '学究', meaning: '', origin: '意大利语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '意大利语' },
+      { type: 'root', part: 'pedant', meaning: '学究', origin: '意大利语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '意大利语' },
     ],
     examples: [
       { sentence: 'His pedantic attention to trivial details annoyed colleagues.', translation: '他对琐碎细节学究式的关注让同事烦恼。', year: 2020, type: '完形' },
@@ -1592,9 +1592,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 背信弃义的，不忠的',
     pos: ['adj.'],
     roots: [
-      { type: 'per', part: '通过', meaning: '', origin: '拉丁语' },
-      { type: 'fid', part: '信任', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'per', meaning: '通过', origin: '拉丁语' },
+      { type: 'root', part: 'fid', meaning: '信任', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The perfidious ally betrayed them at the critical moment.', translation: '背信弃义的盟友在关键时刻背叛了他们。', year: 2018, type: '阅读' },
@@ -1609,9 +1609,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 敷衍的，草率的',
     pos: ['adj.'],
     roots: [
-      { type: 'per', part: '通过', meaning: '', origin: '拉丁语' },
-      { type: 'funct', part: '做', meaning: '', origin: '拉丁语' },
-      { type: 'ory', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'per', meaning: '通过', origin: '拉丁语' },
+      { type: 'root', part: 'funct', meaning: '做', origin: '拉丁语' },
+      { type: 'root', part: 'ory', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The inspector gave only a perfunctory examination.', translation: '检查员只进行了敷衍的检查。', year: 2018, type: '阅读' },
@@ -1626,9 +1626,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 巡回的，流动的',
     pos: ['adj.'],
     roots: [
-      { type: 'peri', part: '周围', meaning: '', origin: '希腊语' },
-      { type: 'patet', part: '走', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'peri', meaning: '周围', origin: '希腊语' },
+      { type: 'root', part: 'patet', meaning: '走', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The peripatetic musician traveled from town to town.', translation: '巡回的音乐家从一个城镇走到另一个城镇。', year: 2020, type: '完形' },
@@ -1643,9 +1643,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 敏锐的，有洞察力的',
     pos: ['adj.'],
     roots: [
-      { type: 'per', part: '通过', meaning: '', origin: '拉丁语' },
-      { type: 'spic', part: '看', meaning: '', origin: '拉丁语' },
-      { type: 'acious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'per', meaning: '通过', origin: '拉丁语' },
+      { type: 'root', part: 'spic', meaning: '看', origin: '拉丁语' },
+      { type: 'root', part: 'acious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The perspicacious detective noticed the crucial detail.', translation: '敏锐的侦探注意到了关键细节。', year: 2022, type: '新题型' },
@@ -1660,8 +1660,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 暴躁的，任性的',
     pos: ['adj.'],
     roots: [
-      { type: 'petul', part: '冲动', meaning: '', origin: '拉丁语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'petul', meaning: '冲动', origin: '拉丁语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The petulant child threw a tantrum.', translation: '任性的孩子大发脾气。', year: 2019, type: '翻译' },
@@ -1676,8 +1676,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 冷静的，淡漠的',
     pos: ['adj.'],
     roots: [
-      { type: 'phlegm', part: '冷淡', meaning: '', origin: '希腊语' },
-      { type: 'atic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'phlegm', meaning: '冷淡', origin: '希腊语' },
+      { type: 'root', part: 'atic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'His phlegmatic response to the crisis surprised everyone.', translation: '他对危机冷静淡漠的反应让每个人惊讶。', year: 2018, type: '阅读' },
@@ -1692,8 +1692,8 @@ export const wordList: Word[] = [
     meaning: 'n. 陈词滥调，老生常谈',
     pos: ['n.'],
     roots: [
-      { type: 'plat', part: '平', meaning: '', origin: '法语' },
-      { type: 'itude', part: '名词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'plat', meaning: '平', origin: '法语' },
+      { type: 'root', part: 'itude', meaning: '名词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'The speech was full of platitudes and lacked substance.', translation: '演讲充满了陈词滥调，缺乏实质内容。', year: 2021, type: '写作' },
@@ -1708,9 +1708,9 @@ export const wordList: Word[] = [
     meaning: 'n. 重写本',
     pos: ['n.'],
     roots: [
-      { type: 'palim', part: '再次', meaning: '', origin: '希腊语' },
-      { type: 'ps', part: '擦', meaning: '', origin: '希腊语' },
-      { type: 'est', part: '名词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'palim', meaning: '再次', origin: '希腊语' },
+      { type: 'root', part: 'ps', meaning: '擦', origin: '希腊语' },
+      { type: 'root', part: 'est', meaning: '名词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The ancient palimpsest revealed hidden texts.', translation: '古老的重写本揭示了隐藏的文字。', year: 2020, type: '完形' },
@@ -1725,8 +1725,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 苍白的，暗淡的',
     pos: ['adj.'],
     roots: [
-      { type: 'pall', part: '苍白', meaning: '', origin: '拉丁语' },
-      { type: 'id', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'pall', meaning: '苍白', origin: '拉丁语' },
+      { type: 'root', part: 'id', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Her pallid face suggested she had not slept in days.', translation: '她苍白的脸色暗示她已经好几天没睡了。', year: 2019, type: '翻译' },
@@ -1741,8 +1741,8 @@ export const wordList: Word[] = [
     meaning: 'n. 贫困，赤贫',
     pos: ['n.'],
     roots: [
-      { type: 'penur', part: '缺乏', meaning: '', origin: '拉丁语' },
-      { type: 'y', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'penur', meaning: '缺乏', origin: '拉丁语' },
+      { type: 'root', part: 'y', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'He lived in penury for most of his adult life.', translation: '他成年后大部分时间生活在贫困中。', year: 2019, type: '翻译' },
@@ -1757,8 +1757,8 @@ export const wordList: Word[] = [
     meaning: 'v. 弥漫，遍及',
     pos: ['v.'],
     roots: [
-      { type: 'per', part: '遍', meaning: '', origin: '拉丁语' },
-      { type: 'vad', part: '走', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'per', meaning: '遍', origin: '拉丁语' },
+      { type: 'root', part: 'vad', meaning: '走', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'A sense of unease pervaded the room after the announcement.', translation: '公告后一种不安弥漫了整个房间。', year: 2021, type: '写作' },
@@ -1773,7 +1773,7 @@ export const wordList: Word[] = [
     meaning: 'v. 小偷小摸，偷窃',
     pos: ['v.'],
     roots: [
-      { type: 'pilfer', part: '偷窃', meaning: '', origin: '英语' },
+      { type: 'root', part: 'pilfer', meaning: '偷窃', origin: '英语' },
     ],
     examples: [
       { sentence: 'Workers pilfered small items from the factory.', translation: '工人们从工厂偷窃小物品。', year: 2019, type: '翻译' },
@@ -1788,7 +1788,7 @@ export const wordList: Word[] = [
     meaning: 'v.敷衍，闪烁其词',
     pos: ['v.'],
     roots: [
-      { type: 'palter', part: '敷衍', meaning: '', origin: '英语' },
+      { type: 'root', part: 'palter', meaning: '敷衍', origin: '英语' },
     ],
     examples: [
       { sentence: 'The witness palters when asked about the incident.', translation: '证人被问到事件时闪烁其词。', year: 2022, type: '新题型' },
@@ -1803,7 +1803,7 @@ export const wordList: Word[] = [
     meaning: 'adj.微不足道的，小气的',
     pos: ['adj.'],
     roots: [
-      { type: 'picayune', part: '小铜币（引申为微小）', meaning: '', origin: '法语' },
+      { type: 'root', part: 'picayune', meaning: '小铜币（引申为微小）', origin: '法语' },
     ],
     examples: [
       { sentence: "Don't waste time on picayune details.", translation: '不要在微不足道的细节上浪费时间。', year: 2019, type: '翻译' },
@@ -1818,8 +1818,8 @@ export const wordList: Word[] = [
     meaning: 'adj.挥霍的，放荡的',
     pos: ['adj.'],
     roots: [
-      { type: 'proflig', part: '堕落', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'proflig', meaning: '堕落', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The profligate heir squandered the family fortune.', translation: '挥霍的继承人浪费了家族财产。', year: 2019, type: '翻译' },
@@ -1834,8 +1834,8 @@ export const wordList: Word[] = [
     meaning: 'adj.平民的，粗俗的',
     pos: ['adj.'],
     roots: [
-      { type: 'pleb', part: '平民', meaning: '', origin: '拉丁语' },
-      { type: 'ean', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'pleb', meaning: '平民', origin: '拉丁语' },
+      { type: 'root', part: 'ean', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His plebeian tastes contrasted with his aristocratic background.', translation: '他平民般的品味与他贵族背景形成对比。', year: 2020, type: '完形' },

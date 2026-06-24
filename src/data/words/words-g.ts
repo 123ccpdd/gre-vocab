@@ -1114,8 +1114,8 @@ export const wordList: Word[] = [
     meaning: 'v. 否认，反驳',
     pos: ['v.'],
     roots: [
-      { type: 'gain', part: '反对', meaning: '', origin: '古英语' },
-      { type: 'say', part: '说', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'gain', meaning: '反对', origin: '古英语' },
+      { type: 'root', part: 'say', meaning: '说', origin: '古英语' },
     ],
     examples: [
       { sentence: 'No one can gainsay the importance of education.', translation: '没有人能否认教育的重要性。', year: 2018, type: '阅读' },
@@ -1130,7 +1130,7 @@ export const wordList: Word[] = [
     meaning: 'v. 嘲笑，讥讽',
     pos: ['v.'],
     roots: [
-      { type: 'gibe', part: '嘲笑', meaning: '', origin: '法语' },
+      { type: 'root', part: 'gibe', meaning: '嘲笑', origin: '法语' },
     ],
     examples: [
       { sentence: 'His opponents gibed at his lack of experience.', translation: '对手嘲笑他缺乏经验。', year: 2019, type: '翻译' },
@@ -1145,9 +1145,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 夸大的，浮夸的',
     pos: ['adj.'],
     roots: [
-      { type: 'grand', part: '大', meaning: '', origin: '拉丁语' },
-      { type: 'iloqu', part: '说话', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'grand', meaning: '大', origin: '拉丁语' },
+      { type: 'root', part: 'iloqu', meaning: '说话', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His grandiloquent speech impressed few people.', translation: '他浮夸的演讲几乎没给人留下印象。', year: 2018, type: '阅读' },
@@ -1162,8 +1162,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 严重的，令人悲痛的',
     pos: ['adj.'],
     roots: [
-      { type: 'griev', part: '悲伤', meaning: '', origin: '古法语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '古法语' },
+      { type: 'root', part: 'griev', meaning: '悲伤', origin: '古法语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '古法语' },
     ],
     examples: [
       { sentence: 'The soldier suffered a grievous wound in battle.', translation: '士兵在战斗中受了重伤。', year: 2021, type: '写作' },
@@ -1178,7 +1178,7 @@ export const wordList: Word[] = [
     meaning: 'n. 狡诈，诡计',
     pos: ['n.'],
     roots: [
-      { type: 'guile', part: '狡诈', meaning: '', origin: '法语' },
+      { type: 'root', part: 'guile', meaning: '狡诈', origin: '法语' },
     ],
     examples: [
       { sentence: 'He achieved his goals through guile rather than hard work.', translation: '他通过狡诈而非努力实现了目标。', year: 2019, type: '翻译' },
@@ -1193,8 +1193,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 味觉的，品尝的',
     pos: ['adj.'],
     roots: [
-      { type: 'gust', part: '味道', meaning: '', origin: '拉丁语' },
-      { type: 'atory', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'gust', meaning: '味道', origin: '拉丁语' },
+      { type: 'root', part: 'atory', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The chef created a gustatory experience that delighted diners.', translation: '厨师创造了一种令食客愉悦的味觉体验。', year: 2018, type: '阅读' },
@@ -1209,7 +1209,7 @@ export const wordList: Word[] = [
     meaning: 'v. 煽动，驱使；n. 刺激',
     pos: ['v.'],
     roots: [
-      { type: 'goad', part: '驱赶棒', meaning: '', origin: '古英语' },
+      { type: 'root', part: 'goad', meaning: '驱赶棒', origin: '古英语' },
     ],
     examples: [
       { sentence: "She was goaded into action by her competitor's success.", translation: '竞争对手的成功驱使她采取行动。', year: 2022, type: '新题型' },
@@ -1224,8 +1224,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 勉强的，不情愿的',
     pos: ['adj.'],
     roots: [
-      { type: 'grudg', part: '怨恨', meaning: '', origin: '古法语' },
-      { type: 'ing', part: '形容词后缀', meaning: '', origin: '古法语' },
+      { type: 'root', part: 'grudg', meaning: '怨恨', origin: '古法语' },
+      { type: 'root', part: 'ing', meaning: '形容词后缀', origin: '古法语' },
     ],
     examples: [
       { sentence: 'He gave grudging approval to the plan.', translation: '他勉强批准了该计划。', year: 2022, type: '新题型' },
@@ -1240,7 +1240,7 @@ export const wordList: Word[] = [
     meaning: 'n. 美食家，贪吃者',
     pos: ['n.'],
     roots: [
-      { type: 'gourmand', part: '贪吃', meaning: '', origin: '法语' },
+      { type: 'root', part: 'gourmand', meaning: '贪吃', origin: '法语' },
     ],
     examples: [
       { sentence: 'The gourmand reviewed every restaurant in the city.', translation: '美食家评审了城市里的每一家餐厅。', year: 2021, type: '写作' },

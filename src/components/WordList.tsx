@@ -5,6 +5,7 @@ import { useCustomWords } from '../hooks/useCustomWords';
 import { exportToJSON, exportToCSV } from '../utils/export';
 import { getStageLabel } from '../utils/spaced-repetition';
 import { SearchOutlined, CloseCircleFilled, UpOutlined, DownOutlined, ExperimentOutlined, BulbOutlined, FileTextOutlined, LeftOutlined, RightOutlined, BookOutlined, ImportOutlined, ExportOutlined, DeleteOutlined } from '@ant-design/icons';
+import { Modal } from 'antd';
 import ImportPanel from './ImportPanel';
 
 const PAGE_SIZE = 50;
@@ -84,20 +85,42 @@ export default function WordList() {
 
   // 导出
   const handleExportJSON = useCallback(() => {
-    exportToJSON(allWordsList);
+    Modal.confirm({
+      title: '导出词库',
+      content: `确认导出 ${allWordsList.length} 个词汇为 JSON 文件？`,
+      okText: '确认导出',
+      cancelText: '取消',
+      centered: true,
+      onOk: () => exportToJSON(allWordsList),
+    });
   }, [allWordsList]);
 
   const handleExportCSV = useCallback(() => {
-    exportToCSV(allWordsList);
+    Modal.confirm({
+      title: '导出词库',
+      content: `确认导出 ${allWordsList.length} 个词汇为 CSV 文件？`,
+      okText: '确认导出',
+      cancelText: '取消',
+      centered: true,
+      onOk: () => exportToCSV(allWordsList),
+    });
   }, [allWordsList]);
 
   // 清空自定义词库
   const handleClearCustom = useCallback(() => {
     if (customWords.length === 0) return;
-    if (window.confirm(`确认清空已导入的 ${customWords.length} 个自定义词？`)) {
-      clearCustomWords();
-      setRefreshKey((k) => k + 1);
-    }
+    Modal.confirm({
+      title: '清空自定义词库',
+      content: `确认清空已导入的 ${customWords.length} 个自定义词？此操作不可撤销。`,
+      okText: '确认清空',
+      okButtonProps: { danger: true },
+      cancelText: '取消',
+      centered: true,
+      onOk: () => {
+        clearCustomWords();
+        setRefreshKey((k) => k + 1);
+      },
+    });
   }, [customWords.length, clearCustomWords]);
 
   // 难度颜色

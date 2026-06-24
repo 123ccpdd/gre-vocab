@@ -1963,9 +1963,9 @@ export const wordList: Word[] = [
     meaning: 'n. 刺耳的声音，不和谐',
     pos: ['n.'],
     roots: [
-      { type: 'caco', part: '坏', meaning: '', origin: '希腊语' },
-      { type: 'phon', part: '声音', meaning: '', origin: '希腊语' },
-      { type: 'y', part: '名词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'caco', meaning: '坏', origin: '希腊语' },
+      { type: 'root', part: 'phon', meaning: '声音', origin: '希腊语' },
+      { type: 'root', part: 'y', meaning: '名词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'The cacophony of car horns filled the intersection.', translation: '刺耳的汽车喇叭声充满了十字路口。', year: 2022, type: '新题型' },
@@ -1980,8 +1980,8 @@ export const wordList: Word[] = [
     meaning: 'v. 校准，标定',
     pos: ['v.'],
     roots: [
-      { type: 'calibr', part: '校准', meaning: '', origin: '阿拉伯语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '阿拉伯语' },
+      { type: 'root', part: 'calibr', meaning: '校准', origin: '阿拉伯语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '阿拉伯语' },
     ],
     examples: [
       { sentence: 'The instrument needs to be calibrated before each experiment.', translation: '仪器在每次实验前都需要校准。', year: 2022, type: '新题型' },
@@ -1996,8 +1996,8 @@ export const wordList: Word[] = [
     meaning: 'n. 诽谤，中伤',
     pos: ['n.'],
     roots: [
-      { type: 'calumn', part: '诽谤', meaning: '', origin: '拉丁语' },
-      { type: 'y', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'calumn', meaning: '诽谤', origin: '拉丁语' },
+      { type: 'root', part: 'y', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'He was a victim of calumny spread by his rivals.', translation: '他是对手散布诽谤的受害者。', year: 2018, type: '阅读' },
@@ -2012,8 +2012,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 吹毛求疵的',
     pos: ['adj.'],
     roots: [
-      { type: 'capt', part: '抓住', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'capt', meaning: '抓住', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Her captious criticism discouraged the team.', translation: '她吹毛求疵的批评使团队灰心。', year: 2019, type: '翻译' },
@@ -2028,8 +2028,8 @@ export const wordList: Word[] = [
     meaning: 'n. 大屠杀，残杀',
     pos: ['n.'],
     roots: [
-      { type: 'carn', part: '肉', meaning: '', origin: '拉丁语' },
-      { type: 'age', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'carn', meaning: '肉', origin: '拉丁语' },
+      { type: 'root', part: 'age', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The carnage of the battle was beyond description.', translation: '战斗的屠杀惨状无法描述。', year: 2020, type: '完形' },
@@ -2044,8 +2044,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 广泛的，普遍的',
     pos: ['adj.'],
     roots: [
-      { type: 'cathol', part: '普遍', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'cathol', meaning: '普遍', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: 'She has catholic tastes in music.', translation: '她的音乐品味很广泛。', year: 2018, type: '阅读' },
@@ -2060,8 +2060,8 @@ export const wordList: Word[] = [
     meaning: 'n. 诡计，欺骗',
     pos: ['n.'],
     roots: [
-      { type: 'chican', part: '诡计', meaning: '', origin: '法语' },
-      { type: 'ery', part: '名词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'chican', meaning: '诡计', origin: '法语' },
+      { type: 'root', part: 'ery', meaning: '名词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'The lawyer was disbarred for using chicanery.', translation: '律师因使用诡计而被取消资格。', year: 2018, type: '阅读' },
@@ -2076,9 +2076,9 @@ export const wordList: Word[] = [
     meaning: 'n. 迂回说法，累赘的话',
     pos: ['n.'],
     roots: [
-      { type: 'circum', part: '周围', meaning: '', origin: '拉丁语' },
-      { type: 'locut', part: '说话', meaning: '', origin: '拉丁语' },
-      { type: 'ion', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'circum', meaning: '周围', origin: '拉丁语' },
+      { type: 'root', part: 'locut', meaning: '说话', origin: '拉丁语' },
+      { type: 'root', part: 'ion', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His circumlocution made it hard to understand his point.', translation: '他迂回的说法让人难以理解他的观点。', year: 2022, type: '新题型' },
@@ -2093,9 +2093,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 顺从的，殷勤的',
     pos: ['adj.'],
     roots: [
-      { type: 'com', part: '完全', meaning: '', origin: '法语' },
-      { type: 'plais', part: '取悦', meaning: '', origin: '法语' },
-      { type: 'ant', part: '形容词后缀', meaning: '', origin: '法语' },
+      { type: 'root', part: 'com', meaning: '完全', origin: '法语' },
+      { type: 'root', part: 'plais', meaning: '取悦', origin: '法语' },
+      { type: 'root', part: 'ant', meaning: '形容词后缀', origin: '法语' },
     ],
     examples: [
       { sentence: 'The complaisant waiter anticipated every need.', translation: '殷勤的服务员预见了每个需求。', year: 2021, type: '写作' },
@@ -2110,9 +2110,9 @@ export const wordList: Word[] = [
     meaning: 'v. 安抚，调和',
     pos: ['v.'],
     roots: [
-      { type: 'con', part: '共同', meaning: '', origin: '拉丁语' },
-      { type: 'cili', part: '召集', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'con', meaning: '共同', origin: '拉丁语' },
+      { type: 'root', part: 'cili', meaning: '召集', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The mediator tried to conciliate the opposing parties.', translation: '调解人试图调和对立党派。', year: 2019, type: '翻译' },
@@ -2127,9 +2127,9 @@ export const wordList: Word[] = [
     meaning: 'n. 大火，大火灾',
     pos: ['n.'],
     roots: [
-      { type: 'con', part: '共同', meaning: '', origin: '拉丁语' },
-      { type: 'flagr', part: '燃烧', meaning: '', origin: '拉丁语' },
-      { type: 'ation', part: '名词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'con', meaning: '共同', origin: '拉丁语' },
+      { type: 'root', part: 'flagr', meaning: '燃烧', origin: '拉丁语' },
+      { type: 'root', part: 'ation', meaning: '名词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The conflagration destroyed several city blocks.', translation: '大火烧毁了几个街区。', year: 2020, type: '完形' },
@@ -2144,7 +2144,7 @@ export const wordList: Word[] = [
     meaning: 'n. 难题，谜',
     pos: ['n.'],
     roots: [
-      { type: 'conundrum', part: '谜语', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'conundrum', meaning: '谜语', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The budget deficit presents a conundrum for policymakers.', translation: '预算赤字给决策者出了一个难题。', year: 2019, type: '翻译' },
@@ -2159,9 +2159,9 @@ export const wordList: Word[] = [
     meaning: 'v. 证实，支持',
     pos: ['v.'],
     roots: [
-      { type: 'cor', part: '共同', meaning: '', origin: '拉丁语' },
-      { type: 'robor', part: '力量', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'cor', meaning: '共同', origin: '拉丁语' },
+      { type: 'root', part: 'robor', meaning: '力量', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: "The witness corroborated the defendant's alibi.", translation: '证人证实了被告的不在场证明。', year: 2019, type: '翻译' },
@@ -2176,7 +2176,7 @@ export const wordList: Word[] = [
     meaning: 'n. 阴谋集团，秘密结社',
     pos: ['n.'],
     roots: [
-      { type: 'cabal', part: '秘密集会', meaning: '', origin: '法语' },
+      { type: 'root', part: 'cabal', meaning: '秘密集会', origin: '法语' },
     ],
     examples: [
       { sentence: 'The cabal of ministers plotted to overthrow the prime minister.', translation: '大臣们密谋推翻首相。', year: 2019, type: '翻译' },
@@ -2191,7 +2191,7 @@ export const wordList: Word[] = [
     meaning: 'v. 乞讨，索取',
     pos: ['v.'],
     roots: [
-      { type: 'cadge', part: '乞讨', meaning: '', origin: '英语' },
+      { type: 'root', part: 'cadge', meaning: '乞讨', origin: '英语' },
     ],
     examples: [
       { sentence: 'He tried to cadge a free meal from his friend.', translation: '他试图从朋友那里蹭一顿免费饭。', year: 2020, type: '完形' },
@@ -2206,7 +2206,7 @@ export const wordList: Word[] = [
     meaning: 'n. 溃疡，弊害；v. 腐蚀',
     pos: ['n.'],
     roots: [
-      { type: 'canker', part: '腐蚀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'canker', meaning: '腐蚀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Corruption is a canker that eats away at society.', translation: '腐败是侵蚀社会的弊害。', year: 2020, type: '完形' },
@@ -2221,8 +2221,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 尸体般的，苍白的',
     pos: ['adj.'],
     roots: [
-      { type: 'cadaver', part: '尸体', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'cadaver', meaning: '尸体', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The cadaverous patient looked as if he had not eaten in weeks.', translation: '苍白如尸体的病人看起来好像好几周没吃东西了。', year: 2021, type: '写作' },
@@ -2237,7 +2237,7 @@ export const wordList: Word[] = [
     meaning: 'v. 挑剔，无端指责',
     pos: ['v.'],
     roots: [
-      { type: 'cavil', part: '挑剔', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'cavil', meaning: '挑剔', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'He caviled at every minor detail of the proposal.', translation: '他对提案的每个微小细节都挑剔。', year: 2020, type: '完形' },

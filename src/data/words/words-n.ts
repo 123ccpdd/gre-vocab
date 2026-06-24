@@ -892,9 +892,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 邪恶的，罪恶的',
     pos: ['adj.'],
     roots: [
-      { type: 'ne', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'far', part: '命运', meaning: '', origin: '拉丁语' },
-      { type: 'ious', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'ne', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'far', meaning: '命运', origin: '拉丁语' },
+      { type: 'root', part: 'ious', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The nefarious scheme was uncovered before execution.', translation: '邪恶的阴谋在执行前被揭露了。', year: 2018, type: '阅读' },
@@ -909,9 +909,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 疏忽的，粗心大意的',
     pos: ['adj.'],
     roots: [
-      { type: 'neg', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'lig', part: '选择', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'neg', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'lig', meaning: '选择', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The negligent driver caused a serious accident.', translation: '粗心的司机造成了严重事故。', year: 2020, type: '完形' },
@@ -926,8 +926,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 漫不经心的，冷淡的',
     pos: ['adj.'],
     roots: [
-      { type: 'non', part: '不', meaning: '', origin: '法语' },
-      { type: 'chalant', part: '热心', meaning: '', origin: '法语' },
+      { type: 'root', part: 'non', meaning: '不', origin: '法语' },
+      { type: 'root', part: 'chalant', meaning: '热心', origin: '法语' },
     ],
     examples: [
       { sentence: 'He appeared nonchalant about the exam but had studied hard.', translation: '他对考试显得漫不经心，但其实很用功。', year: 2021, type: '写作' },
@@ -942,8 +942,8 @@ export const wordList: Word[] = [
     meaning: 'n. 虚无主义',
     pos: ['n.'],
     roots: [
-      { type: 'nihil', part: '无', meaning: '', origin: '拉丁语' },
-      { type: 'ism', part: '主义', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'nihil', meaning: '无', origin: '拉丁语' },
+      { type: 'root', part: 'ism', meaning: '主义', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Nihilism rejects all religious and moral principles.', translation: '虚无主义拒绝一切宗教和道德原则。', year: 2019, type: '翻译' },
@@ -958,8 +958,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 神圣的，超自然的',
     pos: ['adj.'],
     roots: [
-      { type: 'numin', part: '神灵', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'numin', meaning: '神灵', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The numinous experience left her speechless.', translation: '神圣的体验让她无言以对。', year: 2018, type: '阅读' },
@@ -974,7 +974,7 @@ export const wordList: Word[] = [
     meaning: 'n. 秘方，万灵药（往往无效）',
     pos: ['n.'],
     roots: [
-      { type: 'nostrum', part: '我们的（引申为私方）', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'nostrum', meaning: '我们的（引申为私方）', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'Politicians often offer nostrums instead of real solutions.', translation: '政治家常提供秘方而非真正的解决方案。', year: 2022, type: '新题型' },
@@ -989,7 +989,7 @@ export const wordList: Word[] = [
     meaning: 'n.富豪，大人物',
     pos: ['n.'],
     roots: [
-      { type: 'nabob', part: '富豪', meaning: '', origin: '印度语' },
+      { type: 'root', part: 'nabob', meaning: '富豪', origin: '印度语' },
     ],
     examples: [
       { sentence: 'The nabob lived in a lavish mansion.', translation: '富豪住在豪华的宅邸里。', year: 2021, type: '写作' },

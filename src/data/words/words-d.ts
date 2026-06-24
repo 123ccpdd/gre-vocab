@@ -1630,7 +1630,7 @@ export const wordList: Word[] = [
     meaning: 'v. 闲荡，拖延',
     pos: ['v.'],
     roots: [
-      { type: 'dally', part: '闲荡', meaning: '', origin: '法语' },
+      { type: 'root', part: 'dally', meaning: '闲荡', origin: '法语' },
     ],
     examples: [
       { sentence: "Don't dally on your way to the station.", translation: '去车站的路上不要磨蹭。', year: 2020, type: '完形' },
@@ -1645,7 +1645,7 @@ export const wordList: Word[] = [
     meaning: 'adj. 阴湿的，潮湿的',
     pos: ['adj.'],
     roots: [
-      { type: 'dank', part: '潮湿', meaning: '', origin: '中古英语' },
+      { type: 'root', part: 'dank', meaning: '潮湿', origin: '中古英语' },
     ],
     examples: [
       { sentence: 'The dank basement smelled of mildew.', translation: '阴湿的地下室散发着霉味。', year: 2021, type: '写作' },
@@ -1660,8 +1660,8 @@ export const wordList: Word[] = [
     meaning: 'v. 慷慨陈词，朗诵',
     pos: ['v.'],
     roots: [
-      { type: 'de', part: '加强', meaning: '', origin: '拉丁语' },
-      { type: 'claim', part: '叫喊', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'de', meaning: '加强', origin: '拉丁语' },
+      { type: 'root', part: 'claim', meaning: '叫喊', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The senator declaimed against the proposed tax increase.', translation: '参议员慷慨陈词反对增税提案。', year: 2020, type: '完形' },
@@ -1676,8 +1676,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 得体的，合宜的',
     pos: ['adj.'],
     roots: [
-      { type: 'decor', part: '得体', meaning: '', origin: '拉丁语' },
-      { type: 'ous', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'decor', meaning: '得体', origin: '拉丁语' },
+      { type: 'root', part: 'ous', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The students maintained decorous behavior throughout the ceremony.', translation: '学生在整个典礼中保持了得体的举止。', year: 2021, type: '写作' },
@@ -1692,8 +1692,8 @@ export const wordList: Word[] = [
     meaning: 'v. 犹豫，反对；n. 异议',
     pos: ['v.'],
     roots: [
-      { type: 'de', part: '向下', meaning: '', origin: '法语' },
-      { type: 'mur', part: '停留', meaning: '', origin: '法语' },
+      { type: 'root', part: 'de', meaning: '向下', origin: '法语' },
+      { type: 'root', part: 'mur', meaning: '停留', origin: '法语' },
     ],
     examples: [
       { sentence: 'She demurred at the suggestion citing ethical concerns.', translation: '她以道德顾虑为由对该建议表示异议。', year: 2021, type: '写作' },
@@ -1708,9 +1708,9 @@ export const wordList: Word[] = [
     meaning: 'v. 诋毁，贬低',
     pos: ['v.'],
     roots: [
-      { type: 'de', part: '向下', meaning: '', origin: '拉丁语' },
-      { type: 'nigr', part: '黑', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'de', meaning: '向下', origin: '拉丁语' },
+      { type: 'root', part: 'nigr', meaning: '黑', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'It is unfair to denigrate his achievements without context.', translation: '不了解背景就贬低他的成就是不公正的。', year: 2020, type: '完形' },
@@ -1725,8 +1725,8 @@ export const wordList: Word[] = [
     meaning: 'v. 谴责，悲叹',
     pos: ['v.'],
     roots: [
-      { type: 'de', part: '向下', meaning: '', origin: '拉丁语' },
-      { type: 'plor', part: '哭泣', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'de', meaning: '向下', origin: '拉丁语' },
+      { type: 'root', part: 'plor', meaning: '哭泣', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The international community deplored the act of violence.', translation: '国际社会谴责了暴力行为。', year: 2018, type: '阅读' },
@@ -1741,8 +1741,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 散漫的，随意的',
     pos: ['adj.'],
     roots: [
-      { type: 'desultor', part: '跳跃', meaning: '', origin: '拉丁语' },
-      { type: 'ory', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'desultor', meaning: '跳跃', origin: '拉丁语' },
+      { type: 'root', part: 'ory', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'His desultory approach to studying resulted in poor grades.', translation: '他散漫的学习方式导致了糟糕的成绩。', year: 2019, type: '翻译' },
@@ -1757,9 +1757,9 @@ export const wordList: Word[] = [
     meaning: 'adj. 缺乏自信的，羞怯的',
     pos: ['adj.'],
     roots: [
-      { type: 'dif', part: '不', meaning: '', origin: '拉丁语' },
-      { type: 'fid', part: '信任', meaning: '', origin: '拉丁语' },
-      { type: 'ent', part: '形容词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'dif', meaning: '不', origin: '拉丁语' },
+      { type: 'root', part: 'fid', meaning: '信任', origin: '拉丁语' },
+      { type: 'root', part: 'ent', meaning: '形容词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The diffident student rarely spoke up in class.', translation: '羞怯的学生很少在课堂上发言。', year: 2020, type: '完形' },
@@ -1774,8 +1774,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 说教的，教导的',
     pos: ['adj.'],
     roots: [
-      { type: 'didact', part: '教导', meaning: '', origin: '希腊语' },
-      { type: 'ic', part: '形容词后缀', meaning: '', origin: '希腊语' },
+      { type: 'root', part: 'didact', meaning: '教导', origin: '希腊语' },
+      { type: 'root', part: 'ic', meaning: '形容词后缀', origin: '希腊语' },
     ],
     examples: [
       { sentence: "The novel's didactic tone made it less enjoyable.", translation: '小说说教的语调使其不太令人愉快。', year: 2020, type: '完形' },
@@ -1790,7 +1790,7 @@ export const wordList: Word[] = [
     meaning: 'n. 懦夫，卑鄙的人',
     pos: ['n.'],
     roots: [
-      { type: 'dastard', part: '卑怯', meaning: '', origin: '英语' },
+      { type: 'root', part: 'dastard', meaning: '卑怯', origin: '英语' },
     ],
     examples: [
       { sentence: 'Only a dastard would abandon his comrades in battle.', translation: '只有懦夫才会在战斗中抛弃战友。', year: 2020, type: '完形' },
@@ -1805,8 +1805,8 @@ export const wordList: Word[] = [
     meaning: 'adj. 放荡的，荒淫的',
     pos: ['adj.'],
     roots: [
-      { type: 'dis', part: '分散', meaning: '', origin: '拉丁语' },
-      { type: 'solut', part: '松开', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'dis', meaning: '分散', origin: '拉丁语' },
+      { type: 'root', part: 'solut', meaning: '松开', origin: '拉丁语' },
     ],
     examples: [
       { sentence: "The dissolute nobleman squandered his family's fortune.", translation: '放荡的贵族挥霍了家族的财富。', year: 2019, type: '翻译' },
@@ -1821,9 +1821,9 @@ export const wordList: Word[] = [
     meaning: 'v.净化，清洗',
     pos: ['v.'],
     roots: [
-      { type: 'de', part: '去除', meaning: '', origin: '拉丁语' },
-      { type: 'pur', part: '纯净', meaning: '', origin: '拉丁语' },
-      { type: 'ate', part: '动词后缀', meaning: '', origin: '拉丁语' },
+      { type: 'root', part: 'de', meaning: '去除', origin: '拉丁语' },
+      { type: 'root', part: 'pur', meaning: '纯净', origin: '拉丁语' },
+      { type: 'root', part: 'ate', meaning: '动词后缀', origin: '拉丁语' },
     ],
     examples: [
       { sentence: 'The filter depurates the water of impurities.', translation: '过滤器净化水中的杂质。', year: 2019, type: '翻译' },

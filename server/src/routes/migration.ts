@@ -18,13 +18,19 @@ router.post('/import', async (req: Request, res: Response) => {
 
     // 1. 导入学习记录 — bulkWrite upsert
     if (records && typeof records === 'object') {
-      const ops = Object.values(records as Record<string, any>).map((r: any) => ({
-        updateOne: {
-          filter: { userId, wordId: r.wordId },
-          update: { $setOnInsert: { userId, wordId: r.wordId }, $set: { ...r, userId } },
-          upsert: true,
-        } as any,
-      }));
+      const ops = Object.values(records as Record<string, any>).map((r: any) => {
+        const { userId: _uid, wordId: _wid, ...rest } = r;
+        return {
+          updateOne: {
+            filter: { userId, wordId: r.wordId },
+            update: {
+              $setOnInsert: { userId, wordId: r.wordId },
+              $set: { ...rest },
+            },
+            upsert: true,
+          } as any,
+        };
+      });
       if (ops.length > 0) {
         await LearningRecord.bulkWrite(ops);
       }
@@ -32,19 +38,22 @@ router.post('/import', async (req: Request, res: Response) => {
 
     // 2. 导入每日统计 — bulkWrite upsert（同天合并取较大值）
     if (Array.isArray(dailyStats)) {
-      const ops = dailyStats.map((s: any) => ({
-        updateOne: {
-          filter: { userId, date: s.date },
-          update: {
-            $setOnInsert: { userId, date: s.date },
-            $max: {
-              newWords: s.newWords || 0,
-              reviewWords: s.reviewWords || 0,
+      const ops = dailyStats.map((s: any) => {
+        const { userId: _uid, date: _date, ...rest } = s;
+        return {
+          updateOne: {
+            filter: { userId, date: s.date },
+            update: {
+              $setOnInsert: { userId, date: s.date },
+              $max: {
+                newWords: rest.newWords || 0,
+                reviewWords: rest.reviewWords || 0,
+              },
             },
-          },
-          upsert: true,
-        } as any,
-      }));
+            upsert: true,
+          } as any,
+        };
+      });
       if (ops.length > 0) {
         await DailyStats.bulkWrite(ops);
       }
@@ -52,9 +61,10 @@ router.post('/import', async (req: Request, res: Response) => {
 
     // 3. 导入设置 — upsert 整体覆盖
     if (settings && typeof settings === 'object') {
+      const { userId: _uid, ...settingsRest } = settings;
       await UserSettings.findOneAndUpdate(
         { userId },
-        { $set: { ...settings, userId } },
+        { $set: { ...settingsRest, userId } },
         { upsert: true, new: true, setDefaultsOnInsert: true }
       );
     }
