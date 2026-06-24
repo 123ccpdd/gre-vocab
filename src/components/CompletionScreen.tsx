@@ -34,31 +34,31 @@ export default function CompletionScreen({
   return (
     <div className="max-w-md mx-auto text-center space-y-6 py-12">
       <div>{message.icon}</div>
-      <h2 className="text-2xl font-bold text-gray-900">
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
         {mode === 'learn' ? '学习完成！' : '复习完成！'}
       </h2>
-      <p className="text-gray-500">{message.text}</p>
+      <p className="text-gray-500 dark:text-gray-400">{message.text}</p>
 
       <div className="grid grid-cols-3 gap-4 py-4">
-        <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
-          <p className="text-2xl font-bold text-gray-900">{totalWords}</p>
-          <p className="text-xs text-gray-500">
+        <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm transition-colors">
+          <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">{totalWords}</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
             {mode === 'learn' ? '新学' : '复习'}单词
           </p>
         </div>
-        <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
-          <p className="text-2xl font-bold text-green-600">{correctCount}</p>
-          <p className="text-xs text-gray-500">认识</p>
+        <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm transition-colors">
+          <p className="text-2xl font-bold text-green-600 dark:text-green-400">{correctCount}</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">认识</p>
         </div>
-        <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
-          <p className="text-2xl font-bold text-red-500">{incorrectCount}</p>
-          <p className="text-xs text-gray-500">不认识</p>
+        <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm transition-colors">
+          <p className="text-2xl font-bold text-red-500 dark:text-red-400">{incorrectCount}</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">不认识</p>
         </div>
       </div>
 
-      <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
-        <p className="text-sm text-gray-500 mb-1">正确率</p>
-        <p className="text-4xl font-bold text-indigo-600">{accuracy}%</p>
+      <div className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm transition-colors">
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">正确率</p>
+        <p className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">{accuracy}%</p>
       </div>
 
       <div className="space-y-3 pt-4">
@@ -70,7 +70,7 @@ export default function CompletionScreen({
         </button>
         <button
           onClick={onBack}
-          className="w-full py-3 bg-gray-100 text-gray-600 rounded-xl font-medium hover:bg-gray-200 transition"
+          className="w-full py-3 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-xl font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition"
         >
           返回首页
         </button>

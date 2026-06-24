@@ -27,18 +27,18 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-      <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
-        <h1 className="text-2xl font-bold text-center text-gray-900 mb-2">考研词汇</h1>
-        <p className="text-center text-gray-500 mb-8">创建新账号</p>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4 transition-colors">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 w-full max-w-md transition-colors">
+        <h1 className="text-2xl font-bold text-center text-gray-900 dark:text-gray-100 mb-2">考研词汇</h1>
+        <p className="text-center text-gray-500 dark:text-gray-400 mb-8">创建新账号</p>
 
         {error && (
-          <div className="bg-red-50 text-red-600 px-4 py-3 rounded-xl mb-4 text-sm">{error}</div>
+          <div className="bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 px-4 py-3 rounded-xl mb-4 text-sm">{error}</div>
         )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">邮箱</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">邮箱</label>
             <div className="relative">
               <input
                 type="email"
@@ -46,28 +46,28 @@ export default function RegisterPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 placeholder="your@email.com"
-                className="w-full px-4 py-3 pl-10 bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent text-sm"
+                className="w-full px-4 py-3 pl-10 bg-gray-50 dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
               />
-              <MailOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <MailOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500" />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">昵称（可选）</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">昵称（可选）</label>
             <div className="relative">
               <input
                 type="text"
                 value={nickname}
                 onChange={(e) => setNickname(e.target.value)}
                 placeholder="你的昵称"
-                className="w-full px-4 py-3 pl-10 bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent text-sm"
+                className="w-full px-4 py-3 pl-10 bg-gray-50 dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
               />
-              <UserOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <UserOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500" />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">密码</label>
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">密码</label>
             <div className="relative">
               <input
                 type="password"
@@ -76,9 +76,9 @@ export default function RegisterPage() {
                 required
                 minLength={6}
                 placeholder="至少6个字符"
-                className="w-full px-4 py-3 pl-10 bg-gray-50 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent text-sm"
+                className="w-full px-4 py-3 pl-10 bg-gray-50 dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500"
               />
-              <LockOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <LockOutlined className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500" />
             </div>
           </div>
 
@@ -91,9 +91,9 @@ export default function RegisterPage() {
           </button>
         </form>
 
-        <p className="text-center text-sm text-gray-500 mt-6">
+        <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-6">
           已有账号？{' '}
-          <Link to="/login" className="text-indigo-600 hover:text-indigo-700 font-medium">
+          <Link to="/login" className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium">
             登录
           </Link>
         </p>
