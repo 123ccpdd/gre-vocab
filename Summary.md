@@ -79,6 +79,73 @@ docker compose up -d --build
 ---
 
 
+## 注册登录优化方案
+
+> 当前认证系统为简易版：邮箱+密码注册、JWT 双令牌、localStorage 存储 refreshToken。
+> 以下按优先级排列，建议逐步实施。
+
+### 当前问题
+
+| 问题 | 位置 | 风险 |
+|------|------|------|
+| 密码仅 6 位，无强度校验 | `auth.ts` registerSchema + `RegisterPage.tsx` | 🔴 高 |
+| refreshToken 存 localStorage，XSS 可窃取 | `api.ts` + `AuthContext.tsx` | 🔴 高 |
+| 无登录限速，可暴力破解 | `auth.ts` POST /login | 🔴 高 |
+| refreshToken 无服务端记录，无法吊销 | `jwt.ts` verifyRefreshToken 仅验签名 | 🟡 中 |
+| 无邮箱验证 | `auth.ts` POST /register | 🟡 中 |
+| 无密码重置 | 缺失 | 🟡 中 |
+| 登录/注册页无深色模式 | `LoginPage.tsx` / `RegisterPage.tsx` | 🟢 低（已修复） |
+
+### P0：安全底线（2-3天）
+
+1. **密码策略强化**
+   - 后端 Zod schema 改为 min(8) + 大写 + 小写 + 数字 + 特殊字符正则
+   - 前端加实时强度指示器 + 确认密码字段
+
+2. **登录限速**
+   - `express-rate-limit`：注册 15min/10次，登录 5min/5次失败
+   - 新文件 `server/src/middleware/rateLimiter.ts`
+
+3. **refreshToken 迁移 HttpOnly Cookie**
+   - 后端登录/注册改用 `res.cookie()` 设置 httpOnly+secure+sameSite
+   - refresh 接口从 `req.cookies` 读取
+   - 前端 Axios 加 `withCredentials: true`，删掉 localStorage 读写 refreshToken 逻辑
+
+### P1：邮箱验证 + 密码重置（2-3天）
+
+4. **邮箱验证**
+   - User 模型加 `isEmailVerified` / `emailVerificationToken` / `emailVerificationExpires`
+   - 注册后发验证邮件（Nodemailer + QQ邮箱 SMTP）
+   - 未验证用户限制迁移数据
+   - 新增 `/verify-email` + `/resend-verification` 接口
+
+5. **密码重置**
+   - User 模型加 `passwordResetToken` / `passwordResetExpires`
+   - 新增 `/forgot-password` + `/reset-password` 接口
+   - 重置后吊销所有 session
+   - 前端新增 `ForgotPasswordPage.tsx`
+
+### P2：设备管理 + Session（2天）
+
+6. **Session 模型**
+   - 新增 `server/src/models/Session.ts`（userId, refreshTokenHash, device, ip, createdAt, expiresAt）
+   - refresh 时轮转 session，检测重放攻击
+   - 新增 `/sessions` 查询和删除接口，支持「在其他设备上退出登录」
+
+### P3：第三方登录（3-5天）
+
+7. **微信扫码登录** — 微信开放平台 OAuth2，需 AppID + AppSecret
+8. **GitHub/Google OAuth**（可选）— passport.js 简化实现 + 绑定/解绑逻辑
+
+### P4：前端体验（1-2天）
+
+9. ~~登录/注册页深色模式~~ ✅ 已修复
+10. **注册后自动登录** — 当前已基本可用，确认 ProtectedRoute 不拦截
+11. **「记住我」选项** — 勾选延长 refreshToken 至 30 天
+12. **Token 主动刷新** — accessToken 过期前 5 分钟主动刷新，避免操作中断
+
+---
+
 ## 未完成功能
 
 - [ ] 学习提醒
