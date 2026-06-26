@@ -571,4 +571,508 @@ export const wordList: Word[] = [
     difficulty: 5,
     frequency: 2,
   },
+  {
+    id: '2677',
+    word: 'wieldy',
+    phonetic: '/ˈwiːldi/',
+    meaning: 'adj. 易于使用的；便于操控的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'wield', meaning: '控制，支配', origin: '古英语' },
+      { type: 'suffix', part: '-y', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The new software interface is far more wieldy than its predecessor, enabling faster data analysis.', translation: '新的软件界面比前代更易于使用，能够更快地进行数据分析。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 2,
+  },
+  {
+    id: '2678',
+    word: 'wist',
+    phonetic: '/wɪst/',
+    meaning: 'v. 知道；了解（古语）',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wist', meaning: '知道', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Little did she wist that the discovery would reshape the entire field of molecular biology.', translation: '她几乎不知道这一发现将重塑整个分子生物学领域。', year: 2021, type: '翻译' },
+    ],
+    difficulty: 5,
+    frequency: 1,
+  },
+  {
+    id: '2679',
+    word: 'wont',
+    phonetic: '/wəʊnt/',
+    meaning: 'n. 习惯；惯例；adj. 习惯的',
+    pos: ['n.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'wont', meaning: '习惯', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'As is his wont, the professor began the lecture with a provocative question.', translation: '按照他的惯例，教授以一个发人深省的问题开始了讲座。', year: 2020, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2680',
+    word: 'wangle',
+    phonetic: '/ˈwæŋɡl/',
+    meaning: 'v. 设法获得；哄骗；操纵',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wangle', meaning: '操纵，哄骗', origin: '方言' },
+    ],
+    examples: [
+      { sentence: 'The lobbyist managed to wangle a meeting with the minister despite the tight schedule.', translation: '尽管日程紧张，游说者还是设法获得了与部长会面的机会。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2681',
+    word: 'wince',
+    phonetic: '/wɪns/',
+    meaning: 'v. 畏缩；退缩；n. 畏缩',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'wince', meaning: '退缩', origin: '古法语' },
+    ],
+    examples: [
+      { sentence: 'Investors winced at the sharp decline in the stock market, fearing a prolonged recession.', translation: '投资者对股市的急剧下跌感到畏缩，担心经济衰退会持续。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2682',
+    word: 'winkle',
+    phonetic: '/ˈwɪŋkl/',
+    meaning: 'v. 逐渐取出；费力地弄出',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'winkle', meaning: '逐渐取出', origin: '荷兰语' },
+    ],
+    examples: [
+      { sentence: "Journalists tried to winkle out the truth behind the government's secretive decision-making process.", translation: '记者们试图费力地弄清政府秘密决策过程背后的真相。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2683',
+    word: 'wizen',
+    phonetic: '/ˈwɪzn/',
+    meaning: 'v. 枯萎；皱缩；adj. 干瘪的',
+    pos: ['v.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'wizen', meaning: '干燥，枯萎', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The once-thriving industry has wizened under the pressure of foreign competition.', translation: '曾经繁荣的产业在外来竞争的压力下已经萎缩。', year: 2021, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2684',
+    word: 'wile',
+    phonetic: '/waɪl/',
+    meaning: 'n. 诡计；花言巧语；v. 诱骗',
+    pos: ['n.', 'v.'],
+    roots: [
+      { type: 'root', part: 'wile', meaning: '诡计', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The corporation used every wile to evade regulatory scrutiny and maintain its market dominance.', translation: '该公司用尽各种诡计来逃避监管审查并维持其市场主导地位。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2685',
+    word: 'waddle',
+    phonetic: '/ˈwɒdl/',
+    meaning: 'v. 摇摆行走；蹒跚而行；n. 摇摆步态',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'waddle', meaning: '摇摆行走', origin: '中古英语' },
+    ],
+    examples: [
+      { sentence: 'The economy waddled through the recession, unable to regain its former momentum.', translation: '经济在衰退中蹒跚而行，无法恢复往日的势头。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 2,
+  },
+  {
+    id: '2686',
+    word: 'wreathe',
+    phonetic: '/riːð/',
+    meaning: 'v. 环绕；笼罩；盘旋',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wreathe', meaning: '缠绕，环绕', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Uncertainty wreathed the financial markets as central banks debated further interest rate hikes.', translation: '随着各国央行讨论进一步加息，不确定性笼罩着金融市场。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2687',
+    word: 'wryly',
+    phonetic: '/ˈraɪli/',
+    meaning: 'adv. 挖苦地；讽刺地；苦涩地',
+    pos: ['adv.'],
+    roots: [
+      { type: 'root', part: 'wry', meaning: '扭曲，讽刺', origin: '古英语' },
+      { type: 'suffix', part: '-ly', meaning: '副词后缀' },
+    ],
+    examples: [
+      { sentence: 'The author wryly observed that technological progress had only made people busier, not happier.', translation: '作者讽刺地指出，技术进步只是让人们更忙碌，而非更幸福。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '2688',
+    word: 'wastrel',
+    phonetic: '/ˈweɪstrəl/',
+    meaning: 'n. 挥霍者；废物；败家子',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'waste', meaning: '浪费' },
+      { type: 'suffix', part: '-rel', meaning: '名词后缀，表示人' },
+    ],
+    examples: [
+      { sentence: 'Critics accused the corporation of acting like a wastrel, squandering resources on frivolous projects.', translation: '批评者指责该公司像败家子一样，在无用的项目上挥霍资源。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2937',
+    word: 'waddle',
+    phonetic: '/ˈwɒdl/',
+    meaning: 'v. 摇摆行走，蹒跚而行',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'waddle', meaning: '摇摆行走', origin: '中古英语' },
+    ],
+    examples: [
+      { sentence: 'The economy waddled through the recession, making sluggish progress toward recovery.', translation: '经济在衰退中蹒跚而行，缓慢地向复苏迈进。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
+  {
+    id: '2938',
+    word: 'wangle',
+    phonetic: '/ˈwæŋɡl/',
+    meaning: 'v. 设法获得，巧取',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wangle', meaning: '巧妙获取', origin: '德语' },
+    ],
+    examples: [
+      { sentence: 'Lobbyists wangle concessions from legislators through a combination of persuasion and strategic donations.', translation: '游说者通过说服和战略性捐赠的结合从立法者那里巧取让步。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2939',
+    word: 'wanton',
+    phonetic: '/ˈwɒntən/',
+    meaning: 'adj. 肆意的，恣意的；淫荡的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'wanton', meaning: '缺乏纪律的', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The wanton destruction of cultural heritage during armed conflict constitutes a war crime under international law.', translation: '武装冲突期间对文化遗产的肆意破坏构成国际法下的战争罪。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2940',
+    word: 'warrant',
+    phonetic: '/ˈwɒrənt/',
+    meaning: 'v. 保证，授权；n. 许可证，搜查令',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'warrant', meaning: '保护，保证', origin: '古诺斯语' },
+    ],
+    examples: [
+      { sentence: 'The scale of the environmental crisis warrants immediate and coordinated international action.', translation: '环境危机的规模需要立即采取协调的国际行动。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '2941',
+    word: 'wary',
+    phonetic: '/ˈweəri/',
+    meaning: 'adj. 谨慎的，小心的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'war', meaning: '注意，小心', origin: '古英语' },
+      { type: 'suffix', part: '-y', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'Investors remain wary of emerging markets amid persistent geopolitical uncertainty.', translation: '在持续的地缘政治不确定性中，投资者对新兴市场保持谨慎。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '2942',
+    word: 'watershed',
+    phonetic: '/ˈwɔːtəʃed/',
+    meaning: 'n. 分水岭，转折点',
+    pos: ['n.'],
+    roots: [
+      { type: 'root', part: 'water', meaning: '水', origin: '古英语' },
+      { type: 'root', part: 'shed', meaning: '分开' },
+    ],
+    examples: [
+      { sentence: 'The Paris Agreement marked a watershed in global climate policy, signalling unprecedented international consensus.', translation: '《巴黎协定》标志着全球气候政策的转折点，表明了前所未有的国际共识。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '2943',
+    word: 'waver',
+    phonetic: '/ˈweɪvə/',
+    meaning: 'v. 摇摆，犹豫不决',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'waver', meaning: '摇摆', origin: '中古英语' },
+    ],
+    examples: [
+      { sentence: 'Public support for the reform agenda began to waver as its economic costs became apparent.', translation: '随着改革议程的经济成本变得明显，公众对其支持开始动摇。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2944',
+    word: 'wheedle',
+    phonetic: '/ˈwiːdl/',
+    meaning: 'v. 哄骗，诱骗',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wheedle', meaning: '哄骗', origin: '德语' },
+    ],
+    examples: [
+      { sentence: 'Corporations wheedle tax breaks from governments by exaggerating their contribution to job creation.', translation: '企业通过夸大其对创造就业的贡献来哄骗政府提供税收减免。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2945',
+    word: 'whet',
+    phonetic: '/wet/',
+    meaning: 'v. 磨快，刺激（食欲、兴趣等）',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'whet', meaning: '磨，刺激', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The preliminary findings whet the appetite of the scientific community for more detailed research.', translation: '初步发现激发了科学界对更详细研究的兴趣。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2946',
+    word: 'whimsical',
+    phonetic: '/ˈwɪmzɪkl/',
+    meaning: 'adj. 异想天开的，古怪的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'whimsy', meaning: '奇想', origin: '英语' },
+      { type: 'suffix', part: '-ical', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'The whimsical approach to urban planning produced public spaces that delighted residents but baffled engineers.', translation: '异想天开的城市规划方法创造了令居民愉悦但令工程师困惑的公共空间。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '2947',
+    word: 'wield',
+    phonetic: '/wiːld/',
+    meaning: 'v. 挥舞，行使（权力等）',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wield', meaning: '控制，支配', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Tech giants wield enormous influence over public discourse, raising questions about accountability and regulation.', translation: '科技巨头对公共话语行使着巨大的影响力，引发了关于问责和监管的问题。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '2948',
+    word: 'wizen',
+    phonetic: '/ˈwɪzn/',
+    meaning: 'v./adj. （使）枯萎，干瘪',
+    pos: ['v.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'wizen', meaning: '干燥，枯萎', origin: '德语' },
+    ],
+    examples: [
+      { sentence: 'The wizen remnants of once-thriving industries serve as a reminder of the costs of economic neglect.', translation: '曾经繁荣的产业的枯萎残骸提醒人们经济忽视的代价。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2949',
+    word: 'wont',
+    phonetic: '/wəʊnt/',
+    meaning: 'n./adj. 习惯，惯常的',
+    pos: ['n.', 'adj.'],
+    roots: [
+      { type: 'root', part: 'wont', meaning: '习惯', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'As is his wont, the philosopher approached the ethical dilemma with meticulous logical rigour.', translation: '正如他的习惯一样，这位哲学家以严密的逻辑严谨性来处理这个伦理困境。', year: 2022, type: '翻译' },
+    ],
+    difficulty: 4,
+    frequency: 2,
+  },
+  {
+    id: '2950',
+    word: 'wreak',
+    phonetic: '/riːk/',
+    meaning: 'v. 造成（破坏等），发泄',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wreak', meaning: '执行，造成', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Climate change continues to wreak havoc on coastal communities through increasingly severe storms.', translation: '气候变化通过日益严重的风暴继续对沿海社区造成破坏。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '2951',
+    word: 'wrest',
+    phonetic: '/rest/',
+    meaning: 'v. 夺取，费力取得',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wrest', meaning: '扭转，夺取', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Opposition parties wrested control of the legislature from the ruling coalition in a historic election.', translation: '反对党在一场历史性的选举中从执政联盟手中夺取了立法机构的控制权。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '3198',
+    word: 'wane',
+    phonetic: '/weɪn/',
+    meaning: 'v. 衰减，衰退；n. 衰退',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'wane', meaning: '减少', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'Public trust in institutions continues to wane, posing a fundamental challenge to democratic legitimacy.', translation: '公众对机构的信任持续衰退，对民主合法性构成根本挑战。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '3199',
+    word: 'wary',
+    phonetic: '/ˈweəri/',
+    meaning: 'adj. 谨慎的，小心的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'war', meaning: '注意', origin: '古英语' },
+      { type: 'suffix', part: '-y', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'Investors remain wary of emerging markets amid persistent geopolitical uncertainty.', translation: '在持续的地缘政治不确定性中，投资者对新兴市场保持谨慎。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '3200',
+    word: 'weary',
+    phonetic: '/ˈwɪəri/',
+    meaning: 'adj. 疲倦的，厌倦的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'wear', meaning: '磨损，疲倦', origin: '古英语' },
+      { type: 'suffix', part: '-y', meaning: '形容词后缀' },
+    ],
+    examples: [
+      { sentence: 'Weary voters, disillusioned by broken promises, are increasingly drawn to populist alternatives.', translation: '厌倦的选民对失信的承诺感到幻灭，越来越被民粹主义替代方案吸引。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 4,
+  },
+  {
+    id: '3201',
+    word: 'wield',
+    phonetic: '/wiːld/',
+    meaning: 'v. 挥舞，行使（权力）',
+    pos: ['v.'],
+    roots: [
+      { type: 'root', part: 'wield', meaning: '控制，支配', origin: '古英语' },
+    ],
+    examples: [
+      { sentence: 'The judiciary wields considerable power to hold the executive branch accountable.', translation: '司法机关行使着相当大的权力来追究行政分支的责任。', year: 2023, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 5,
+  },
+  {
+    id: '3202',
+    word: 'wistful',
+    phonetic: '/ˈwɪstfʊl/',
+    meaning: 'adj. 渴望的，怅惘的',
+    pos: ['adj.'],
+    roots: [
+      { type: 'root', part: 'wist', meaning: '知道，渴望' },
+      { type: 'suffix', part: '-ful', meaning: '充满...的' },
+    ],
+    examples: [
+      { sentence: 'The wistful longing for an idealised past can distract societies from addressing present challenges.', translation: '对理想化过去的怅惘渴望会使社会分心，无法应对当前的挑战。', year: 2022, type: '阅读' },
+    ],
+    difficulty: 4,
+    frequency: 3,
+  },
+  {
+    id: '3203',
+    word: 'wrangle',
+    phonetic: '/ˈræŋɡl/',
+    meaning: 'v./n. 争论，吵架',
+    pos: ['v.', 'n.'],
+    roots: [
+      { type: 'root', part: 'wrangl', meaning: '争辩', origin: '中古英语' },
+    ],
+    examples: [
+      { sentence: 'Legislators wrangle over budget allocations while pressing social needs go unaddressed.', translation: '立法者在预算分配上争吵不休，而紧迫的社会需求却无人关注。', year: 2021, type: '阅读' },
+    ],
+    difficulty: 3,
+    frequency: 3,
+  },
 ];

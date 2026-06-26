@@ -53,7 +53,7 @@ function MainApp() {
   const [category, setCategory] = useState<Category>('mastered');
   const [activeView, setActiveView] = useState<'home' | 'learn' | 'review' | 'complete' | 'category'>('home');
 
-  const { logout, user, showMigrationDialog, handleMigration, skipMigration } = useAuth();
+  const { logout, showMigrationDialog, handleMigration, skipMigration } = useAuth();
   const navigate = useNavigate();
 
   const { records, getRecord, markWord, getDueWords, getStats } = useLearningRecords();
