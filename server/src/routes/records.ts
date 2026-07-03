@@ -2,9 +2,6 @@ import { Router, Request, Response } from 'express';
 import { authMiddleware } from '../middleware/auth.js';
 import { markWord, getDueWords, getStats, getAllRecords, getRecordsByStatus } from '../services/recordService.js';
 
-// 词库总数（与前端保持同步，后续可从配置或数据库读取）
-const TOTAL_WORD_COUNT = 1750;
-
 const router = Router();
 
 // 所有路由需认证
@@ -38,7 +35,7 @@ router.get('/due', async (req: Request, res: Response) => {
 // GET /records/stats
 router.get('/stats', async (req: Request, res: Response) => {
   try {
-    const stats = await getStats(req.user!.userId, TOTAL_WORD_COUNT);
+    const stats = await getStats(req.user!.userId);
     res.json(stats);
   } catch (err) {
     res.status(500).json({ error: 'InternalServerError', message: '获取统计失败' });

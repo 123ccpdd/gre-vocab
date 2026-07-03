@@ -52,10 +52,12 @@ export async function markWord(userId: string, wordId: string, isCorrect: boolea
     }
   } else {
     record.incorrectCount += 1;
-    // 答错则重置间隔
-    record.correctCount = 0;
-    record.interval = 0;
-    record.status = 'learning';
+    // 答错降级而非清零：扣2次进度（最低保留1），避免一次遗忘打回原点
+    record.correctCount = Math.max(1, record.correctCount - 2);
+    const intervalIndex = Math.min(record.correctCount - 1, REVIEW_INTERVALS.length - 1);
+    record.interval = REVIEW_INTERVALS[intervalIndex];
+    // 只有 correctCount 降到 1 才退回 learning，否则保持 reviewing
+    record.status = record.correctCount <= 1 ? 'learning' : 'reviewing';
   }
 
   // 计算下次复习日期
@@ -83,12 +85,11 @@ export async function getDueWords(userId: string): Promise<string[]> {
 /**
  * 获取学习统计
  */
-export async function getStats(userId: string, totalWordCount: number) {
+export async function getStats(userId: string) {
   const allRecords = await LearningRecord.find({ userId });
   const recordedCount = allRecords.length;
   return {
     total: recordedCount,
-    new: totalWordCount - recordedCount,
     learning: allRecords.filter((r) => r.status === 'learning').length,
     reviewing: allRecords.filter((r) => r.status === 'reviewing').length,
     mastered: allRecords.filter((r) => r.status === 'mastered').length,

@@ -1,6 +1,6 @@
 # 项目任务概要
 
-> 最后更新：2026-06-18
+> 最后更新：2026-07-03
 
 ## 项目简介
 
@@ -12,7 +12,9 @@
 
 ### ✅ 已完成
 
-- **词库扩容至 2000 词**（原 1750 词，新增 250 词，id 2025-2274）
+- **词库扩容至 3000 词**（原 2000 词，新增 1000 词，分批生成）
+- **后端答错逻辑修复**：与前端对齐，答错扣 2 次进度（最低保留 1），不再清零
+- **后端硬编码词库总数移除**：删除 `TOTAL_WORD_COUNT = 1750`，`getStats` 不再返回 `new` 字段，前端自行计算
 - **后端 API 完整实现**：注册/登录/学习记录/统计/设置/词汇查询/数据迁移
 - **JWT 双令牌认证**：accessToken + refreshToken，自动刷新
 - **Docker 部署配置**：前端(Nginx) + 后端(Node) + MongoDB 三容器编排
@@ -43,7 +45,7 @@ docker compose up -d --build
 
 | 文件 | 说明 |
 |------|------|
-| `src/data/words/words-a~z.ts` | 词库（2000词，按字母分文件） |
+| `src/data/words/words-a~z.ts` | 词库（3000词，按字母分文件） |
 | `src/data/words/index.ts` | 词库统一导出 |
 | `src/types/index.ts` | TypeScript 类型定义（Word, WordRoot, Example 等） |
 | `src/contexts/AuthContext.tsx` | 前端认证状态管理 |
@@ -152,4 +154,96 @@ docker compose up -d --build
 - [ ] 响应式布局优化
 - [ ] 单词发音（Web Speech API）
 - [ ] 词库扩充至 5500 词
+
+---
+
+## 词库批量导入方案（PDF → 词库）
+
+> 逐批 AI 生成扩容效率极低（每批 30-50 词），改用三步流水线直接从词汇书 PDF 批量导入。
+
+### 三步流水线
+
+```
+PDF 文件 → ① 提取文本 → ② AI 结构化解析 → ③ 合并入库
+```
+
+#### 第 1 步：PDF 文本提取
+
+- **脚本**：`scripts/extract-pdf.ts`（使用 `pdf-parse` 库）
+- **输入**：词汇书 PDF（文本版，非扫描版）
+- **输出**：`raw-vocab.txt`（纯文本，包含所有词条）
+- 用户手动检查提取质量，确认词条可辨识
+
+#### 第 2 步：AI 批量解析（文本 → 结构化 JSON）
+
+- **脚本**：`scripts/parse-vocab.ts`（调用 Claude API）
+- **输入**：`raw-vocab.txt`
+- **输出**：`parsed-vocab.json`
+- **流程**：
+  1. 按词条分块（每块 30-50 个），避免 context 溢出
+  2. 每块发给 Claude API，按 `Word` 类型返回结构化 JSON
+  3. AI 补全缺失字段：音标、词根词缀、真题例句、难度评级、考频
+  4. 串行执行 + 失败重试（最多 3 次）
+
+- **AI Prompt 要点**：
+  - roots 的 type 不能写反（prefix/root/suffix）
+  - 例句撇号用双引号包裹
+  - difficulty: 1=初中, 2=高中, 3=四级, 4=六级, 5=考研核心难词
+  - frequency: 1-3=低频, 4-6=中频, 7-10=高频
+  - 原文缺失的字段由 AI 根据知识补全
+
+#### 第 3 步：合并入库（JSON → 词库文件）
+
+- **脚本**：`scripts/merge-vocab.ts`
+- **输入**：`parsed-vocab.json` + 现有 `src/data/words/words-*.ts`
+- **输出**：更新后的 `words-*.ts`
+- **逻辑**：
+  1. 读取现有词库 + 新解析数据
+  2. 按单词名去重（已有词跳过，新词追加）
+  3. 按首字母分组，写入对应 `words-{x}.ts`
+  4. 新词 id 从现有最大 id 递增
+
+### 不推荐方案：通过 ImportPanel 导入自定义词库
+
+- localStorage 有 5MB 限制，5000+ 词完整数据可能超限
+- 自定义词库与内置词库管理方式不同
+- 每次启动从 localStorage 加载，影响性能
+
+### 操作步骤
+
+```bash
+# 1. 将 PDF 放到项目根目录
+cp ~/红宝书.pdf vocab-book.pdf
+
+# 2. 提取文本
+npx tsx scripts/extract-pdf.ts vocab-book.pdf
+
+# 3. 检查 raw-vocab.txt 质量
+
+# 4. 配置 API Key
+echo "ANTHROPIC_API_KEY=sk-..." >> .env
+
+# 5. AI 解析（耗时较长，视词量而定）
+npx tsx scripts/parse-vocab.ts raw-vocab.txt
+
+# 6. 检查 parsed-vocab.json 质量
+
+# 7. 合并入库
+npx tsx scripts/merge-vocab.ts parsed-vocab.json
+
+# 8. 验证
+npx tsx -e "import { getAllWords } from './src/data/words'; console.log(getAllWords().length)"
+```
+
+### 涉及文件
+
+| 文件 | 操作 | 说明 |
+|------|------|------|
+| `scripts/extract-pdf.ts` | 新建 | PDF 文本提取脚本 |
+| `scripts/parse-vocab.ts` | 新建 | AI 批量解析脚本 |
+| `scripts/merge-vocab.ts` | 新建 | 合并去重 + 写入词库脚本 |
+| `raw-vocab.txt` | 生成 | PDF 提取的原始文本 |
+| `parsed-vocab.json` | 生成 | AI 解析后的结构化数据 |
+| `src/data/words/words-*.ts` | 修改 | 追加新词 |
+| `package.json` | 修改 | 添加 `pdf-parse` + `@anthropic-ai/sdk` |
 - [ ] 服务器部署验证通过
